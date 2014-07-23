@@ -39,3 +39,7 @@ h3.bio {
 .maxx {
     max-width: 225px;
 }
+
+.recent {
+    max-width: 250px;
+}

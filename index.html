@@ -131,12 +131,14 @@ title: Runner's Life
                         <div class="pad-top-sm"><button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
         			</div>
                 </div>
-                <div class="col-sm-3 pad-top-sm well">
-                    <h4>Recent Articles</h4>
-                    <div class="posts">
-                        {% for post in site.posts limit:5%}
-                            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-                        {% endfor %}
+                <div class="col-sm-3 pad-top-sm">
+                    <div class="well recent">
+                        <h4>Recent Articles</h4>
+                        <div class="posts">
+                            {% for post in site.posts limit:5%}
+                                <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
