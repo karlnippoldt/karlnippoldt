@@ -1,0 +1,41 @@
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../img/jumbotron.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h3.bio {
+    font-size: 24px;
+    font-weight:500;
+}
+
+.pad-top {
+    padding-top: 50px;
+}
+
+.pad-top-sm {
+    padding-top: 15px;
+}
+
+.pad-top-xl {
+    padding-top: 100px;
+}
+
+.pad-bt-sm {
+    padding-bottom: 15px;
+}
+
+.asterisk {
+    color: #df691a;
+}
+
+.maxx {
+    max-width: 225px;
+}
