@@ -20,14 +20,16 @@
   </head>
   <body name="top">
     <div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-{% include nav.html %}
-{{content}}
-{% include footer.html %}
-		</div>
-	</div>
-</div>
+    	<div class="row clearfix">
+    		<div class="col-md-12 column">
+    {% include nav.html %}
+    {{content}}
+    {% include footer.html %}
+    		</div>
+    	</div>
+    </div>
+    <!--signup modal-->
+      {% include signupmodal.html %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
