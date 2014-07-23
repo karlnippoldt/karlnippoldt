@@ -125,18 +125,18 @@ title: Runner's Life
             </div>
 <!--signup button-->
             <div class="row clearfix pad-top">
-                <div class="col-sm-9">
+                <div class="col-md-9">
         			<div class="text-center">
                         <h2>Ready to get our fantastic emails?</h2>
                         <div class="pad-top-sm"><button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
         			</div>
                 </div>
-                <div class="col-sm-3 pad-top-sm">
+                <div class="col-md-3 pad-top">
                     <div class="well recent center-block">
                         <h4>Recent Articles</h4>
                         <div class="posts">
                             {% for post in site.posts limit:5 %}
-                                <p><a href="{{ post.url }}">{{ post.title }}</a> {{ post.author }}</p>
+                                <p><a href="{{ post.url }}">{{ post.title }}</a></p>
                             {% endfor %}
                         </div>
                     </div>
