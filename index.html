@@ -136,7 +136,7 @@ title: Runner's Life
                     <div class="well recent center-block">
                         <h4>Recent Articles</h4>
                         <div class="posts">
-                            {% for post in site.posts limit:5 %}
+                            {% for post in site.posts limit:3 %}
                                 <p><a href="{{ post.url }}">{{ post.title }}</a></p>
                             {% endfor %}
                         </div>
