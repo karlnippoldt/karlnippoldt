@@ -8,22 +8,34 @@ title: Runner's Life
 </ul>
 
 <!--jumbotron banner-->
-			<div class="jumbotron">
-                <div class="row clearfix">
-                    <div class="container">
-                        <h1>
-                            Workouts, tips, and more.
-                        </h1>
-                        <p>
-                            Get our informative monthly email newsletter featuring articles written by runners, for runners, both beginner and advanced. Learn from the best!
-                        </p>
-                        <p class="pad-top-sm">
-                            <button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>&nbsp;&nbsp;&nbsp;
-                            <a href="https://madmimi.com/s/71a715" target="_blank"><button type="button" class="btn btn-link text-uppercase">What you'll receive</button></a>
-                        </p>
-                    </div>
+			<div class="row clearfix">
+                <div class="col-sm-9">
+                    <div class="jumbotron">
+                        <div class="row clearfix">
+                            <div class="container">
+                                <h1>
+                                    Workouts, tips, and more.
+                                </h1>
+                                <p>
+                                    Get our informative monthly email newsletter featuring articles written by runners, for runners, both beginner and advanced. Learn from the best!
+                                </p>
+                                <p class="pad-top-sm">
+                                    <button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://madmimi.com/s/71a715" target="_blank"><button type="button" class="btn btn-link text-uppercase">What you'll receive</button></a>
+                                </p>
+                            </div>
+                        </div>
+        			</div>
                 </div>
-			</div>
+                <div class="col-sm-3">
+                    <h3>Recent Articles</h3>
+                    <ul class="posts">
+                        {% for post in site.posts %}
+                            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
 
 <!--the newsletter-->
 			<div class="row clearfix pad-top" id="newsletter">
