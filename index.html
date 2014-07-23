@@ -1,65 +1,239 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Karlnippoldt.github.io by karlnippoldt</title>
+---
+layout: default
+title: Welcome
+---
+ 
+<div class="page-header">
+<h1>Jetstrap Docs</h1>
+</div>
+Welcome!
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Karlnippoldt.github.io</h1>
-        <p></p>
+    <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+<!--navigation-->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+                    <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <b><a class="navbar-brand" href="#top">Runner's Life</a></b>
+                    </div>
 
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#newsletter">The Newsletter</a>
+                            </li>
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="navbar-right btn btn-primary navbar-btn text-uppercase" data-toggle="modal" data-target="#signup">Subscribe</button>
+                        <div class="visible-xs pad-bt-sm"></div>
+                    </div>
+				</div>
+			</nav>
+            
+<!--jumbotron banner-->
+			<div class="jumbotron">
+                <div class="row clearfix">
+                    <div class="container">
+                        <h1>
+                            Workouts, tips, and more.
+                        </h1>
+                        <p>
+                            Get our informative monthly email newsletter featuring articles written by runners, for runners, both beginner and advanced. Learn from the best!
+                        </p>
+                        <p class="pad-top-sm">
+                            <button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-link text-uppercase">What you'll receive</button>
+                        </p>
+                    </div>
+                </div>
+			</div>
 
-        <p class="view"><a href="https://github.com/karlnippoldt">View My GitHub Profile</a></p>
+<!--the newsletter-->
+			<div class="row clearfix pad-top" id="newsletter">
+				<div class="col-sm-4 column">
+					<h2>
+						<span class="glyphicon glyphicon-align-left"></span>&nbsp;&nbsp;Stories
+					</h2>
+					<p>
+                        How did you start running? Read our stories about running—from our beginnings to the present: the successes as well as the failures, the bumps in the road that got us to where we are as runners today.
+                    </p>
+				</div>
+				<div class="col-sm-4 column">
+					<h2>
+						<span class="glyphicon glyphicon-road"></span>&nbsp;&nbsp;Workouts
+					</h2>
+					<p>
+						The most important part of being a runner is training. And the type of training you do is important, too. Learn the best ways to train, whether you're running for excercise or aiming for a PR on a race.
+					</p>
+				</div>
+				<div class="col-sm-4 column">
+					<h2>
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&hellip;and more
+					</h2>
+					<p>
+						When you're a runner, everything's a competition (except driving). We explore how running can impact every aspect of your life, from school to work and beyond.
+					</p>
+				</div>
+			</div>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<!--biographies-->
+			<div class="row clearfix pad-top" id="about">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="thumbnail maxx center-block">
+                                <img src="img/karl.jpg" width="250" height="175"/>
+                                <div class="caption">
+                                    <h3 class="bio">
+                                        Karl Nippoldt
+                                    </h3>
+                                    <h4>Age: 16<br />Fave food: ???</h4>
+                                    <p>
+                                        Long, easy runs are great! Interval training is not so fun, but I do it anyway.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumbnail maxx center-block">
+                                <img src="img/spencer.jpg" width="250" height="175"/>
+                                <div class="caption">
+                                    <h3 class="bio">
+                                        Spencer Larralde
+                                    </h3>
+                                    <h4>Age: 17<br />Fave food: doughnuts</h4>
+                                    <p>
+                                        I love to cruise on long runs&hellip;and doughnuts may or may not be my weakness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="thumbnail maxx center-block">
+                                <img src="img/jarrett.jpg" width="250" height="175"/>
+                                <div class="caption">
+                                    <h3 class="bio">
+                                        Jarrett Chow
+                                    </h3>
+                                    <h4>Age: 16<br />Fave food: sushi</h4>
+                                    <p>
+                                         I love running, and may or may not be the master of indecisiveness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumbnail maxx center-block">
+                                <img src="img/guests.jpg" width="250" height="175"/>
+                                <div class="caption">
+                                    <h3 class="bio">
+                                        Guests
+                                    </h3>
+                                    <p>
+                                        Would you like your writing to be featured in Runner's Life? Let us know!
+                                    </p>
+                                    <p>
+                                        <button class="btn btn-primary" href="#" data-toggle="modal" data-target="#guest">Write for us</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--signup button-->
+			<div class="row clearfix text-center pad-top">
+                <h2>Ready to get our fantastic emails?</h2>
+                <div class="pad-top-sm"><button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
+			</div>
+<!--Copyright notice-->            
+			<div class="row clearfix pad-top-xl">
+				<div class="col-md-12 column">
+					<p class="text-center">
+						<small>Copyright &copy;
+                            <script>
+                            <!--
+                            var year=new Date();
+                            year=year.getYear();
+                            if (year<1900) year+=1900;
+                            document.write(year);
+                            //-->
+                            </script>
+                        Karl Nippoldt. All Rights Reserved.
+                        </small>
+					</p>
+				</div>
+			</div>
+<!--End webpage content-->
+<!--signup modal-->
+            <div class="modal fade" id="signup">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">Subscribe to Runner's Life</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Begin MailChimp Signup Form -->
+                            <div id="mc_embed_signup" class="form-group text-center">
+                            <form action="//nippoldt.us8.list-manage.com/subscribe/post?u=4913f594ab8941f3c8cfffa61&amp;id=682177ddbd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                            <div class="indicates-required text-right"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group input-group pad-top-sm">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Email Address <span class="asterisk">*</span></span>
+                                <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group input-group pad-top-sm">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;First Name</span>
+                                <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group input-group pad-top-sm">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Last Name</span>
+                                <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+                            </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_4913f594ab8941f3c8cfffa61_682177ddbd" tabindex="-1" value=""></div>
+                                <div class="clear pad-top-sm"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-block text-uppercase"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
+                            </form>
+                            </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+                            <!--End mc_embed_signup-->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+<!--Guest modal-->
+            <div class="modal fade" id="guest">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">Write for us</h4>
+                        </div>
+                        <div class="modal-body">
+                            <script type="text/javascript" src="http://form.jotform.us/jsform/41987940389170"></script>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+<!--end modals-->            
+		</div>
+	</div>
+</div>
