@@ -140,7 +140,7 @@ title: Runner's Life
             </div>
 <!--End webpage content-->
 <!--Guest modal-->
-<!--            <div class="modal fade" id="guest">
+            <div class="modal fade" id="guest">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -148,12 +148,110 @@ title: Runner's Life
                             <h4 class="modal-title">Write for us</h4>
                         </div>
                         <div class="modal-body">
-                            <script type="text/javascript" src="http://form.jotform.us/jsform/41987940389170"></script>
+                                <script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+                                <script src="http://max.jotfor.ms/static/jotform.forms.js?3.2.2967" type="text/javascript"></script>
+                                <script type="text/javascript">
+                                   JotForm.init(function(){
+                                      $('input_1').hint('ex: myname@example.com');
+                                      JotForm.highlightInputs = false;
+                                   });
+                                </script>
+                                <link href="http://max.jotfor.ms/static/formCss.css?3.2.2967" rel="stylesheet" type="text/css" />
+                                <link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.2967" />
+                                <style type="text/css">
+                                    .form-label-left{
+                                        width:150px !important;
+                                    }
+                                    .form-line{
+                                        padding-top:12px;
+                                        padding-bottom:12px;
+                                    }
+                                    .form-label-right{
+                                        width:150px !important;
+                                    }
+                                    .form-all{
+                                        width:500px;
+                                        color:#FFFFFF !important;
+                                        font-family:'Helvetica';
+                                        font-size:15px;
+                                    }
+                                    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+                                        color:#FFFFFF;
+                                    }
+
+                                </style>
+
+                                <link type="text/css" rel="stylesheet" href="http://jotform.us/css/styles/buttons/form-submit-button-simple_orange.css?3.2.2967"/>
+                                <form class="jotform-form" action="http://submit.jotform.us/submit/41987940389170/" method="post" name="form_41987940389170" id="41987940389170" accept-charset="utf-8">
+                                  <input type="hidden" name="formID" value="41987940389170" />
+                                  <div class="form-all">
+                                    <ul class="form-section">
+                                      <li class="form-line" data-type="control_fullname" id="id_3">
+                                        <label class="form-label form-label-top form-label-auto" id="label_3" for="input_3">
+                                          Full Name
+                                          <span class="form-required">
+                                            *
+                                          </span>
+                                        </label>
+                                        <div id="cid_3" class="form-input-wide">
+                                          <span class="form-sub-label-container">
+                                            <input class="form-textbox validate[required]" type="text" size="10" name="q3_fullName3[first]" id="first_3" />
+                                            <label class="form-sub-label" for="first_3" id="sublabel_first"> First Name </label>
+                                          </span>
+                                          <span class="form-sub-label-container">
+                                            <input class="form-textbox validate[required]" type="text" size="15" name="q3_fullName3[last]" id="last_3" />
+                                            <label class="form-sub-label" for="last_3" id="sublabel_last"> Last Name </label>
+                                          </span>
+                                        </div>
+                                      </li>
+                                      <li class="form-line" data-type="control_email" id="id_1">
+                                        <label class="form-label form-label-top form-label-auto" id="label_1" for="input_1">
+                                          E-mail
+                                          <span class="form-required">
+                                            *
+                                          </span>
+                                        </label>
+                                        <div id="cid_1" class="form-input-wide">
+                                          <input type="email" class=" form-textbox validate[required, Email]" id="input_1" name="q1_email1" size="30" value="" />
+                                        </div>
+                                      </li>
+                                      <li class="form-line" data-type="control_textbox" id="id_4">
+                                        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Blog/site address (if applicable) </label>
+                                        <div id="cid_4" class="form-input-wide">
+                                          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_4" name="q4_blogsiteAddress" size="30" value="" />
+                                        </div>
+                                      </li>
+                                      <li class="form-line" data-type="control_textarea" id="id_5">
+                                        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Other comments (optional) </label>
+                                        <div id="cid_5" class="form-input-wide">
+                                          <textarea id="input_5" class="form-textarea" name="q5_otherComments5" cols="30" rows="3"></textarea>
+                                        </div>
+                                      </li>
+                                      <li class="form-line" data-type="control_button" id="id_2">
+                                        <div id="cid_2" class="form-input-wide">
+                                          <div style="text-align:left" class="form-buttons-wrapper">
+                                            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_orange">
+                                              Submit
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li style="display:none">
+                                        Should be Empty:
+                                        <input type="text" name="website" value="" />
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <input type="hidden" id="simple_spc" name="simple_spc" value="41987940389170" />
+                                  <script type="text/javascript">
+                                  document.getElementById("si" + "mple" + "_spc").value = "41987940389170-41987940389170";
+                                  </script>
+                                </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
 <!--end modals-->
