@@ -1,0 +1,29 @@
+---
+layout: page
+title: Contact Runner's Life
+---
+<div class="col-sm-2"></div>
+<div class="col-sm-8">	
+	<div class="form-group">
+	<form action="http://getsimpleform.com/messages?form_api_token=f0bb8b80fc2447e789ae00b808632940" method="post">
+	  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+<!--	  <input type='hidden' name='redirect_to' value='{{ site.url }}' />-->
+	  <!-- all your input fields here.... -->
+     <div class="input-group pad-top-sm">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Name</span>
+        <input name="name" type="text" class="form-control" required>
+     </div>
+     <div class="input-group pad-top-sm">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Email Address</span>
+        <input name="email" type="email" class="form-control" required>
+     </div>
+     <div class="pad-top-sm">
+        <textarea class="form-control col-xs-12" name="message" rows="5" required></textarea>
+     </div>
+     <div class="pad-top-sm">
+        <button type="submit" class="submit btn btn-primary btn-block text-uppercase" id="submit"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Send message</button>
+     </div>
+	</form>
+</div>
+</div>
+<div class="col-sm-2"></div>
