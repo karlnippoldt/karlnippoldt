@@ -1,7 +1,6 @@
 /*body {
     padding-top: 70px;
 }*/
-
 .jumbotron {
     margin-bottom: 0px;
     background-image: url(../img/jumbotron.jpg);
@@ -10,36 +9,36 @@
     background-repeat: no-repeat;
     color: white;
 }
-
-h3.bio {
-    font-size: 24px;
+.bio {
+    font-size: 1.4em;
     font-weight:500;
+    margin-top: 0.5em;
 }
-
 .pad-top {
     padding-top: 50px;
 }
-
 .pad-top-sm {
     padding-top: 15px;
 }
-
 .pad-top-xl {
     padding-top: 100px;
 }
-
 .pad-bt-sm {
     padding-bottom: 15px;
 }
-
 .asterisk {
     color: #df691a;
 }
-
 .maxx {
     max-width: 225px;
 }
-
 .recent {
+    max-width: 250px;
+}
+.media-bio {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.img-bio {
     max-width: 250px;
 }

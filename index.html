@@ -11,10 +11,10 @@ title: Runner's Life
                             Workouts, tips, and more.
                         </h1>
                         <p>
-                            Get our informative monthly email newsletter featuring articles written by runners, for runners, both beginner and advanced. Learn from the best!
+                           Our monthly email newsletter features articles written by and for runners, both beginner and advanced.
                         </p>
                         <p class="pad-top-sm">
-                            <button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="fa fa-paper-plane"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>&nbsp;&nbsp;&nbsp;
                             <a href="https://madmimi.com/s/71a715" target="_blank"><button type="button" class="btn btn-link text-uppercase">What you'll receive</button></a>
                         </p>
                     </div>
@@ -25,7 +25,7 @@ title: Runner's Life
 			<div class="row clearfix pad-top" id="newsletter">
 				<div class="col-sm-4 column">
 					<h2>
-						<span class="glyphicon glyphicon-align-left"></span>&nbsp;&nbsp;Stories
+						<span class="fa fa-book"></span>&nbsp;&nbsp;Stories
 					</h2>
 					<p>
                         How did you start running? Read our stories about running—from our beginnings to the present: the successes as well as the failures, the bumps in the road that got us to where we are as runners today.
@@ -33,7 +33,7 @@ title: Runner's Life
 				</div>
 				<div class="col-sm-4 column">
 					<h2>
-						<span class="glyphicon glyphicon-road"></span>&nbsp;&nbsp;Workouts
+						<span class="fa fa-road"></span>&nbsp;&nbsp;Workouts
 					</h2>
 					<p>
 						The most important part of being a runner is training. And the type of training you do is important, too. Learn the best ways to train, whether you're running for excercise or aiming for a PR on a race.
@@ -41,217 +41,20 @@ title: Runner's Life
 				</div>
 				<div class="col-sm-4 column">
 					<h2>
-						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&hellip;and more
+						<span class="fa fa-flag-checkered"></span>&nbsp;&nbsp;&hellip;and more
 					</h2>
 					<p>
 						When you're a runner, everything's a competition (except driving). We explore how running can impact every aspect of your life, from school to work and beyond.
 					</p>
 				</div>
 			</div>
-
-<!--biographies-->
-			<div class="row clearfix pad-top" id="about">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="thumbnail maxx center-block">
-                                <img src="img/karl.jpg" width="250" height="175"/>
-                                <div class="caption">
-                                    <h3 class="bio">
-                                        Karl Nippoldt
-                                    </h3>
-                                    <h4>Age: 16<br />Fave food: ???</h4>
-                                    <p>
-                                        Long, easy runs are great! Interval training is not so fun, but I do it anyway.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="thumbnail maxx center-block">
-                                <img src="img/spencer.jpg" width="250" height="175"/>
-                                <div class="caption">
-                                    <h3 class="bio">
-                                        Spencer Larralde
-                                    </h3>
-                                    <h4>Age: 17<br />Fave food: doughnuts</h4>
-                                    <p>
-                                        I love to cruise on long runs&hellip;and doughnuts may or may not be my weakness.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="thumbnail maxx center-block">
-                                <img src="img/jarrett.jpg" width="250" height="175"/>
-                                <div class="caption">
-                                    <h3 class="bio">
-                                        Jarrett Chow
-                                    </h3>
-                                    <h4>Age: 16<br />Fave food: sushi</h4>
-                                    <p>
-                                         I love running. I just might be the master of indecisiveness, but I'm not quite sure.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="thumbnail maxx center-block">
-                                <img src="img/guests.jpg" width="250" height="175"/>
-                                <div class="caption">
-                                    <h3 class="bio">
-                                        Guests
-                                    </h3>
-                                    <p>
-                                        Would you like your writing to be featured in Runner's Life? Let us know!
-                                    </p>
-                                    <p>
-                                        <button class="btn btn-primary" href="#" data-toggle="modal" data-target="#guest">Write for us</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--signup button-->
+<!--signup button
             <div class="row clearfix pad-top">
-                <div class="col-md-9">
+                <div class="container">
         			<div class="text-center">
                         <h2>Ready to get our fantastic emails?</h2>
-                        <div class="pad-top-sm"><button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
+                        <div class="pad-top-sm"><button class="btn btn-primary btn-lg text-uppercase" data-toggle="modal" data-target="#signup"><span class="fa fa-paper-plane"></span>&nbsp;&nbsp;&nbsp;Subscribe</button></div>
         			</div>
                 </div>
-                <div class="col-md-3">
-                <div class="visible-xs pad-top"></div>
-                    <div class="well maxx center-block">
-                        <h4>Recent Articles</h4>
-                        <div class="posts">
-                            {% for post in site.posts limit:3 %}
-                                <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>-->
 <!--End webpage content-->
-<!--Guest modal-->
-            <div class="modal fade" id="guest">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title">Write for us</h4>
-                        </div>
-                        <div class="modal-body">
-                                <script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-                                <script src="http://max.jotfor.ms/static/jotform.forms.js?3.2.2967" type="text/javascript"></script>
-                                <script type="text/javascript">
-                                   JotForm.init(function(){
-                                      $('input_1').hint('ex: myname@example.com');
-                                      JotForm.highlightInputs = false;
-                                   });
-                                </script>
-                                <link href="http://max.jotfor.ms/static/formCss.css?3.2.2967" rel="stylesheet" type="text/css" />
-                                <link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.2967" />
-                                <style type="text/css">
-                                    .form-label-left{
-                                        width:150px !important;
-                                    }
-                                    .form-line{
-                                        padding-top:12px;
-                                        padding-bottom:12px;
-                                    }
-                                    .form-label-right{
-                                        width:150px !important;
-                                    }
-                                    .form-all{
-                                        width:500px;
-                                        color:#FFFFFF !important;
-                                        font-family:'Helvetica';
-                                        font-size:15px;
-                                    }
-                                    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
-                                        color:#FFFFFF;
-                                    }
-
-                                </style>
-
-                                <link type="text/css" rel="stylesheet" href="http://jotform.us/css/styles/buttons/form-submit-button-simple_orange.css?3.2.2967"/>
-                                <form class="jotform-form" action="http://submit.jotform.us/submit/41987940389170/" method="post" name="form_41987940389170" id="41987940389170" accept-charset="utf-8">
-                                  <input type="hidden" name="formID" value="41987940389170" />
-                                  <div class="form-all">
-                                    <ul class="form-section">
-                                      <li class="form-line" data-type="control_fullname" id="id_3">
-                                        <label class="form-label form-label-top form-label-auto" id="label_3" for="input_3">
-                                          Full Name
-                                          <span class="form-required">
-                                            *
-                                          </span>
-                                        </label>
-                                        <div id="cid_3" class="form-input-wide">
-                                          <span class="form-sub-label-container">
-                                            <input class="form-textbox validate[required]" type="text" size="10" name="q3_fullName3[first]" id="first_3" />
-                                            <label class="form-sub-label" for="first_3" id="sublabel_first"> First Name </label>
-                                          </span>
-                                          <span class="form-sub-label-container">
-                                            <input class="form-textbox validate[required]" type="text" size="15" name="q3_fullName3[last]" id="last_3" />
-                                            <label class="form-sub-label" for="last_3" id="sublabel_last"> Last Name </label>
-                                          </span>
-                                        </div>
-                                      </li>
-                                      <li class="form-line" data-type="control_email" id="id_1">
-                                        <label class="form-label form-label-top form-label-auto" id="label_1" for="input_1">
-                                          E-mail
-                                          <span class="form-required">
-                                            *
-                                          </span>
-                                        </label>
-                                        <div id="cid_1" class="form-input-wide">
-                                          <input type="email" class=" form-textbox validate[required, Email]" id="input_1" name="q1_email1" size="30" value="" />
-                                        </div>
-                                      </li>
-                                      <li class="form-line" data-type="control_textbox" id="id_4">
-                                        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Blog/site address (if applicable) </label>
-                                        <div id="cid_4" class="form-input-wide">
-                                          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_4" name="q4_blogsiteAddress" size="30" value="" />
-                                        </div>
-                                      </li>
-                                      <li class="form-line" data-type="control_textarea" id="id_5">
-                                        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Other comments (optional) </label>
-                                        <div id="cid_5" class="form-input-wide">
-                                          <textarea id="input_5" class="form-textarea" name="q5_otherComments5" cols="30" rows="3"></textarea>
-                                        </div>
-                                      </li>
-                                      <li class="form-line" data-type="control_button" id="id_2">
-                                        <div id="cid_2" class="form-input-wide">
-                                          <div style="text-align:left" class="form-buttons-wrapper">
-                                            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_orange">
-                                              Submit
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li style="display:none">
-                                        Should be Empty:
-                                        <input type="text" name="website" value="" />
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <input type="hidden" id="simple_spc" name="simple_spc" value="41987940389170" />
-                                  <script type="text/javascript">
-                                  document.getElementById("si" + "mple" + "_spc").value = "41987940389170-41987940389170";
-                                  </script>
-                                </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--end modals-->
