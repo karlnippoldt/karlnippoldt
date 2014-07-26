@@ -1,13 +1,8 @@
 /*body {
     padding-top: 70px;
 }*/
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(../img/jumbotron.jpg);
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.navbar-brand {
+    font-weight: bold;
 }
 .bio {
     font-size: 1.4em;
