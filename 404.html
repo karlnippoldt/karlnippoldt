@@ -1,7 +1,73 @@
----
-layout: default
-title: 404 error!!! :(
----
-
-<h1>Sorry, this page cannot be found. :(</h1>
-<h3>Maybe I turned it in with my math homework? <i class="fa fa-graduation-cap"></h3>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>404 error</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom css -->
+		<link href="css/custom.css" rel="stylesheet">
+		<!-- Font Awesome -->		
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--shortcut icon-->
+		<link rel="shortcut icon" type="image/png" href="img/karl.jpg"/>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body name="top">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h1 class="pad-top-xl">Sorry, this page cannot be found. :(</h1>
+					<h3>Maybe I turned it in with my math homework?</h3>
+					<div class="pad-top"><a class="btn btn-default btn-lg" href="/"><i class="fa fa-home"></i> Home</a></div>
+					<div class="pad-top"><code><i class="fa fa-life-ring"></i> 404 error</code></div>
+					<!--Copyright notice-->			
+					<div class="row clearfix pad-top-xl">
+						<div class="col-md-12 column">
+							<p class="text-center">
+								<small>Copyright &copy;
+									<script>
+									<!--
+									var year=new Date();
+									year=year.getYear();
+									if (year<1900) year+=1900;
+									document.write(year);
+									//-->
+									</script>
+								Karl Nippoldt. All Rights Reserved.
+								</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+<script>
+				$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 500);
+						return false;
+					}
+				}
+			});
+		});
+</script>
+</html>
