@@ -34,7 +34,8 @@ a.fa-2x {
     margin-bottom: 0px;
 }
 .bio {
-    max-width: 600px;
+    font-size: 1.4em;
+    max-width: 640px;
 }
 .img-responsive {
     max-height: 100px;
