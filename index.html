@@ -34,7 +34,7 @@
 						<div class="pad-top-sm bio center-block">I am a high school student, calling California my home. I run on my school's Cross Country and Track teams. In my spare time I read, take photos, mess around with computers, watch Doctor Who, and listen to music.
 						</div>
 						<div class="social-icons pad-top-md">
-							<a class="fa fa-envelope fa-2x" href="#" data-toggle="modal" data-target="#contact" alt="Email" data-toggle="tooltip" data-placement="bottom" title="Email"></a>
+							<a class="fa fa-envelope-o fa-2x" href="#" data-toggle="modal" data-target="#contact" data-placement="bottom" title="Email" data-original-title="Email" alt="Email" id="tooltip"></a>
 							<a class="fa fa-twitter fa-2x" href="http://twitter.com/karlnippoldt" alt="Twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></a>
 							<a class="fa fa-tumblr fa-2x" href="http://karlnippoldt.tumblr.com" alt="Tumblr" data-toggle="tooltip" data-placement="bottom" title="Tumblr"></a>
 							<a class="fa fa-camera-retro fa-2x" href="http://500px.com/karlnippoldt" alt="500px" data-toggle="tooltip" data-placement="bottom" title="500px"></a>
@@ -106,10 +106,13 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	</body>
-<!--tooltip initialize-->
+<!--tooltip initialize 2 scripts-->
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+</script>
+<script>
+ $('#tooltip').tooltip();
 </script>
 </html>
