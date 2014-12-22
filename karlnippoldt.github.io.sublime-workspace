@@ -14,6 +14,22 @@
 				"buffer_size": 5545,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "404.html",
+			"settings":
+			{
+				"buffer_size": 2741,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
+			"settings":
+			{
+				"buffer_size": 134640,
+				"line_ending": "CR"
+			}
 		}
 	],
 	"build_system": "",
@@ -43,6 +59,13 @@
 	},
 	"file_history":
 	[
+		"/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
+		"/C/Program Files/OpenVPN/config/client.ovpn",
+		"/C/Program Files/OpenVPN/sample-config/sample.ovpn",
+		"/C/Program Files/OpenVPN/sample-config/client.ovpn",
+		"/E/Users/Karl Nippoldt/Downloads/com.snapchat.android/manifest.json",
+		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/index.html",
+		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/404.html",
 		"/E/Users/Karl Nippoldt/Desktop/table.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/css/custom.css",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/up-found/chap-2-challenge.html",
@@ -52,7 +75,6 @@
 		"/E/Users/Karl Nippoldt/Documents/GitHub/up-found/block-grid.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/up-found/nested-grid.html",
 		"/E/Users/Karl Nippoldt/Desktop/Exercise Files/Chapter 2/02_02/start/grid.html",
-		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/index.html",
 		"/E/Users/Karl Nippoldt/Downloads/export/main_style.css",
 		"/E/Users/Karl Nippoldt/Downloads/export/no-header.html",
 		"/C/Users/Karl Nippoldt/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
@@ -60,7 +82,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -97,7 +119,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -113,14 +135,71 @@
 						"selection":
 						[
 							[
-								15,
-								15
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "404.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1794,
+								1811
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
