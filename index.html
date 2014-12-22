@@ -34,13 +34,13 @@
 						<div class="pad-top-sm bio center-block">I am a high school student, calling California my home. I run on my school's Cross Country and Track teams. In my spare time I read, take photos, mess around with computers, watch Doctor Who, and listen to music.
 						</div>
 						<div class="social-icons pad-top-md">
+							<a class="fa fa-envelope fa-2x" href="#" data-toggle="modal" data-target="#contact" alt="Email" data-toggle="tooltip" data-placement="bottom" title="Email"></a>
 							<a class="fa fa-twitter fa-2x" href="http://twitter.com/karlnippoldt" alt="Twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></a>
 							<a class="fa fa-tumblr fa-2x" href="http://karlnippoldt.tumblr.com" alt="Tumblr" data-toggle="tooltip" data-placement="bottom" title="Tumblr"></a>
 							<a class="fa fa-camera-retro fa-2x" href="http://500px.com/karlnippoldt" alt="500px" data-toggle="tooltip" data-placement="bottom" title="500px"></a>
 							<a class="fa fa-picture-o fa-2x" href="http://instagram.com/karlnippoldt" alt="Instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"></a>
 							<a class="fa fa-vine fa-2x" href="https://vine.co/u/967228318883688448" alt="Vine" data-toggle="tooltip" data-placement="bottom" title="Vine"></a>
 							<a class="fa fa-spotify fa-2x" href="http://open.spotify.com/user/karlnippoldt" alt="Spotify" data-toggle="tooltip" data-placement="bottom" title="Spotify"></a>
-							<a class="fa fa-envelope fa-2x" href="#" data-toggle="modal" data-target="#contact" alt="Email" data-toggle="tooltip" data-placement="bottom" title="Email"></a>
 						</div>
 					</div>
 					<!--Copyright notice-->			
@@ -104,22 +104,12 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	</body>
+<!--tooltip initialize-->
 <script>
-				$(function() {
-			$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 500);
-						return false;
-					}
-				}
-			});
-		});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 </html>
