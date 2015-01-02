@@ -8,14 +8,6 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 5545,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "404.html",
 			"settings":
 			{
@@ -24,11 +16,11 @@
 			}
 		},
 		{
-			"file": "/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 134640,
-				"line_ending": "CR"
+				"buffer_size": 5837,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -59,12 +51,12 @@
 	},
 	"file_history":
 	[
+		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/index.html",
 		"/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
 		"/C/Program Files/OpenVPN/config/client.ovpn",
 		"/C/Program Files/OpenVPN/sample-config/sample.ovpn",
 		"/C/Program Files/OpenVPN/sample-config/client.ovpn",
 		"/E/Users/Karl Nippoldt/Downloads/com.snapchat.android/manifest.json",
-		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/index.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/404.html",
 		"/E/Users/Karl Nippoldt/Desktop/table.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/css/custom.css",
@@ -82,7 +74,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -119,40 +111,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5545,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "404.html",
 					"semi_transient": false,
 					"settings":
@@ -181,28 +144,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
+					"buffer": 1,
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 134640,
+						"buffer_size": 5837,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1794,
-								1811
+								2982,
+								2982
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
