@@ -8,18 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "404.html",
+			"file": "/E/Users/Karl Nippoldt/Desktop/franciscantheme.html",
 			"settings":
 			{
-				"buffer_size": 2741,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 5837,
+				"buffer_size": 19241,
 				"line_ending": "Windows"
 			}
 		}
@@ -51,13 +43,13 @@
 	},
 	"file_history":
 	[
+		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/404.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/index.html",
 		"/E/Users/Karl Nippoldt/Downloads/AndroidManifest.xml",
 		"/C/Program Files/OpenVPN/config/client.ovpn",
 		"/C/Program Files/OpenVPN/sample-config/sample.ovpn",
 		"/C/Program Files/OpenVPN/sample-config/client.ovpn",
 		"/E/Users/Karl Nippoldt/Downloads/com.snapchat.android/manifest.json",
-		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/404.html",
 		"/E/Users/Karl Nippoldt/Desktop/table.html",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/karlnippoldt.github.io/css/custom.css",
 		"/E/Users/Karl Nippoldt/Documents/GitHub/up-found/chap-2-challenge.html",
@@ -74,7 +66,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -88,6 +80,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"carousel",
+			".min.js",
 			" column",
 			"css/",
 			". ",
@@ -111,24 +105,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "404.html",
+					"file": "/E/Users/Karl Nippoldt/Desktop/franciscantheme.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2741,
+						"buffer_size": 19241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								499,
+								499
 							]
 						],
 						"settings":
@@ -138,35 +132,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5837,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2982,
-								2982
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
