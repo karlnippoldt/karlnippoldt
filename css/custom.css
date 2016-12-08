@@ -25,6 +25,9 @@ a:hover, a:focus {
 .pad-bt-sm {
     padding-bottom: 15px;
 }
+.pad-bt-md {
+    padding-bottom: 30px;
+}
 .asterisk {
     color: #df691a;
 }
