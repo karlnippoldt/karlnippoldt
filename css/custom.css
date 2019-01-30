@@ -31,7 +31,7 @@ a:hover, a:focus {
 .asterisk {
     color: #df691a;
 }
-a.fa-2x {
+span.fa-2x {
     padding: 10px 10px;
 }
 /*a.fa {
