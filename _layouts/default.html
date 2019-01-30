@@ -7,7 +7,7 @@
 	    <!-- Page Title -->
 		<title>{{ page.title }}</title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-kW2H6mf/72/MKlmwB//Zcwg0ckiegojPx/fio14/rpoYw2LMhULTn5YhS1QyrQfx" crossorigin="anonymous">
 		<!-- Custom css -->
 		<link href="css/custom.css" rel="stylesheet">
 		<!-- Font Awesome -->		
@@ -16,6 +16,7 @@
 		<link rel="shortcut icon" type="image/png" href="img/karl.jpg"/>
 	</head>
 	<body name="top">
+		<% include navbar.html %}
         {{ content }}
         {% include page_scripts.html %}
 	</body>
