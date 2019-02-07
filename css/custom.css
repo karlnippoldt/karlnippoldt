@@ -1,6 +1,6 @@
 .karl-bg { 
   /* The image used */
-  background-image: url("img/karl.jpg");
+  background-image: url("/img/karl.jpg");
 
   /* Full height */
   height: 100%; 
