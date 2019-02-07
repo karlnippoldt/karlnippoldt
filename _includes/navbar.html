@@ -5,12 +5,9 @@
 		</button>
 	<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link" href="/">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/portfolio-jan-2019.pdf">Portfolio</a>
-			</li>
+			{% assign pages_list = site.pages %}
+			{% assign group = 'navigation' %}
+			{% include pages_list.html %}
 		</ul>
 	</div>
 </nav>

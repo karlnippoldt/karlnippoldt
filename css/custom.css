@@ -1,3 +1,9 @@
+/* Makes web page take up entire page */
+html, body {
+    height: 100%;
+}
+
+/* Creates background style for homepage image */
 .karl-bg { 
   /* The image used */
   background-image: url("/img/karl.jpg");
@@ -8,53 +14,10 @@
   background-size: cover;
 }
 
-
-.text-center {
-    text-align: center;
-}
-h1 {
-    font-size: 4em;
-}
-a:hover, a:focus {
-    text-decoration: none;
-}
-.pad-top {
-    padding-top: 50px;
-}
-.pad-top-sm {
-    padding-top: 15px;
-}
-.pad-top-md {
-    padding-top: 30px;
-}
-.pad-top-xl {
-    padding-top: 100px;
-}
-.pad-bt-sm {
-    padding-bottom: 15px;
-}
-.pad-bt-md {
-    padding-bottom: 30px;
-}
-.asterisk {
-    color: #df691a;
-}
+/* Adds padding and removes underline for social icons */
 a.fa-2x {
     padding: 10px 10px;
 }
-/*a.fa {
-    color: #2C3E50;
-}*/
-.page-header {
-    border-bottom-style: none;
-    margin-bottom: 0px;
-}
-.bio {
-    font-size: 1.2em;
-}
-.content {
-    max-width: 700px;
-}
-.img-responsive {
-    max-height: 150px;
+a.fa-2x:hover, a.fa-2x:focus {
+    text-decoration: none;
 }
