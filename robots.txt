@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /portfolio.pdf
+Disallow: /assets/portfolio/

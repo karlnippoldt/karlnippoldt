@@ -1,0 +1,11 @@
+docs_list_title: Navigation
+docs:
+
+- title: Home
+  url: /
+
+- title: Résumé
+  url: /resume.html
+
+- title: Portfolio
+  url: /portfolio.html

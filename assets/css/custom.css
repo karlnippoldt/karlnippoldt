@@ -1,0 +1,25 @@
+/* Makes web page take up entire page */
+html, body {
+    height: 100%;
+}
+
+/* Creates background style for homepage image */
+.karl-bg { 
+  /* The image used */
+  background-image: url("/assets/images/karl.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Adds padding for social icons */
+a.fa-2x {
+    padding: 10px 10px;
+}
+
+/* Remove underline for links */
+a:hover, a:focus {
+    text-decoration: none;
+}
