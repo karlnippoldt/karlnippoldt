@@ -4,7 +4,7 @@ html, body {
 }
 
 /* Creates background style for homepage image */
-.karl-bg { 
+.karl-bg {
   /* The image used */
   background-image: url("/assets/images/karl.jpg");
 
@@ -22,4 +22,17 @@ a.fa-2x {
 /* Remove underline for links */
 a:hover, a:focus {
     text-decoration: none;
+}
+
+/* Change number of card columns on resume
+Code based on answer in https://stackoverflow.com/questions/34140793/bootstrap-4-responsive-cards-in-card-columns/34831794 */
+@media (min-width: 576px) {
+    .resume-card-columns {
+        column-count: 1;
+    }
+}
+@media (min-width: 992px) {
+    .resume-card-columns {
+        column-count: 2;
+    }
 }
