@@ -19,9 +19,9 @@ a.fa-2x {
     padding: 10px 10px;
 }
 
-/* Remove underline for links */
-a:hover, a:focus {
-    text-decoration: none;
+/* Change text color to black */
+p {
+  color: #1a1a1a;
 }
 
 /* Change number of card columns on resume
@@ -35,4 +35,24 @@ Code based on answer in https://stackoverflow.com/questions/34140793/bootstrap-4
     .resume-card-columns {
         column-count: 2;
     }
+}
+
+/*Font styles for resume*/
+.resume-font-styles h3, .resume-font-styles h4, .resume-font-styles h5, .resume-font-styles h6 {
+  text-transform: none;
+  letter-spacing: normal;
+}
+.resume-font-styles h2 {
+  font-size: 1.5rem;
+  letter-spacing: normal;
+}
+.resume-font-styles h3 {
+  font-size: 1rem;
+}
+.resume-font-styles h4 {
+  font-size: 0.8rem;
+}
+.resume-font-styles ul {
+  padding-inline-start: 20px;
+  color: #1a1a1a;
 }
