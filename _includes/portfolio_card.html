@@ -1,15 +1,15 @@
 <div class="col-md-4">
 	<div class="card my-3">
-		<a href="{{ include.link_href }}" target="_blank">
+		{% if include.link_href != ""%}<a href="{{ include.link_href }}" target="_blank">{% endif %}
 			<img src="{{ include.img_src }}" class="card-img-top" alt="{{ include.name }}">
-		</a>
+		{% if include.link_href != ""%}</a>{% endif %}
 		<div class="card-body">
-			<a href="{{ include.link_href}}">
+			{% if include.link_href != ""%}<a href="{{ include.link_href}}" target="_blank">{% endif %}
 				<h1 class="card-title portfolio-card-title">{{ include.name }}</h1>
-			</a>
+			{% if include.link_href != ""%}</a>{% endif %}
 			<h2 class="card-subtitle portfolio-card-subtitle mb-2">{{ include.date }}</h2>
 			<p class="card-text">{{ include.text }}</p>
-			<a href="{{ include.link_href }}" class="btn btn-outline-primary btn-sm" target="_blank">View this artifact <span class="fas fa-external-link-alt"></span></a>
+			{% if include.link_href != ""%}<a href="{{ include.link_href }}" class="btn btn-outline-primary btn-sm" target="_blank">View this artifact <span class="fas fa-external-link-alt"></span></a>{% endif %}
 		</div>
 	</div>
 </div>
