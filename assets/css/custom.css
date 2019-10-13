@@ -37,6 +37,11 @@ Code based on answer in https://stackoverflow.com/questions/34140793/bootstrap-4
     }
 }
 
+/* Hide underlining for links*/
+.no-link-underline a:hover, .no-link-underline a:focus {
+    text-decoration: none;
+}
+
 /*Font styles for resume*/
 .resume-font-styles h3, .resume-font-styles h4, .resume-font-styles h5, .resume-font-styles h6 {
   text-transform: none;
@@ -55,4 +60,9 @@ Code based on answer in https://stackoverflow.com/questions/34140793/bootstrap-4
 .resume-font-styles ul {
   padding-inline-start: 20px;
   color: #1a1a1a;
+}
+
+/*Font resize, used for portfolio cards*/
+h1.portfolio-card-title {
+  font-size: 1.5rem;
 }
