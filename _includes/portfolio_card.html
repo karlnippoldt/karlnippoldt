@@ -1,13 +1,13 @@
 <div class="col-md-4">
 	<div class="card my-3">
 		<a href="{{ include.link_href }}" target="_blank">
-			<img src="{{ include.img_src }}" class="card-img-top" alt="Image of {{ include.name }}">
+			<img src="{{ include.img_src }}" class="card-img-top" alt="{{ include.name }}">
 		</a>
 		<div class="card-body">
 			<a href="{{ include.link_href}}">
 				<h1 class="card-title portfolio-card-title">{{ include.name }}</h1>
 			</a>
-			<h6 class="card-subtitle mb-2">{{ include.date }}</h6>
+			<h2 class="card-subtitle portfolio-card-subtitle mb-2">{{ include.date }}</h2>
 			<p class="card-text">{{ include.text }}</p>
 			<a href="{{ include.link_href }}" class="btn btn-outline-primary btn-sm" target="_blank">View this artifact <span class="fas fa-external-link-alt"></span></a>
 		</div>
