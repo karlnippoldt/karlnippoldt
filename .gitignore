@@ -2,3 +2,4 @@ vendor
 .bundle
 _site
 Gemfile*
+.DS_Store
