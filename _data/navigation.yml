@@ -1,11 +1,11 @@
 docs_list_title: Navigation
 docs:
 
-- title: Home
+- title: Projects
   url: /
 
 - title: Résumé
   url: /resume.html
 
-- title: Portfolio
-  url: /portfolio.html
+- title: Contact
+  url: /contact.html

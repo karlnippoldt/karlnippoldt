@@ -1,72 +1,25 @@
 ---
-layout: default
+layout: page
 title: Karl Nippoldt
+redirect_from: /portfolio
 ---
-<div class="d-flex flex-column h-100">
-	<!-- This extra div is necessary for correct rendering in Safari-->
-	<div>
-		{% include navbar.html %}
-	</div>
-	<div class="container-fluid flex-grow-1">
-		<div class="row h-100">
-			<div class="col-lg-6 px-0 karl-bg d-none d-lg-flex"></div>
-			<div class="col-lg-6 px-0 karl-bg d-lg-none" style="min-height: 85vw;"></div>
-			<div class="col-lg-6 px-0">
-				<div class="pt-3 px-3 pt-md-5 px-md-5">
-					<div class="card">
-						<div class="card-body p-4 p-md-5">
-							<h1 class="card-title text-primary">Good design makes technology work for everyone.</h1>
-							<p class="card-text lead">I'm a student at UC Irvine studying Informatics, specializing in human-computer interaction. I’m passionate about good design in the products and experiences I create and use every day. I'm searching for an internship that draws on my skills and interest in designing products that work for everyone.</p>
-							<div class="row pt-md-3">
-									<div class="col-6">
-										<a class="d-md-none btn btn-sm btn-primary btn-block" href="/resume" role="button">View my résumé</a>
-										<a class="d-none d-md-block btn btn-primary btn-block" href="/resume" role="button">View my résumé</a>
-									</div>
-									<div class="col-6">
-										<a class="d-md-none btn btn-sm btn-primary btn-block" href="/portfolio" role="button">View my portfolio</a>
-										<a class="d-none d-md-block btn btn-primary btn-block" href="/portfolio" role="button">View my portfolio</a>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="row pt-4 pb-2 px-5">
-						<div class="col-6">
-							<a class="btn btn-outline-primary btn-sm btn-block" href="https://www.linkedin.com/in/karlnippoldt/" role="button"><span class="fab fa-linkedin-in"></span> LinkedIn</a>
-						</div>
-						<div class="col-6">
-							<a class="btn btn-outline-primary btn-sm btn-block typeform-share link" href="https://karlnippoldt.typeform.com/to/DopNW8" data-mode="drawer_right" target="_blank" role="button"><span class="far fa-envelope"></span> Email</a>
-						</div>
-					</div>
-					<div class="pt-2 text-center no-link-underline">
-						<a class="fab fa-facebook-messenger fa-2x" href="https://m.me/karlnippoldt" title="Facebook Messenger"></a>
-						<a class="fab fa-facebook-f fa-2x" href="https://www.facebook.com/karlnippoldt" title="Facebook"></a>
-						<a class="fab fa-twitter fa-2x" href="https://twitter.com/karlnippoldt" title="Twitter"></a>
-						<a class="fab fa-instagram fa-2x" href="https://instagram.com/karlnippoldt" title="Instagram"></a>
-						<a class="fab fa-snapchat-ghost fa-2x" href="#" data-toggle="modal" data-target="#snapchat" title="Snapchat"></a>
-					</div>
-					{% include copyright.html %}
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="pb-3 pb-md-5">
+	<h1 class="headline">Good design makes technology work for everyone.</h1>
+	<p class="lead my-3 my-lg-4">I'm a student at UC Irvine studying Informatics, specializing in human-computer interaction. I’m passionate about good design in the products and experiences I create and use every day. I'm searching for a position that draws on my skills and interest in designing products that work for everyone.</p>
+	<a class="btn btn-primary btn-lg btn-headline my-3 my-lg-4" href="#projects" role="button">Projects <i class="fas fa-arrow-down"></i></a>
 </div>
-
-<!--Snapchat modal-->
-<div class="modal fade" id="snapchat" tabindex="-1" role="dialog" aria-labelledby="snapImg" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Style is to fix image in IE10 -->
-        <img src="/assets/images/snapcode.svg" class="img-fluid" id="snapImg" alt="Snapcode for Snapchat" style="width: 100% \9;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Typeform launch code -->
-<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+<div id="projects" class="row">
+		{% include portfolio_card.html img_src="/assets/portfolio/piazza.jpg" name="Piazza Redesign" date="Spring 2019" text="My team conducted user research evaluating the usability of Piazza, an academic Q&A platform. We completed interviews and a survey with existing users, as well as an observational experiment with users and a cognitive walkthrough. We then created and evaluated a redesign of Piazza with the results of our research." link_href="/assets/portfolio/piazza.pdf" %}
+	
+		{% include portfolio_card.html img_src="/assets/portfolio/emr_mockups.png" name="Electronic Medical Records Mockups" date="November 2019" text="As a design exercise, I created mockups for an electronic medical records system with Figma. Nurses and physicians would use this system to quickly and accurately collect information about a patient, which then would analyze and display the information in a helpful way." link_href="/emr-mockups" %}
+	
+		{% include portfolio_card.html img_src="/assets/portfolio/pha_case_study.png" name="Case Study on Fundraising Software" date="Spring 2018" text="I spent a quarter observing how information systems were used in a nearby nonprofit organization and wrote a case study based on my observations and notes." link_href="/assets/portfolio/pha_case_study.pdf" %}
+		
+		{% include portfolio_card.html img_src="/assets/portfolio/my_site.jpg" name="Personal Website and Portfolio" date="2014 – Present" text="I created a responsive website to showcase my work and career goals. I use Jekyll to handle static page generation and Bootstrap for layout and responsive design." link_href="/" %}
+	
+		{% include portfolio_card.html img_src="/assets/portfolio/runners_life.png" name="Runner's Life" date="2014" text="Runner’s Life was a website, Tumblr blog, and newsletter I designed and coded. I created the responsive website with HTML and CSS, using Bootstrap, Jekyll, and Bootswatch, then adapted the design to a Tumblr theme to use on the blog." link_href="http://karl.nippoldt.com/runnerslife" %}
+	
+		{% include portfolio_card.html img_src="/assets/images/420x240.png" name="Marketrac (In Progress)" date="Fall 2019 – Winter 2020" text="My team is working with CoreLogic, a real estate analytics firm, to redesign Marketrac, a product which provides investors with real-time data on real estate transactions. We are using React and Angular for this project." link_href="" %}
+	</div>
+	
+	

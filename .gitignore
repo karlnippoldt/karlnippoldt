@@ -1,6 +1,6 @@
 vendor
 .bundle
 _site
-Gemfile*
 .DS_Store
 *.code-workspace
+.jekyll-cache
