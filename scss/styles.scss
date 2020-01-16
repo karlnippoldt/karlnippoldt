@@ -1,109 +1,127 @@
 // Font overrides
 $font-family-sans-serif: "Verdana", sans-serif;
 $headings-font-weight: 700;
+$display1-weight: 700;
+$display2-weight: 700;
+$display3-weight: 700;
+$display4-weight: 700;
 $body-color: #000;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base;
+$h5-font-size: $font-size-base * 0.85;
+$h6-font-size: $font-size-base * 0.7;
 
 // Color overrides
 $primary: #000;
-/*
-$gray-100: #E5E5E5;
-$gray-200: #CCCCCC;
-$gray-300: #B2B2B2;
-$gray-400: #999999;
-$gray-500: #7F7F7F;
-$gray-600: #666666;
-$gray-700: #4C4C4C;
-$gray-800: #333333;
-$gray-900: #191919;
-*/
+
+// Add wider spacing for padding and margin
+$spacer: 1rem;
+$spacers:  (
+    10: ($spacer * 6),
+    20: ($spacer * 12)
+  )
+;
 
 // Other overrides
 $enable-rounded: false;
 $enable-responsive-font-sizes: true;
+$modal-fade-transform: none;
 
 @import "../bootstrap/scss/bootstrap";
 
-// Enable smooth scrolling
+// Enable smooth scrolling (pretty much only works in Chromium-based browsers)
 html {
     scroll-behavior: smooth;
+}
+
+// Add reusable margin/padding classes
+.section-mx-xl {
+  @extend .mx-lg-10;
+  @extend .mx-xl-20;
+}
+.section-my {
+  @extend .my-3;
+  @extend .my-lg-5;
+}
+.section-my-l {
+  @extend .my-5;
+  @extend .my-lg-10;
+}
+
+// Fix Safari 100% height issue
+.fix-safari-size {
+  height: 0;
 }
 
 // Navigation
 // Includes solution from Stack Overflow https://stackoverflow.com/a/6285388
 .navigation {
-    h1 {
-        @include font-size(1.5rem);
-        a:hover {
-            text-decoration: none;
-        }
+  h1 {
+    @include font-size(1.5rem);
+    a:hover {
+      text-decoration: none;
     }
-    ul {
-        list-style-type: none;
-        margin: auto;
-        padding: initial;
+  }
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: initial;
+  }
+  li {
+    display: inline;
+    a.active {
+      text-decoration: underline;
     }
-    li {
-        display: inline;
-        color: $gray-300;
-        a.active {
-            text-decoration: underline;
-        }
-    }
-    li + li:before {
-        content: " / ";
-    }
+  }
+  li + li:before {
+    content: " / ";
+    color: $gray-300;
+  }
 }
 
-h1.headline {
-    @include font-size(6rem);
+// Gray color class
+.gray {
+  color: $gray-300;
 }
-.btn-headline {
+
+// Add emphasis classes for paragraphs
+p {
+  &.emphasized {
+    @extend .lead;
+    font-weight: bold;  
+  }
+  &.lead-emphasized {
+    @include font-size($lead-font-size * 1.25);
+    @extend p.emphasized;
+  }
+}
+
+// Create Display button class for larger button
+.btn-display {
     @include font-size(1.75rem);
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: .75rem 1.5rem;
 }
 
-
-
-/* LEGACY STYLES FROM OLD SITE */
-
-/* Change number of card columns on resume
-Code based on answer in https://stackoverflow.com/questions/34140793/bootstrap-4-responsive-cards-in-card-columns/34831794 */
-@media (min-width: 576px) {
-    .resume-card-columns {
-        column-count: 1;
-    }
-}
-@media (min-width: 992px) {
-    .resume-card-columns {
-        column-count: 2;
-    }
+// Create class for fullscreen modal
+.modal-fullscreen {
+  @extend .modal-xl;
+  @extend .my-0;
+  height: 100% !important;
 }
 
-/*Font styles for resume*/
-.resume-font-styles h3, .resume-font-styles h4, .resume-font-styles h5, .resume-font-styles h6 {
-  text-transform: none;
-  letter-spacing: normal;
-}
-.resume-font-styles h2 {
-  font-size: 1.5rem;
-  letter-spacing: normal;
-}
-.resume-font-styles h3 {
-  font-size: 1rem;
-}
-.resume-font-styles h4 {
-  font-size: 0.8rem;
-}
-.resume-font-styles ul {
+// Make ul bullets square and reduce padding
+ul {
+  list-style: square;
   padding-left: 20px;
-  color: #1a1a1a;
 }
 
-/*Font resize, used for portfolio cards*/
-h1.portfolio-card-title {
-  font-size: 1.5rem;
-}
-h2.portfolio-card-subtitle {
-  font-size: 0.75rem;
+// Span to create preferred line break
+// Code from https://stackoverflow.com/a/24357132
+span.line {
+  display: inline-block;
 }

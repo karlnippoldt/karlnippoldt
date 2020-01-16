@@ -10,3 +10,19 @@ exclude:
 
 plugins:
   - jekyll-redirect-from
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: page

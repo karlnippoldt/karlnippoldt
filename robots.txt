@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /assets/portfolio/
+Disallow: /assets/projects/

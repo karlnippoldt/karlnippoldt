@@ -14,13 +14,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Page Title -->
-		<title>{{ page.title }}</title>
+		<title>{% if page.url == "/" %}Karl Nippoldt{% else %}{{ page.title }} / Karl Nippoldt{% endif %}</title>
 		<!-- Bootstrap and Custom CSS -->
 		<link href="/css/styles.css" rel="stylesheet">
 		<!-- Iconify -->
 		<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-		<!--shortcut icon-->
-		<link rel="shortcut icon" type="image/jpg" href="/assets/images/karl.jpg"/>
+		<!--shortcut icon - from realfavicongenerator.net-->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#000000">
+		<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 		<!--Heap analytics-->
 		<script type="text/javascript">
 			window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
@@ -29,7 +37,7 @@
 	</head>
 	<body>
 		{{ content }}
-		
+
 		<!-- Clicky Analytics -->
 		<script src="//static.getclicky.com/js"></script>
 		<script>try{ clicky.init(100957691); }catch(e){}</script>
@@ -40,5 +48,24 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		{% if page.image_modal %}
+		<!-- Script to allow changing image modal. Needed here because it must run after jQuery and Bootstrap scripts -->
+		<script type="text/javascript">
+		$('#imageModal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var imgSrc = button.data('img-src')
+			var imgAlt = button.data('img-alt')
+			var imgWidth = button.data('img-width') // Extract info from data-* attributes
+			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+			var modal = $(this)
+			modal.find('.modal-title').text(imgAlt)
+			modal.find('.modal-body img').attr("src",imgSrc)
+			modal.find('.modal-body img').attr("alt",imgAlt)
+			modal.find('.modal-body img').attr("width",imgWidth)
+		})
+		</script>
+		{% endif %}
 	</body>
 </html>
