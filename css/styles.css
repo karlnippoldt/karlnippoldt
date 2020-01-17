@@ -10108,6 +10108,11 @@ p.lead-emphasized {
   height: 100% !important;
 }
 
+.pdfobject-container {
+  height: 100%;
+  width: 100%;
+}
+
 ul {
   list-style: square;
   padding-left: 20px;
