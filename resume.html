@@ -2,85 +2,91 @@
 title: Résumé
 permalink: /resume
 ---
-<div class="section-my section-mx-xl">
+<div class="section-my text-center">
 	<h1>Résumé</h1>
-	<button type="button" class="btn btn-outline-primary mx-auto" data-toggle="modal" data-target="#resumeModal">
-		<span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View as PDF
-	</button>
-	<div class="section-my">
-		<h2>Education</h2>
-		<p>
-			<b>University of California, Irvine</b>
-			<br>Bachelor of Science, Informatics <span class="gray">/</span> June 2020
-			<br>Specialization in Human-Computer Interaction
-			<br><i>GPA: 3.66</i>
-		</p>
-	</div>
-	<div class="section-my">
-		<h2>Projects</h2>
-		{% assign sorted_projects = site.projects | sort: 'order' %}
-		{% for project in sorted_projects %}
-		<p>
-			<a href="{{ project.url }}"><b>{{ project.title }}</b></a>
-			<br>{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
-			<span class="line">{{ project.date_string }}</span>
-			<br><i>{{ project.short_description }}</i>
-		</p>
-		{% endfor %}
-	</div>
-	<div class="section-my">
-		<h2>Skills</h2>
-		<div class="row">
-			<div class="col-md-5">
-				<b>Processes</b>
-				<ul>
-					<li>User-centered design</li>
-					<li>Agile development</li>
-					<li>Requirements and design documentation</li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<b>Tools</b>
-				<ul>
-					<li>Figma</li>
-					<li>Balsamiq</li>
-					<li>Photoshop</li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<b>Languages</b>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Angular</li>
-					<li>Python</li>
-				</ul>
+	<p>
+		<button type="button" class="btn btn-outline-primary mx-auto" data-toggle="modal" data-target="#resumeModal">
+			<span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View as PDF
+		</button>
+	</p>	
+</div>
+<div class="card section-my section-mx-xl">
+	<div class="card-body">
+		<div>
+			<h2>Education</h2>
+			<p>
+				<b>University of California, Irvine</b>
+				<br>Bachelor of Science, Informatics <span class="gray">/</span> June 2020
+				<br>Specialization in Human-Computer Interaction
+				<br><i>3.69 GPA</i>
+			</p>
+		</div>
+		<div>
+			<h2>Projects</h2>
+			{% assign sorted_projects = site.projects | sort: 'order' %}
+			{% for project in sorted_projects %}
+			<p>
+				<a href="{{ project.url }}"><b>{{ project.title }}</b></a>
+				<br>{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
+				<span class="line">{{ project.date_string }}</span>
+				<br><i>{{ project.short_description }}</i>
+			</p>
+			{% endfor %}
+		</div>
+		<div>
+			<h2>Skills</h2>
+			<div class="row">
+				<div class="col-md-5">
+					<b>Processes</b>
+					<ul>
+						<li>User-centered design</li>
+						<li>Agile development</li>
+						<li>Requirements and design documentation</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<b>Tools</b>
+					<ul>
+						<li>Figma</li>
+						<li>Balsamiq</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<b>Languages</b>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Angular</li>
+						<li>Python</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="section-my">
-		<h2>Work Experience</h2>
-		<p>
-			<b>Urban Plates</b>, Irvine, CA
-			<br>Cashier <span class="gray">/</span> September 2019 – Present
-			<br><i>Ensure guest satisfaction through attentive customer service</i>
-		</p>
-		<p>
-			<b>Dreams for Schools</b>, Irvine, CA
-			<br>Summer STEM Mentor <span class="gray">/</span> June 2019 – July 2019
-			<br><i>Taught elementary school children STEM concepts, including block-based programming</i>
-		</p>
-		<p>
-			<b>Panera Bread</b>, Irvine, CA
-			<br>Associate Trainer <span class="gray">/</span> March 2017 – June 2019
-			<br><i>Ensured customer satisfaction by verifying orders and maintaining cleanliness, trained new associates in job duties</i>
-		</p>
-		<p>
-			<b>University of California, Irvine</b>, Irvine, CA
-			<br>Summer Conference Assistant <span class="gray">/</span> June 2018 – September 2018
-			<br><i>Worked with Summer Conference staff to host and provide customer service to conferences and camps residing at UCI</i>
-		</p>
+		<div>
+			<h2>Work Experience</h2>
+			<p>
+				<b>Urban Plates</b>, Irvine, CA
+				<br>Cashier <span class="gray">/</span> September 2019–Present
+				<br><i>Ensure guest satisfaction through attentive customer service and accurate order entry into the POS system</i>
+			</p>
+			<p>
+				<b>Dreams for Schools</b>, Irvine, CA
+				<br>Summer STEM Mentor <span class="gray">/</span> June 2019–July 2019
+				<br><i>Taught elementary school children from 3rd through 6th grade STEM concepts, including block-based programming</i>
+			</p>
+			<p>
+				<b>Panera Bread</b>, Irvine, CA
+				<br>Associate Trainer <span class="gray">/</span> March 2017–June 2019
+				<br><i>Assisted customers in placing orders, verified order accuracy, maintained cleanliness, and trained new associates in job duties</i>
+			</p>
+			<p>
+				<b>University of California, Irvine</b>, Irvine, CA
+				<br>Summer Conference Assistant <span class="gray">/</span> June 2018–September 2018
+				<br><i>Worked with Summer Conference staff to host and provide customer service to conferences and camps residing at UCI</i>
+			</p>
+		</div>
 	</div>
 </div>
 {% include pdf_modal.html id="resumeModal" title="Survey Questions" src="/assets/resume.pdf" %}
