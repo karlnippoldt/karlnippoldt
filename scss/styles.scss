@@ -26,6 +26,15 @@ $spacers:  (
   )
 ;
 
+// Add embed aspect ratios
+$embed-responsive-aspect-ratios: (
+  (21 9),
+  (16 9),
+  (4 3),
+  (1 1),
+  (9 16)
+);
+
 // Other overrides
 $enable-rounded: false;
 $enable-responsive-font-sizes: true;
