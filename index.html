@@ -9,6 +9,7 @@ redirect_from: /portfolio
 <div id="projects">
 	{% assign sorted_projects = site.projects | sort: 'order' %}
 	{% for project in sorted_projects %}
+	{% unless project.hidden %}
 		<div class="section-my-l">
 			<h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
 			<div class="row">
@@ -27,5 +28,6 @@ redirect_from: /portfolio
 				</div>
 			</div>
 		</div>
+	{% endunless %}
 	{% endfor %}
 </div>

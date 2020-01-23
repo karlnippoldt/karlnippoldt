@@ -25,12 +25,14 @@ permalink: /resume
 			<h2>Projects</h2>
 			{% assign sorted_projects = site.projects | sort: 'order' %}
 			{% for project in sorted_projects %}
+			{% unless project.hidden %}
 			<p>
 				<a href="{{ project.url }}"><b>{{ project.title }}</b></a>
 				<br>{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
 				<span class="line">{{ project.date_string }}</span>
 				<br><i>{{ project.short_description }}</i>
 			</p>
+			{% endunless %}
 			{% endfor %}
 		</div>
 		<div>
