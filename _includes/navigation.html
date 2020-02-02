@@ -1,11 +1,24 @@
-<nav class="navigation section text-center">
-    <h1><a href="/">Karl Nippoldt</a></h1>
-    <ul>
-        {% for item in site.data.navigation.docs %}
-        <li><a {% if item.url == page.url %}class="active" {% endif %}href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-        {% for item in site.data.social.docs %}
-        <li><a href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}">{{ item.icon }}</a></li>
-        {% endfor %}
-    </ul>
-</nav>
+{% comment %}
+align-items-center: vertically aligns columns
+justify-content-md-between: adds space in between the two columns
+mx-md-0, px-md-0: remove horizontal gutters but not vertical
+col-md-auto: resize column to fit contents
+{% endcomment %}
+
+<div class="row align-items-center justify-content-md-between mx-md-0 section section-wide navigation">
+    <div class="col col-12 col-md-auto px-md-0">
+        <h1 class="mb-md-0"><a href="/">Karl Nippoldt</a></h1>
+    </div>
+    <div class="col col-12 col-md-auto px-md-0">
+        <nav>
+            <ul>
+                {% for item in site.data.navigation.docs %}
+                <li><a {% if item.url == page.url %}class="active" {% endif %}href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+                {% for item in site.data.social.docs %}
+                <li><a href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}">{{ item.icon }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

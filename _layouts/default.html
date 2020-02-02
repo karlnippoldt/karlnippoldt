@@ -50,7 +50,9 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 		{% if page.image_modal %}
-		<!-- Script to allow changing image modal. Needed here because it must run after jQuery and Bootstrap scripts -->
+		{% comment %}
+		Script to allow changing image modal. Needed here because it must run after jQuery and Bootstrap scripts
+		{% endcomment %}
 		<script type="text/javascript">
 		$('#imageModal').on('show.bs.modal', function (event) {
 			var button = $(event.relatedTarget) // Button that triggered the modal
