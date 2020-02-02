@@ -1,7 +1,7 @@
 ---
 redirect_from: /portfolio
 ---
-<div class="section-my">
+<div class="section-tall section-wide">
 	<p class="display-1">Hi, I'm Karl.</p>
 	<p class="lead my-3 my-lg-4">I'm a UX designer, passionate about good design in the products and experiences I create and use every day. I'm looking for a UX design position that draws on my skills and interest in designing products that work for everyone.</p>
 	<a class="btn btn-primary btn-lg btn-display my-3 my-lg-4" href="#projects" role="button">Projects <span class="iconify" data-icon="ic:sharp-arrow-downward"></span></a>
@@ -10,7 +10,7 @@ redirect_from: /portfolio
 	{% assign sorted_projects = site.projects | sort: 'order' %}
 	{% for project in sorted_projects %}
 	{% unless project.hidden %}
-		<div class="section-my-l">
+		<div class="section-tall section-wide">
 			<h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
 			<div class="row">
 				<div class="col-md-7 col-lg-8 my-md-3 d-md-flex align-items-start">

@@ -47,18 +47,17 @@ html {
     scroll-behavior: smooth;
 }
 
-// Add reusable margin/padding classes
-.section-mx-xl {
-  @extend .mx-lg-10;
-  @extend .mx-xl-20;
+// section classes for new layout
+.section {
+  @extend .my-4;
+  @extend .my-sm-5;
 }
-.section-my {
-  @extend .my-3;
-  @extend .my-lg-5;
-}
-.section-my-l {
+.section-tall {
   @extend .my-5;
-  @extend .my-lg-10;
+  @extend .my-md-10;
+}
+.section-wide {
+  @extend .mx-lg-n10;
 }
 
 // Fix Safari 100% height issue

@@ -2,18 +2,17 @@
 title: Résumé
 permalink: /resume
 ---
-<div class="section-my text-center">
-	<h1>Résumé</h1>
+<div class="section text-center">
 	<p>
 		<button type="button" class="btn btn-outline-primary mx-auto" data-toggle="modal" data-target="#resumeModal">
 			<span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View as PDF
 		</button>
 	</p>	
 </div>
-<div class="card section-my section-mx-xl">
+<div class="card section">
 	<div class="card-body">
 		<div>
-			<h2>Education</h2>
+			<h1>Education</h1>
 			<p>
 				<b>University of California, Irvine</b>
 				<br>Bachelor of Science, Informatics <span class="gray">/</span> June 2020
@@ -22,7 +21,7 @@ permalink: /resume
 			</p>
 		</div>
 		<div>
-			<h2>Projects</h2>
+			<h1>Projects</h1>
 			{% assign sorted_projects = site.projects | sort: 'order' %}
 			{% for project in sorted_projects %}
 			{% unless project.hidden %}
@@ -36,7 +35,7 @@ permalink: /resume
 			{% endfor %}
 		</div>
 		<div>
-			<h2>Work Experience</h2>
+			<h1>Work Experience</h1>
 			<p>
 				<b>Urban Plates</b>, Irvine, CA
 				<br>Cashier <span class="gray">/</span> September 2019–Present
@@ -59,7 +58,7 @@ permalink: /resume
 			</p>
 		</div>
 		<div>
-			<h2>Skills</h2>
+			<h1>Skills</h1>
 			<div class="row">
 				<div class="col-md-5">
 					<b>Processes</b>
@@ -96,4 +95,4 @@ permalink: /resume
 		</div>
 	</div>
 </div>
-{% include pdf_modal.html id="resumeModal" title="Survey Questions" src="/assets/resume.pdf" %}
+{% include pdf_modal.html id="resumeModal" title="Résumé" src="/assets/resume.pdf" %}
