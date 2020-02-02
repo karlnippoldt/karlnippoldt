@@ -1,5 +1,3 @@
-<!-- right now I'm not using a modal anywhere I think; remove the code? -->
-
 <div class="row section-my">
     {% for src in images %}
     <div class="{% if include.modal %}col-6 {% endif %}col-md mb-3 mb-lg-0 text-center">
@@ -13,7 +11,7 @@
     {% endfor %}
 </div>
 
-<!-- Don't forget to set modal: true in front matter of page where this is included; this enables the necessary JQuery in the default.html page -->
+<!-- Don't forget to set image_modal: true in front matter of page where this is included; this enables the necessary JQuery in the default.html page -->
 {% if include.modal %}
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-xl" role="document">

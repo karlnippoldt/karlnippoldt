@@ -1,4 +1,5 @@
 ---
+image_modal: true
 order: 1
 title: Concept for Airport Pick-Up Assistant
 date: 2020-01-31
@@ -24,7 +25,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
     </div>
     {% assign images="/assets/projects/airport/flow.jpg,/assets/projects/airport/sketches.jpg" | split: ',' %}
     {% assign images_alt="User flow for Airport Pick-Up Assistant,Sketches for components of the user interface" | split: ',' %}
-    {% include img_thumbs.html images=images images_alt=images_alt caption=true %}
+    {% include img_thumbs.html images=images images_alt=images_alt modal=true caption=true %}
     <div class="section-mx-xl section-my">
         <p>A number of the UI elements in the Pick-Up Assistant—especially in the flow for finding the correct itinerary—already exist in the Southwest website. I wanted my design solution to be consistent with the existing Southwest brand, so I recreated these elements in Figma.</p>
         <p>Since this is a personal project, I don't have all the design resources and brand guidelines that would be available to a designer at Southwest. I used as many elements as I possible from Southwest's website to ensure consistency with their existing design language.</p>
@@ -38,16 +39,11 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
         <p class="lead">To introduce vertical rhythm into my design, I adjusted all element and font sizing and padding to follow an 8-point grid.</p>
         <p>I also made the UI elements much more consistent. One example of this is that whenever there's a departure and arrival, the text for the departure is aligned to the left and the text for arrival is to the right. This includes not only flights, but the car ride to the airport as well. There is always an icon of the appropriate vehicle in between the departure and arrival times (except for when the times are intentionally de-emphasized, such as the scheduled times for a flight that has been delayed).</p>
         <p>I didn't want to reinvent the wheel—Southwest has a great brand already. Even with my changes to existing UI elements, they still retain most of the original design and stay true to Southwest's identity.</p>
-        {% assign images="/assets/projects/airport/flyer_info_before.png,/assets/projects/airport/flyer_info_after.png" | split: ',' %}
-        {% assign images_alt="Before: flight information screen while boarding,After: flight information screen while boarding" | split: ',' %}
-        {% assign images_width="375,375" | split: ',' %}
-        {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width caption=true %}
-        
-        {% assign images="/assets/projects/airport/details_before.png,/assets/projects/airport/details_after.png" | split: ',' %}
-        {% assign images_alt="Before: flight status,After: flight status" | split: ',' %}
-        {% assign images_width="375,375" | split: ',' %}
-        {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width caption=true %}
         </div>
+        {% assign images="/assets/projects/airport/flyer_info_before.png,/assets/projects/airport/flyer_info_after.png,/assets/projects/airport/details_before.png,/assets/projects/airport/details_after.png" | split: ',' %}
+        {% assign images_alt="Before: flight information screen while boarding,After: flight information screen while boarding,Before: flight status,After: flight status" | split: ',' %}
+        {% assign images_width="375,375,375,375" | split: ',' %}
+        {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 </div>
 <div class="section-my-l">
     <div class="section-mx-xl section-my">
