@@ -22,7 +22,7 @@ $primary: #000;
 $spacer: 1rem;
 $spacers:  (
     10: ($spacer * 6),
-    20: ($spacer * 12)
+    // from old design delete later 20: ($spacer * 12)
   )
 ;
 
@@ -47,14 +47,22 @@ html {
     scroll-behavior: smooth;
 }
 
-// section classes for new layout
+// Section classes for new layout
 .section {
   @extend .my-4;
   @extend .my-sm-5;
 }
+.section-t {
+  @extend .mt-4;
+  @extend .mt-sm-5;
+}
 .section-tall {
   @extend .my-5;
   @extend .my-md-10;
+}
+.section-tall-t {
+  @extend .mt-5;
+  @extend .mt-md-10;
 }
 .section-wide {
   @extend .mx-lg-n10;
@@ -105,6 +113,16 @@ p {
   &.lead-emphasized {
     @include font-size($lead-font-size * 1.25);
     @extend p.emphasized;
+  }
+}
+
+// Add spacing for project body
+.project-body {
+  h1 {
+    @extend .section-tall-t;
+  }
+  h2 {
+    @extend .section-t;
   }
 }
 
