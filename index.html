@@ -12,7 +12,7 @@ redirect_from: /portfolio
 	{% unless project.hidden %}
 		<div class="section-tall section-wide">
 			<div class="row align-items-center">
-				<div class="col-md-7 col-lg-8 my-md-3">
+				<div class="col-md-7 col-lg-8">
 					<div>
 						<h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
 						<p class="emphasized">
@@ -23,8 +23,8 @@ redirect_from: /portfolio
 						<a href="{{ project.url }}" class="btn btn-outline-primary">More about this project <span class="iconify" data-icon="ic:sharp-chevron-right"></span></a>
 					</div>
 				</div>
-				<div class="col-md-5 col-lg-4 my-md-3">
-					<a href="{{ project.url }}"><img src="{{ project.thumbnail }}" class="img-fluid mt-3 mt-md-0" alt="{{ project.thumbnail_alt }}"></a>
+				<div class="col-md-5 col-lg-4 mb-3 mb-md-0 order-first order-md-last">
+					<a href="{{ project.url }}"><img src="{{ project.thumbnail }}" class="img-fluid" alt="{{ project.thumbnail_alt }}"></a>
 				</div>
 			</div>
 		</div>
