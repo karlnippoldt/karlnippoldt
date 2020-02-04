@@ -1,6 +1,6 @@
 ---
 image_modal: true
-order: 1
+order: 2
 title: Concept for Airport Pick-Up Assistant
 date: 2020-01-31
 date_string: January 2020
@@ -24,7 +24,8 @@ To begin solving the problem of a stressful airport experience, I created a simp
 
 {% assign images="/assets/projects/airport/flow.jpg,/assets/projects/airport/sketches.jpg" | split: ',' %}
 {% assign images_alt="User flow for Airport Pick-Up Assistant,Sketches for components of the user interface" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt modal=true caption=true %}    
+{% assign images_width="1470,1470" | split: ',' %}
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}    
 
 A number of the UI elements in the Pick-Up Assistant—especially in the flow for finding the correct itinerary—already exist in the Southwest website. I wanted my design solution to be consistent with the existing Southwest brand, so I recreated these elements in Figma.
 

@@ -1,6 +1,7 @@
 // Font overrides
-$font-family-sans-serif: "Verdana", sans-serif;
+$font-family-base: "Verdana", sans-serif;
 $headings-font-weight: 700;
+$lead-font-weight: 400;
 $display1-weight: 700;
 $display2-weight: 700;
 $display3-weight: 700;
@@ -120,9 +121,19 @@ p {
 .project-body {
   h1 {
     @extend .section-tall-t;
+    + h2 {
+      @extend .mt-auto;
+    }
   }
   h2 {
     @extend .section-t;
+  }
+}
+
+// Make heading smaller on Resume
+.resume-body {
+  h1 {
+    @include font-size(1.75rem);
   }
 }
 

@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Piazza User Research and Design Improvements
 date: 2019-06-11
 date_string: April–June 2019
@@ -24,7 +24,7 @@ To learn more about Piazza users than we could with just interviews, my team con
 
 We posted our survey on various UCI social media groups on Facebook, UCI’s subreddit, Canvas discussions, and other school-related social media pages. We also sent the survey to friends and acquaintances that use Piazza or have used Piazza in the past. We collected a total of 31 responses to the survey.
 
-<button type="button" class="btn btn-outline-primary mx-auto" data-toggle="modal" data-target="#surveyModal">
+<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#surveyModal">
     <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey questions
 </button>
 
