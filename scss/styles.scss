@@ -1,12 +1,15 @@
 // Font overrides
-$font-family-base: "Verdana", sans-serif;
+$font-family-base: 'Verdana', sans-serif;
+$body-color: #000;
+
 $headings-font-weight: 700;
-$lead-font-weight: 400;
+
 $display1-weight: 700;
 $display2-weight: 700;
 $display3-weight: 700;
 $display4-weight: 700;
-$body-color: #000;
+
+$lead-font-weight: 400;
 
 $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 2.5;
@@ -78,7 +81,7 @@ html {
 // Includes solution from Stack Overflow https://stackoverflow.com/a/6285388
 .navigation {
   h1 {
-    @include font-size(1.5rem);
+    @include font-size($font-size-base * 1.5);
     a:hover {
       text-decoration: none;
     }
@@ -109,6 +112,7 @@ html {
 p {
   &.emphasized {
     @extend .lead;
+    font-family: $headings-font-family;
     font-weight: bold;  
   }
   &.lead-emphasized {
