@@ -12,7 +12,7 @@ caption: boolean
 <div class="section section-wide">
 	<div class="row align-items-center">
 		{% for src in images %}
-		<div class="{% if include.modal %}col-6 {% endif %}col-md mb-3 mb-md-0 text-center">
+		<div class="col-md mb-3 mb-md-0 text-center">
 			<figure class="figure my-0">
 				{% if include.modal %}<a href="#" data-toggle="modal" data-target="#imageModal" data-img-src="{{ src }}" data-img-alt="{{ include.images_alt[forloop.index0] }}"{% if include.images_width %} data-img-width="{{ include.images_width[forloop.index0] }}"{% endif %}>{% endif %}
 					<img class="figure-img img-fluid{% if include.border %} img-thumbnail{% endif %}" src="{{ src }}"{% if include.images_width %} width="{{ include.images_width[forloop.index0] }}"{% endif %}{% unless include.caption %} alt="{{ include.images_alt[forloop.index0] }}"{% endunless %}>
