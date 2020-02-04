@@ -40,7 +40,7 @@ The project was completed over two quarters at UC Irvine, from September 2019 to
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width %}        
 
 <a class="btn btn-primary btn-lg" href="#mockup" role="button">
-    <span class="iconify" data-icon="ic:sharp-laptop"></span> View Mockup
+    View Mockup <span class="iconify" data-icon="ic:sharp-arrow-downward"></span>
 </a>
 {: .text-center}
 
@@ -56,7 +56,7 @@ We learned from our meetings with the product manager that, while the company ne
 
 We also created a 15-question survey to learn the features users value most and gauge' their level of tech-savviness and Excel proficiency. We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. Once we had the questions, I created the survey with Qualtrics.
 
-<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#surveyModal">
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyModal">
     <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey questions
 </button>
 
@@ -64,7 +64,7 @@ Unfortunately, the company did not keep any record of users' information, names 
 
 Users were generally satisfied with the functionality the product offered, not expressing a significant desire for any of the features suggested in the survey. We learned that they use the product for both a high-level view of real estate trends and a detailed view of individual transactions, and prefer to interact with data outside the product even though the product provides some visualization features. Even though the product's data itself is out of the scope of our redesign and was not directly included in the survey, many users expressed their disappointment in the quality of the data provided in "Other" sections. After the survey was completed, I created a document summarizing the data collected and how it impacted our project.
 
-<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#surveyResultsModal">
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyResultsModal">
     <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey results summary
 </button>
 

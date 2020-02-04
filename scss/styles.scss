@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&display=swap');
+
 // Font overrides
-$font-family-base: 'Verdana', sans-serif;
+$font-family-sans-serif: 'Noto Sans', sans-serif;
+$font-family-base: 'Noto Serif', serif;
 $body-color: #000;
 
+$headings-font-family: $font-family-sans-serif;
 $headings-font-weight: 700;
+
+$input-btn-font-family: $font-family-sans-serif;
 
 $display1-weight: 700;
 $display2-weight: 700;
@@ -11,7 +17,7 @@ $display4-weight: 700;
 
 $lead-font-weight: 400;
 
-$font-size-base: 1rem;
+$font-size-base: 1.15rem;
 $h1-font-size: $font-size-base * 2.5;
 $h2-font-size: $font-size-base * 1.75;
 $h3-font-size: $font-size-base * 1.25;
@@ -21,11 +27,13 @@ $h6-font-size: $font-size-base * 0.7;
 
 // Color overrides
 $primary: #000;
+$secondary: #dee2e6;
 
 // Add wider spacing for padding and margin
 $spacer: 1rem;
 $spacers:  (
     10: ($spacer * 6),
+    15: ($spacer * 9),
     // from old design delete later 20: ($spacer * 12)
   )
 ;
@@ -40,7 +48,7 @@ $embed-responsive-aspect-ratios: (
 );
 
 // Other overrides
-$enable-rounded: false;
+// $enable-rounded: false;
 $enable-responsive-font-sizes: true;
 $modal-fade-transform: none;
 
@@ -69,7 +77,7 @@ html {
   @extend .mt-md-10;
 }
 .section-wide {
-  @extend .mx-lg-n10;
+  @extend .mx-lg-n15;
 }
 
 // Fix Safari 100% height issue
@@ -87,6 +95,7 @@ html {
     }
   }
   ul {
+    font-family: $font-family-sans-serif;
     list-style-type: none;
     margin: auto;
     padding: initial;
@@ -112,7 +121,7 @@ html {
 p {
   &.emphasized {
     @extend .lead;
-    font-family: $headings-font-family;
+    font-family: $font-family-sans-serif;
     font-weight: bold;  
   }
   &.lead-emphasized {
@@ -134,17 +143,34 @@ p {
   }
 }
 
-// Make heading smaller on Resume
+// Resume body font modifications
 .resume-body {
   h1 {
     @include font-size(1.75rem);
   }
+  font-family: $font-family-sans-serif;
+}
+
+// Image spacing class
+.image-margins {
+  @extend .mb-3;
+  @extend .mb-md-0;
+  @extend .mx-5;
+  @extend .mx-md-0;
+  &:last-child {
+    @extend .mb-0;
+  }
+}
+
+// Small and figure caption text in sans serif
+small, .figure-caption {
+  font-family: $font-family-sans-serif;
 }
 
 // Create Display button class for larger button
 .btn-display {
     @include font-size(1.75rem);
-    font-weight: bold;
+    // font-weight: bold;
     padding: .75rem 1.5rem;
 }
 
@@ -162,7 +188,7 @@ p {
 
 // Make ul bullets square and reduce padding
 ul {
-  list-style: square;
+  // list-style: square;
   padding-left: 20px;
 }
 
