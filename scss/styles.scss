@@ -157,9 +157,6 @@ p {
   @extend .mb-md-0;
   @extend .mx-5;
   @extend .mx-md-0;
-  &:last-child {
-    @extend .mb-0;
-  }
 }
 
 // Small and figure caption text in sans serif
