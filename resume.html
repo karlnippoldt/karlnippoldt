@@ -4,7 +4,7 @@ permalink: /resume
 ---
 <div class="section text-center">
 	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#resumeModal">
-		<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View as PDF
+		<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View Résumé PDF
 	</button>
 </div>
 <div class="card section">
@@ -24,7 +24,7 @@ permalink: /resume
 			<a href="{{ project.url }}"><b>{{ project.title }}</b></a>
 			<br>{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
 			<span class="line">{{ project.date_string }}</span>
-			<br><i>{{ project.short_description }}</i>
+			<br><i>{{ project.resume_description }}</i>
 		</p>
 		{% endunless %}
 		{% endfor %}

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Noto+Serif:400&display=swap');
 
 // Font overrides
-$font-family-sans-serif: 'Noto Sans', sans-serif;
-// $font-family-base: 'Noto Serif', serif;
+$font-family-base: 'Noto Sans', sans-serif;
 $body-color: #000;
 
 $headings-font-weight: 700;
@@ -125,7 +124,7 @@ p {
   }
 }
 
-// Add spacing for project body
+// Add project body styles
 .project-body {
   h1 {
     @extend .section-tall-t;
@@ -138,9 +137,12 @@ p {
   }
   p {
     font-family: "Noto Serif", serif;
-    .btn, &.lead {
-      font-family: $font-family-sans-serif;
+    .btn {
+      font-family: $font-family-base;
     }
+  }
+  .modal-body p, .card-body p {
+    font-family: $font-family-base;
   }
 }
 
@@ -155,7 +157,7 @@ p {
 .image-margins {
   @extend .mb-3;
   @extend .mb-md-0;
-  @extend .mx-5;
+  @extend .mx-4;
   @extend .mx-md-0;
 }
 

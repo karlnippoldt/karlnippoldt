@@ -6,7 +6,7 @@ date: 2020-01-31
 date_string: January 2020
 role: Personal project
 description: Many people are overwhelmed and stressed when they are picking up friends and family at an airport. Existing travel apps cater to the traveler—not for people who would pick them up. I added features to the existing Southwest Airlines website to make the pick-up experience less stressful. The user can receive flight status notifications, directions on how to get to the airport, and see the best place to meet the traveler.
-short_description: Streamlined process of picking up friends and family at the airport with added features to the Southwest Airlines website
+resume_description: Streamlined process of picking up friends and family at the airport with added features to the Southwest Airlines website
 thumbnail: /assets/projects/airport/thumbnail.png
 thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 ---

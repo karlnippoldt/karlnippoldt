@@ -5,34 +5,30 @@ title: Redesign of Real Estate Market Analysis Product
 date: 2020-02-01
 date_string: September 2019–March 2020
 role: UX Designer
-description: Created a modern revamp of real estate market analysis software for a leading mortgage data and analytics company
-short_description: Created a modern revamp of real estate market analysis software for a leading mortgage data and analytics company
+description: I created a significantly more usable design for a real estate market analysis product, both improving interfaces for existing features and adding useful new ones.
+resume_description: Created a significantly more usable design for real estate market analysis software, improving interfaces for existing features and adding useful new ones
 thumbnail: /assets/projects/realestate/thumbnail.png
-thumbnail_alt: Laptop with real estate market analysis product on screen
+thumbnail_alt: Laptop with real estate market analysis software on screen
 ---
 # Overview
 
 ## Purpose
 
-My team connected with our sponsor, a leading mortgage data and analytics company, through our senior capstone project class at UC Irvine. The project we were given was to create a new design for their real estate market analysis software. This product is a database used by professionals in the real estate industry such as real estate agents, bankers, business analysts, and mortgage consultants. It allows them to search public records for mortgage transactions, creating reports and filtering by lender, real estate agent, and more. Right now, it is functional, but old, and was not designed with user experience in mind. It does not provide the best-in-class experience its high price tag warrants.
+My project was to redesign a real estate market analysis product used by professionals in the real estate industry such as real estate agents, bankers, business analysts, and mortgage consultants. My team is working with a leading mortgage data and analytics company through our senior capstone project class at UC Irvine. The current version is functional, but old, and does not provide the best-in-class experience customers expect.
 
-## Objective
+## Results
 
-I created a high-fidelity interactive mockup for a new, modern design for this product. I implemented a new interface for existing features, added new features like account settings and a dashboard, and created a component library to ensure consistency across the interface. These changes were informed by the results of my team's survey and previous interviews performed by the company. My team also created a front-end implementation of our new design in Angular.
+I created a new, modern design for this product using Figma. I implemented improved interfaces for existing features, added new features, including account settings and a dashboard, and created a library of components to ensure consistency throughout the interface. The new design was informed by the results of my team's survey and previous interviews performed by the company. We also created a front-end implementation of our new design using Angular.
 
 ## Approach
 
-After evaluating the skills of each of the members of the team, the company and my team decided we would produce two primary deliverables for this project, a clickable, high-fidelity mockup and a front-end prototype built with Angular. To create the mockup, we met with the product manager to learn general information about users—who they are and why they use the software. We then evaluated priorities in a redesign by conducting a survey and reviewing previous user interviews. From this information, we developed a clickable, high-fidelity mockup of a redesign of the system. We then tested the mockup with users, using our findings to inform our creation of a working prototype in Angular.
+After evaluating the skills of each of the members of the team, the company and my team decided on two primary deliverables for this project: a clickable, high-fidelity mockup and a front-end prototype. We met with the product manager to get up to speed on the users—who they are and why they use the software. We then evaluated our priorities in a redesign by conducting a survey and reviewing previous user interviews. From this information, I developed a clickable, high-fidelity mockup of a redesign of the system using Figma. Based on the mockup, we created a working prototype in Angular.{% comment %} We then tested the mockup with users, using our findings to inform our creation of a working prototype in Angular.{% endcomment %}
 
 ## My role
 
-I was part of a team of six students. We did not have fixed position titles, but my primary role in this project was similar to a UX designer. My team worked together on initial sketches, but from there I created both wireframes and a high-fidelity mockup. I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup.
+I was part of a team of six students. We did not have fixed position titles, but my primary role in this project was closest to that of a UX designer. My team worked together on initial sketches; from there, I created both wireframes and a high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %}
 
-I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between us.
-
-## Project duration
-
-The project was completed over two quarters at UC Irvine, from September 2019 to March 2020.
+I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
 
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
 {% assign images_alt="Search screen&comma; geography filter,Account settings page" | split: ',' %}
@@ -48,65 +44,66 @@ The project was completed over two quarters at UC Irvine, from September 2019 to
 
 ## Research
 
-We began our project by trying to understand the users of this product. Nobody on my team had any experience with the real estate industry, so this initially seemed like a daunting task.
+We began our project by undertaking to understand the users of this product. My team's prior exprience in the real estate industry was limited, so we devoted quite a bit of time to this task. We wanted to understand the user journey, their goals when they open the software, and the steps they take to get there. We started by talking with people at the company who were already familiar with the product's users, such as the product manager.
 
-We wanted to understand the user journey, what their goal is they open the software, and the steps they take to get there. We started by talking with people at the company who were already familiar with the product's users, such as the product manager.
+We learned that, while the company needs to stay up to date with a more modern design for this product, existing users are resistant to change and a radical redesign would likely cause them to lose customers. In addition, users desire some additional features not present in the current product. For example, the current system does not provide the user any way to manage their account. If the user forgets their password, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company.
 
-We learned from our meetings with the product manager that, while the company needs a more modern design for this product, product users are resistant to change and a radical redesign would likely cause them to lose customers. The current system does not provide the user any way to manage their account. If the user forgets their password, for example, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company, so adding account management was a top priority for a new design.
-
-We also created a 15-question survey to learn the features users value most and gauge' their level of tech-savviness and Excel proficiency. We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. Once we had the questions, I created the survey with Qualtrics.
+We also created a 15-question survey to learn which features users value most and gauge their level of tech-savviness and Excel proficiency. We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyModal">
-    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
+<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
 </button>
+{: .section .text-center}
 
-Unfortunately, the company did not keep any record of users' information, names or email addresses, so we were not able send the survey directly to them. Instead, a link to complete the survey was shown on the splash screen of the product when they opened it. We received nine responses to the survey. While we would have wanted a significantly larger number of responses, we were still able to learn valuable information.
+Unfortunately, we were not able send the survey directly to users. Instead, a link to complete the survey was shown to users when they opened the product. We received nine responses to our survey. While we wanted a larger number of responses, we were still able to learn valuable information from those we had.
 
-Users were generally satisfied with the functionality the product offered, not expressing a significant desire for any of the features suggested in the survey. We learned that they use the product for both a high-level view of real estate trends and a detailed view of individual transactions, and prefer to interact with data outside the product even though the product provides some visualization features. Even though the product's data itself is out of the scope of our redesign and was not directly included in the survey, many users expressed their disappointment in the quality of the data provided in "Other" sections. After the survey was completed, I created a document summarizing the data collected and how it impacted our project.
+Users were, for the most part, satisfied with the functionality the product offers, not expressing a significant desire for any one of the features proposed in the survey. They use the product to see both a high-level view of real estate trends and a detailed view of individual transactions. Users prefer to interact with data outside the product instead of using its built-in visualization features. Even though the product's database is outside the scope of our redesign and was not directly included in the survey, in "Other" fields, many users expressed their disappointment in the quality of the data. After the survey was completed, I created a document summarizing the data collected and how it would impact our project.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyResultsModal">
-    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey results summary
+<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey results summary
 </button>
+{: .section .text-center}
 
-## Ideation
+## Personas
 
-From the information we gleaned from our research, we created user personas and storyboards for the product.
+From the information we learned about the users from our research, we created personas and storyboards.
 
 {% assign images="/assets/projects/realestate/persona_1.png,/assets/projects/realestate/persona_2.png,/assets/projects/realestate/persona_3.png" | split: ',' %}
 {% assign images_alt="Persona for Mark San,Persona for Stacy Rose,Persona for Jacob Williams" | split: ',' %}
 {% assign images_width="1646,1646,1646" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true%}        
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true%}
 
 {% assign images="/assets/projects/realestate/storyboard_1.png,/assets/projects/realestate/storyboard_2.png" | split: ',' %}
-{% assign images_alt="Storyboard: Stacy uses a saved search,Storyboard: Mark creates a new custom search" | split: ',' %}
+{% assign images_alt="Storyboard: Stacy retrieves a saved search,Storyboard: Mark creates a new custom search" | split: ',' %}
 {% assign images_width="1999,1999" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
 
-## Wireframe
+## Sketches and Wireframes
 
-We began designing a new interface together, beginning with drawing out our designs on a whiteboard. A particularly challenging issue was the screen to refine the geography of a search. The user can choose between different data types (State, County, etc.), and select options from each of them. We each came up with different solutions to this problem, then combined the best ideas from each of them. We followed a similar process for other screens in the app.
+My team began designing a new interface together, beginning with sketching designs on a whiteboard. A particularly challenging design problem was creating screen to refine the geography of a search. The user should be able to choose between different data types (State, County, etc.), and select options within each of them. For problems like this, each member of the team sketched different solutions to this problem. For our final design, we put together the best ideas from each of the sketches. As we encountered further design problems later in development, one other team member and I collaborated using a similar process.
 
 {% assign images="/assets/projects/realestate/sketch_sidebar.jpg,/assets/projects/realestate/sketch_account.jpg" | split: ',' %}
 {% assign images_alt="Sketch: navigation sidebar,Sketch: account settings page" | split: ',' %}
 {% assign images_width="2016,1512" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 
-Once we had a clearer idea of what we wanted some of these pages to look like, I created wireframes for many of the main screens using Balsamiq.
+With a clearer idea of what our screens should look like, I created wireframes using Balsamiq.
 
 {% assign images="/assets/projects/realestate/wireframe_1.png,/assets/projects/realestate/wireframe_2.png,/assets/projects/realestate/wireframe_3.png" | split: ',' %}
 {% assign images_alt="Wireframe: search&comma; geography filter,Wireframe: search&comma; time period filter,Wireframe: search&comma; loan options filter" | split: ',' %}
 {% assign images_width="1024,1024,1024" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true%}        
 
-A major challenge my team encountered was that we were not able to use the system we were redesigning until two months into the project—almost halfway—at which point we had already completed a significant amount of work towards a new design. We used video recordings and screenshots of our meetings, where the product manager demoed the software to us, as our primary source of information. This didn't cover all of the pages of the product, though, so we had to wait until we had access to the system to learn about the features those pages contained. Fortunately, even with this lack of basic information, we did not make any major assumptions that would have required scrapping our designs once we had access to the system.
+A major challenge my team encountered was that we were not able to use the system we were redesigning until two months into the project—almost halfway—at which point we needed to have completed a significant amount of work towards a new design.
+{: .lead}
+
+To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. This didn't cover the whole product, however, so we had to wait until we had access to the system to fill in the missing pieces. Not being able to use the product caused delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
 ## Design
 
-From these wireframes, I began to create a high-fidelity mockup with Figma. First, I created the styles and components (such as buttons and cards) to use on the mockup, ensuring consistency across different screens. The company does have a more comprehensive library for software designs, but as a non-employee, I did not have access to it, so I based the fonts and colors of the components on a print version of the company's style guide.
+From the wireframes, I created a high-fidelity mockup with Figma. First, I created the styles and components (such as buttons and cards) to use on the mockup, ensuring consistency across different screens. The company does have a comprehensive library style guide for UI design, but as a non-employee, I did not have access to it, so I based fonts and colors of the components on a print version of the company's style guide.
 
-Unfortunately, due to the constraints on our project because we are not employed by the company, we do not have access to users to directly test the prototype with.
-
-The expert opinion of designers both on and outside the team was our primary source of feedback. After a few screens had been created, I showed the designs to the product manager, who generally liked them, but provided a few suggestions for improvements, primarily to rename some elements to conform to industry standard. I also received feedback from a UX designer at the company.
+The expert opinion of designers both on and outside the team was our primary source of feedback. After a few screens had been created, I showed the designs to the product manager, who generally liked them, but provided a few suggestions for improvements, primarily to rename some elements to conform to industry standard. Throughout the project, I also consulted with a UX designer at the company, who provided valuable feedback, particularly on information architecture and visual design conventions.
 
 <div id="mockup" class="section section-wide">
     <div class="embed-responsive embed-responsive-4by3">
@@ -116,9 +113,10 @@ The expert opinion of designers both on and outside the team was our primary sou
 
 # Conclusion
 
-The project is still in progress, but we've already come a long way towards achieving a significantly more usable design for the product and adding features that will be useful for our target audience.
+While the project is still in progress, we've already come a long way towards achieving a significantly more usable design for the product and adding useful features.
+{: .lead}
 
-In this project, I've learned a lot about designing for a product used in an industry I'm unfamiliar in. We have, so far, not been able to talk to any users directly, which has made understanding how they use the product much more difficult. Without the ability to have direct interaction with the users, a survey with well-planned questions was a remarkably helpful tool in gaining insight into their desires and goals.
+In this project, I've designed for an industry I'm unfamiliar with, which has taught me the importance of interacting with users in creating a useful design. We have, so far, not been able to talk to any users directly, making understanding how they use the product much more difficult. Without direct interaction with the users, a survey with well-planned questions was a remarkably helpful tool in gaining insight into their desires and goals.
 
 <div class="section-tall text-center">
     <div class="card">

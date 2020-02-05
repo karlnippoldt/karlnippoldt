@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Noto Sans", sans-serif;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -7758,7 +7758,8 @@ button.bg-dark:focus {
 }
 
 .mr-4,
-.mx-4 {
+.mx-4,
+.image-margins {
   margin-right: 1.5rem !important;
 }
 
@@ -7769,7 +7770,8 @@ button.bg-dark:focus {
 }
 
 .ml-4,
-.mx-4 {
+.mx-4,
+.image-margins {
   margin-left: 1.5rem !important;
 }
 
@@ -7784,8 +7786,7 @@ button.bg-dark:focus {
 }
 
 .mr-5,
-.mx-5,
-.image-margins {
+.mx-5 {
   margin-right: 3rem !important;
 }
 
@@ -7796,8 +7797,7 @@ button.bg-dark:focus {
 }
 
 .ml-5,
-.mx-5,
-.image-margins {
+.mx-5 {
   margin-left: 3rem !important;
 }
 
@@ -10450,7 +10450,11 @@ p.lead-emphasized {
   font-family: "Noto Serif", serif;
 }
 
-.project-body p .btn, .project-body p.lead, .project-body p.emphasized, .project-body p.lead-emphasized {
+.project-body p .btn {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.project-body .modal-body p, .project-body .card-body p {
   font-family: "Noto Sans", sans-serif;
 }
 
