@@ -1,8 +1,16 @@
 ---
+recaptcha: true
 title: Contact
 permalink: /contact
 ---
-<form class="section-tall" action="https://formspree.io/myywjkor" method="POST">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function onSubmit(token) {
+    document.getElementById("recaptcha-form").submit();
+  }
+</script>
+
+<form id="recaptcha-form" class="section-tall" action="https://formspree.io/myywjkor" method="POST">
     <div class="form-group">
         <label for="exampleInputEmail1">Name</label>
         <input type="text" class="form-control form-control-lg" name="name">
@@ -15,5 +23,7 @@ permalink: /contact
         <label for="exampleFormControlTextarea1">Message</label>
         <textarea class="form-control form-control-lg" rows="3" name="message"></textarea>
     </div>
-    <button type="submit" class="btn btn-secondary btn-lg" value="Send"><span class="iconify" data-icon="ic:round-send"></span> Send Message</button>
+    <button data-sitekey="6Lez4NUUAAAAANvWZ2jdn89kRiZ6NYnSS6ITUF0q" data-callback='onSubmit' type="submit" class="g-recaptcha btn btn-secondary btn-lg" value="Send">
+        <span class="iconify" data-icon="ic:round-send"></span> Send Message
+    </button>
 </form>
