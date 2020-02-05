@@ -4,7 +4,7 @@ redirect_from: /portfolio
 <div class="section-tall section-wide">
 	<p class="h1 display-1">Hi, I'm Karl.</p>
 	<p class="lead my-3 my-lg-4 text-justify">I'm a UX designer with experience in user-centered design processes, prototyping tools, and front-end development. I'm looking for a UX design position that draws on my passion for good design in the products and experiences I create and use every day.</p>
-	<a class="btn btn-primary btn-lg btn-display my-3 my-lg-4" href="#projects" role="button">Projects <span class="iconify" data-icon="ic:sharp-arrow-downward"></span></a>
+	<a class="btn btn-primary btn-lg btn-display my-3 my-lg-4" href="#projects" role="button">Projects <span class="iconify" data-icon="ic:round-arrow-downward"></span></a>
 </div>
 <div id="projects">
 	{% assign sorted_projects = site.projects | sort: 'order' %}
@@ -20,7 +20,7 @@ redirect_from: /portfolio
 							<span class="line">{{ project.date_string }}</span>
 						</p>
 						<p>{{ project.description }}</p>
-						<a href="{{ project.url }}" class="btn btn-secondary">More about this project <span class="iconify" data-icon="ic:sharp-chevron-right"></span></a>
+						<a href="{{ project.url }}" class="btn btn-secondary">More about this project <span class="iconify" data-icon="ic:round-chevron-right"></span></a>
 					</div>
 				</div>
 				<div class="col-md-5 col-lg-4 image-margins order-first order-md-last">

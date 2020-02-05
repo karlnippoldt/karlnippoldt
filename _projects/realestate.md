@@ -39,8 +39,8 @@ The project was completed over two quarters at UC Irvine, from September 2019 to
 {% assign images_width="1280,1280" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width %}        
 
-<a class="btn btn-primary btn-lg" href="#mockup" role="button">
-    View Mockup <span class="iconify" data-icon="ic:sharp-arrow-downward"></span>
+<a class="btn btn-secondary btn-lg" href="#mockup" role="button">
+    View Mockup <span class="iconify" data-icon="ic:round-arrow-downward"></span>
 </a>
 {: .text-center}
 
@@ -57,7 +57,7 @@ We learned from our meetings with the product manager that, while the company ne
 We also created a 15-question survey to learn the features users value most and gauge' their level of tech-savviness and Excel proficiency. We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. Once we had the questions, I created the survey with Qualtrics.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyModal">
-    <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey questions
+    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
 </button>
 
 Unfortunately, the company did not keep any record of users' information, names or email addresses, so we were not able send the survey directly to them. Instead, a link to complete the survey was shown on the splash screen of the product when they opened it. We received nine responses to the survey. While we would have wanted a significantly larger number of responses, we were still able to learn valuable information.
@@ -65,7 +65,7 @@ Unfortunately, the company did not keep any record of users' information, names 
 Users were generally satisfied with the functionality the product offered, not expressing a significant desire for any of the features suggested in the survey. We learned that they use the product for both a high-level view of real estate trends and a detailed view of individual transactions, and prefer to interact with data outside the product even though the product provides some visualization features. Even though the product's data itself is out of the scope of our redesign and was not directly included in the survey, many users expressed their disappointment in the quality of the data provided in "Other" sections. After the survey was completed, I created a document summarizing the data collected and how it impacted our project.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyResultsModal">
-    <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey results summary
+    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey results summary
 </button>
 
 ## Ideation
@@ -123,7 +123,7 @@ In this project, I've learned a lot about designing for a product used in an ind
 <div class="section-tall text-center">
     <div class="card">
         <div class="card-body">
-            <span class="h1 iconify" data-icon="ic:sharp-info"></span>
+            <span class="h1 iconify" data-icon="ic:round-info"></span>
             <p class="lead">I'm still completing this project. Check back later for more details.</p>
         </div>
     </div>

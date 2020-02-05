@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Noto+Serif:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Noto+Serif:400&display=swap');
 
 // Font overrides
 $font-family-sans-serif: 'Noto Sans', sans-serif;
-$font-family-base: 'Noto Serif', serif;
+// $font-family-base: 'Noto Serif', serif;
 $body-color: #000;
 
-$headings-font-family: $font-family-sans-serif;
 $headings-font-weight: 700;
-
-$input-btn-font-family: $font-family-sans-serif;
 
 $display1-weight: 700;
 $display2-weight: 700;
@@ -95,7 +92,6 @@ html {
     }
   }
   ul {
-    font-family: $font-family-sans-serif;
     list-style-type: none;
     margin: auto;
     padding: initial;
@@ -121,7 +117,6 @@ html {
 p {
   &.emphasized {
     @extend .lead;
-    font-family: $font-family-sans-serif;
     font-weight: bold;  
   }
   &.lead-emphasized {
@@ -141,6 +136,12 @@ p {
   h2 {
     @extend .section-t;
   }
+  p {
+    font-family: "Noto Serif", serif;
+    .btn, &.lead {
+      font-family: $font-family-sans-serif;
+    }
+  }
 }
 
 // Resume body font modifications
@@ -148,7 +149,6 @@ p {
   h1 {
     @include font-size(1.75rem);
   }
-  font-family: $font-family-sans-serif;
 }
 
 // Image spacing class
@@ -157,11 +157,6 @@ p {
   @extend .mb-md-0;
   @extend .mx-5;
   @extend .mx-md-0;
-}
-
-// Small and figure caption text in sans serif
-small, .figure-caption {
-  font-family: $font-family-sans-serif;
 }
 
 // Create Display button class for larger button

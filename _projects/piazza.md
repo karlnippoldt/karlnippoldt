@@ -25,7 +25,7 @@ To learn more about Piazza users than we could with just interviews, my team con
 We posted our survey on various UCI social media groups on Facebook, UCI’s subreddit, Canvas discussions, and other school-related social media pages. We also sent the survey to friends and acquaintances that use Piazza or have used Piazza in the past. We collected a total of 31 responses to the survey.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyModal">
-    <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View survey questions
+    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
 </button>
 
 {% assign images="/assets/projects/piazza/survey_results_1.png,/assets/projects/piazza/survey_results_2.png" | split: ',' %}
@@ -41,7 +41,7 @@ After we conducted our interviews and gathered results from our survey, we had a
 * Peter Smith, another occasional user who checks Piazza frequently and posts questions, but doesn't answer others' questions.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#personaModal">
-    <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View personas
+    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View personas
 </button>
 
 {% assign images="/assets/projects/piazza/persona_1.jpg,/assets/projects/piazza/persona_2.jpg,/assets/projects/piazza/persona_3.jpg" | split: ',' %}
@@ -58,7 +58,7 @@ Our interviews and survey gave us a clearer idea of Piazza's user base and what 
 To gather more information, we conducted 30-minute-long usability tests with 5 users at varying levels of expertise. Together, our team wrote a set of tasks for our participants to complete, encompassing both common and less-common interactions. I compiled them into a document which we printed out and gave to each participant as they completed the tasks. We used a think-aloud protocol to give us insight into what users were thinking as they carried out the tasks.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#usabilityModal">
-    <span class="iconify" data-icon="ic:sharp-picture-as-pdf"></span> View usability tasks
+    <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View usability tasks
 </button>
 
 ## Cognitive Walkthrough
