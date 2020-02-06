@@ -45,10 +45,10 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 
 # Process
 
-{% assign images="/assets/projects/realestate/timeline.png" | split: ',' %}
-{% assign images_alt="Timeline of project process" | split: ',' %}
-{% assign images_width="1140" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width %}
+![Timeline of project process](/assets/projects/realestate/timeline.png){: .img-fluid}
+{: .d-none .d-md-block .section-tall .section-wide}
+![Timeline of project process](/assets/projects/realestate/timeline_small.png){: .img-fluid}
+{: .d-block .d-md-none .section-tall}
 
 ## Research
 
