@@ -14,7 +14,7 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 
 My project was to redesign a real estate market analysis product used by professionals in the real estate industry. My team is working with a leading mortgage data and analytics company through our senior capstone project class at UC Irvine.
 
-The current version of this product is functional, but old, and does not provide the best-in-class experience customers expect.
+The original version of this product was functional, but old, and did not provide the best-in-class experience customers expect.
 {: .lead}
 
 ## Deliverables
@@ -33,12 +33,10 @@ We began by getting up to speed on the users—who they are and why they use the
 
 ## My Role
 
-For this project, I was part of a team of six students.
-
 My primary role in this project was closest to that of a UX designer.
 {: .lead}
 
-My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %} I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
+For this project, I was part of a team of six students. My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %} I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
 
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
 {% assign images_alt="Search screen&comma; geography filter,Account settings page" | split: ',' %}
@@ -62,7 +60,7 @@ We began our project by undertaking to understand the users of this product. My 
 Our goal was to understand the user journey, their goals when they open the software, and the steps they take to get there.
 {: .lead}
 
-We started by talking with those at the company who were already familiar with the product's users, such as the product manager. The product is used by people like real estate agents, bankers, business analysts, and mortgage consultants. While the company wants to stay up to date with a more modern design for this product, existing users are resistant to change and a radical redesign would likely cause them to lose customers. However, users desire some additional features not present in the current product. For example, the current system does not provide the user any way to manage their account. If the user forgets their password, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company.
+We started by talking with those at the company who were already familiar with the product's users, such as the product manager. The product is used by people like real estate agents, bankers, business analysts, and mortgage consultants. While the company wants to stay up to date with a more modern design for this product, existing users are resistant to change and a radical redesign would likely cause them to lose customers. However, users desire some additional features not present in the original product. For example, the original system does not provide the user any way to manage their account. If the user forgets their password, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company.
 
 We created a 15-question survey to learn about the users and which features they value most.
 {: .lead}
@@ -121,10 +119,7 @@ With a clearer idea of what our screens should look like, I created wireframes u
 {% assign images_width="1024,1024,1024" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true%}        
 
-A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project.
-{: .lead}
-
-By the time we had access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. This didn't cover the whole product, however, so we had to wait until we had access to the system to fill in the missing pieces. Not being able to use the product caused delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
+A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. This didn't cover the whole product, however, so we had to wait until we had access to the system to fill in the missing pieces. Not being able to use the product caused delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
 ## Design
 
