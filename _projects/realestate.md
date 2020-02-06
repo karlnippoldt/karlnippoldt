@@ -24,9 +24,12 @@ I created a new, modern design for this product using Figma.
 
 I implemented improved interfaces for existing features, added new features, including account settings and a dashboard, and created a library of components to ensure consistency throughout the interface. The new design was informed by the results of my team's survey and previous interviews performed by the company. We also created a front-end implementation of our new design using Angular.
 
-## Approach
+## Process
 
-My team began by getting up to speed on the users—who they are and why they use the software—meeting with the product manager, the person at the company most familiar with them. We then evaluated our priorities in a redesign by conducting a survey and reviewing previous user interviews. From this information, I developed a clickable, high-fidelity mockup of a redesign of the system using Figma. Based on the mockup, we created a working prototype in Angular.{% comment %} We then tested the mockup with users, using our findings to inform our creation of a working prototype in Angular.{% endcomment %}
+My team followed as close to a user-centered design process as we could, given the constraints of the project.
+{: .lead}
+
+We began by getting up to speed on the users—who they are and why they use the software—meeting with the product manager, the person at the company most familiar with them. We then evaluated our priorities in a redesign by conducting a survey and reviewing previous user interviews. From this information, I developed a clickable, high-fidelity mockup of a redesign of the system using Figma. Based on the mockup, we created a working prototype in Angular.{% comment %} We then tested the mockup with users, using our findings to inform our creation of a working prototype in Angular.{% endcomment %}
 
 ## My Role
 
