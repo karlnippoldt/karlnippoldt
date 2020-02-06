@@ -7,8 +7,11 @@ layout: page
 # date: YYYY-MM-DD format
 # date_string: String representation of date
 # role: OPTIONAL my role in the project
+# tags:
+#	- list of
+#	- tags
 # description: Paragraph describing project
-# short_description: Shorter description for resume
+# resume_description: Shorter description for resume
 # thumbnail: /assets/xxx.png
 # thumbnail_alt: alt text for thumbnail
 ---
@@ -21,6 +24,7 @@ layout: page
 					{% if page.role %}<span class="line">{{ page.role }} <span class="gray">/</span> </span>{% endif %}
 					<span class="line">{{ page.date_string }}</span>
 				</p>
+				<ul class="tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
 				<p class="lead">{{ page.description }}</p>	
 			</div>
 		</div>

@@ -89,19 +89,21 @@ html {
     }
   }
   ul {
-    list-style-type: none;
-    margin: auto;
-    padding: initial;
-  }
-  li {
-    display: inline;
-    a.active {
-      text-decoration: underline;
+    @extend .list-inline;
+    margin: initial;
+    li {
+      @extend .list-inline-item;
+      @extend .lead;
+      a {
+        @extend .badge;
+        &.active {
+          @extend .badge-primary;
+        }
+        &:not(.active) {
+          font-weight: normal;
+        }
+      }
     }
-  }
-  li + li:before {
-    content: " / ";
-    color: $gray-300;
   }
 }
 
@@ -137,6 +139,7 @@ p {
     font-family: 'Noto Serif', serif;
     &.lead {
       font-weight: bold;
+      font-style: italic;
     }
     .btn {
       font-family: $font-family-base;
@@ -144,7 +147,19 @@ p {
   }
   .modal-body p, .card-body p {
     font-family: $font-family-base;
-    font-weight: normal;
+    font-weight: initial;
+    font-style: initial;
+  }
+}
+
+// Add list tag styles
+ul.tags {
+  @extend .list-inline;
+  @extend .lead;
+  li {
+    @extend .badge;
+    @extend .badge-secondary;
+    @extend .list-inline-item;
   }
 }
 
@@ -163,11 +178,13 @@ p {
   @extend .mx-md-0;
 }
 
-// Create Display button class for larger button
-.btn-display {
-    @include font-size(1.75rem);
-    // font-weight: bold;
-    padding: .75rem 1.5rem;
+// Display card class for homepage
+.card-display {
+  @extend .bg-light;
+  @extend .border-0;
+  @extend .p-4;
+  @extend .px-md-10;
+  @extend .py-md-5;
 }
 
 // Create class for fullscreen modal
