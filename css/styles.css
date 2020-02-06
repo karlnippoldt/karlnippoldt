@@ -10449,12 +10449,17 @@ p.lead-emphasized {
   font-family: 'Noto Serif', serif;
 }
 
+.project-body p.lead, .project-body p.emphasized, .project-body p.lead-emphasized, .project-body ul.lead {
+  font-weight: bold;
+}
+
 .project-body p .btn, .project-body ul .btn {
   font-family: "Noto Sans", sans-serif;
 }
 
 .project-body .modal-body p, .project-body .card-body p {
   font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
 }
 
 .resume-body h1 {

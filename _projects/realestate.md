@@ -12,11 +12,17 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 ---
 ## Purpose
 
-My project was to redesign a real estate market analysis product used by professionals in the real estate industry such as real estate agents, bankers, business analysts, and mortgage consultants. My team is working with a leading mortgage data and analytics company through our senior capstone project class at UC Irvine. The current version is functional, but old, and does not provide the best-in-class experience customers expect.
+My project was to redesign a real estate market analysis product used by professionals in the real estate industry. My team is working with a leading mortgage data and analytics company through our senior capstone project class at UC Irvine.
 
-## Results
+The current version of this product is functional, but old, and does not provide the best-in-class experience customers expect.
+{: .lead}
 
-I created a new, modern design for this product using Figma. I implemented improved interfaces for existing features, added new features, including account settings and a dashboard, and created a library of components to ensure consistency throughout the interface. The new design was informed by the results of my team's survey and previous interviews performed by the company. We also created a front-end implementation of our new design using Angular.
+## Deliverables
+
+I created a new, modern design for this product using Figma.
+{: .lead}
+
+I implemented improved interfaces for existing features, added new features, including account settings and a dashboard, and created a library of components to ensure consistency throughout the interface. The new design was informed by the results of my team's survey and previous interviews performed by the company. We also created a front-end implementation of our new design using Angular.
 
 ## Approach
 
@@ -24,9 +30,12 @@ My team began by getting up to speed on the users—who they are and why they us
 
 ## My Role
 
-I was part of a team of six students. We did not have fixed position titles, but my primary role in this project was closest to that of a UX designer. My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %}
+For this project, I was part of a team of six students.
 
-I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
+My primary role in this project was closest to that of a UX designer.
+{: .lead}
+
+My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %} I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
 
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
 {% assign images_alt="Search screen&comma; geography filter,Account settings page" | split: ',' %}
@@ -50,16 +59,22 @@ We began our project by undertaking to understand the users of this product. My 
 Our goal was to understand the user journey, their goals when they open the software, and the steps they take to get there.
 {: .lead}
 
-We started by talking with those at the company who were already familiar with the product's users, such as the product manager. We learned that, while the company wants to stay up to date with a more modern design for this product, existing users are resistant to change and a radical redesign would likely cause them to lose customers. However, users desire some additional features not present in the current product. For example, the current system does not provide the user any way to manage their account. If the user forgets their password, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company.
+We started by talking with those at the company who were already familiar with the product's users, such as the product manager. The product is used by people like real estate agents, bankers, business analysts, and mortgage consultants. While the company wants to stay up to date with a more modern design for this product, existing users are resistant to change and a radical redesign would likely cause them to lose customers. However, users desire some additional features not present in the current product. For example, the current system does not provide the user any way to manage their account. If the user forgets their password, they must contact customer service to get it changed. This is both frustrating to users and a significant expense for the company.
 
-We created a 15-question survey to learn about the users and which features they value most. We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
+We created a 15-question survey to learn about the users and which features they value most.
+{: .lead}
+
+We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
 
 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#surveyModal">
 <span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
 </button>
 {: .section .text-center}
 
-Unfortunately, we were not able send the survey directly to users. Instead, a link to complete the survey was shown to users when they opened the product. We received nine responses to our survey. Though we wanted a larger number of responses, we were still able to learn valuable information from those we had.
+While we were not able send the survey directly to users, a link to complete the survey was shown to users when they opened the product. We received nine responses to our survey, though ideally we would have had more.
+
+We were able to learn some valuable information from the survey responses we received.
+{: .lead}
 
 Users were, for the most part, satisfied with the functionality the product offers, not expressing a significant desire for any one of the features proposed in the survey. Users prefer to interact with data outside the product instead of using its built-in visualization features, indicating a possible area of improvement. After the survey was completed, I created a document summarizing the data collected and how it would impact our project.
 
@@ -71,6 +86,7 @@ Users were, for the most part, satisfied with the functionality the product offe
 ## Personas
 
 From the information we learned about the users from our research, we created personas and storyboards.
+{: .lead}
 
 {% assign images="/assets/projects/realestate/persona_1.png,/assets/projects/realestate/persona_2.png,/assets/projects/realestate/persona_3.png" | split: ',' %}
 {% assign images_alt="Persona for Mark San,Persona for Stacy Rose,Persona for Jacob Williams" | split: ',' %}
@@ -95,6 +111,7 @@ A particularly challenging design problem was creating screen to refine the geog
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 
 With a clearer idea of what our screens should look like, I created wireframes using Balsamiq.
+{: .lead}
 
 {% assign images="/assets/projects/realestate/wireframe_1.png,/assets/projects/realestate/wireframe_2.png,/assets/projects/realestate/wireframe_3.png" | split: ',' %}
 {% assign images_alt="Wireframe: search&comma; geography filter,Wireframe: search&comma; time period filter,Wireframe: search&comma; loan options filter" | split: ',' %}

@@ -135,12 +135,16 @@ p {
   }
   p, ul {
     font-family: 'Noto Serif', serif;
+    &.lead {
+      font-weight: bold;
+    }
     .btn {
       font-family: $font-family-base;
     }
   }
   .modal-body p, .card-body p {
     font-family: $font-family-base;
+    font-weight: normal;
   }
 }
 
