@@ -1,12 +1,14 @@
 ---
 image_modal: true
 order: 2
-title: Concept for Airport Pick-Up Assistant
+title: Airport Pick-Up Assistant Concept
 date: 2020-01-31
 date_string: January 2020
 role: Personal project
 description: Many people are overwhelmed and stressed when they are picking up friends and family at an airport. Existing travel apps cater to the traveler—not for people who would pick them up. I added features to the existing Southwest Airlines website to make the pick-up experience less stressful. The user can receive flight status notifications, directions on how to get to the airport, and see the best place to meet the traveler.
-resume_description: Streamlined process of picking up friends and family at the airport with added features to the Southwest Airlines website
+resume_description:
+    - Streamlined process of picking up friends and family at the airport with added features to Southwest Airlines mobile website, integrating with existing brand
+    - Created an interactive prototype using Figma
 thumbnail: /assets/projects/airport/thumbnail.png
 thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 ---

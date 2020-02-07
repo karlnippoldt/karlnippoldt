@@ -8,11 +8,11 @@ permalink: /resume
 	</button>
 </div>
 <div class="card section">
-	<div class="card-body resume-body">
+	<div class="resume-card-body">
 		<h1>Education</h1>
+		<h2>University of California, Irvine</h2>
 		<p>
-			<b>University of California, Irvine</b>
-			<br>Bachelor of Science, Informatics <span class="gray">/</span> June 2020
+			Bachelor of Science, Informatics <span class="gray">/</span> June 2020
 			<br>Specialization in Human-Computer Interaction
 			<br><i>3.69 GPA</i>
 		</p>
@@ -20,39 +20,51 @@ permalink: /resume
 		{% assign sorted_projects = site.projects | sort: 'order' %}
 		{% for project in sorted_projects %}
 		{% unless project.hidden %}
+		<h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
 		<p>
-			<a href="{{ project.url }}"><b>{{ project.title }}</b></a>
-			<br>{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
+			{% if project.role %}<span class="line">{{ project.role }} <span class="gray">/</span></span>{% endif %}
 			<span class="line">{{ project.date_string }}</span>
-			<br><i>{{ project.resume_description }}</i>
+			<ul>
+				{% for desc_item in project.resume_description %}
+				<li><i>{{ desc_item }}</i></li>
+				{% endfor %}
+			</ul>
 		</p>
 		{% endunless %}
 		{% endfor %}
 		<h1>Work Experience</h1>
+		<h2>Urban Plates<span class="notbold">, Irvine, CA</span></h2>
 		<p>
-			<b>Urban Plates</b>, Irvine, CA
-			<br>Cashier <span class="gray">/</span> September 2019–Present
-			<br><i>Ensure guest satisfaction through attentive customer service and accurate order entry into the POS system</i>
+			Cashier <span class="gray">/</span> September 2019–Present
+			<ul>
+				<li><i>Ensure satisfaction by accommodating guests’ requests, serving desserts and beverages, and accurately entering orders into the POS system</i></li>
+			</ul>
 		</p>
+		<h2>Dreams for Schools<span class="notbold">, Irvine, CA</span></h2>
 		<p>
-			<b>Dreams for Schools</b>, Irvine, CA
-			<br>Summer STEM Mentor <span class="gray">/</span> June 2019–July 2019
-			<br><i>Taught elementary school children from 3<sup>rd</sup> through 6<sup>th</sup> grade STEM concepts, including block-based programming</i>
+			Summer STEM Mentor <span class="gray">/</span> June 2019–July 2019
+			<ul>
+				<li><i>Taught programming and STEM concepts to elementary school children from  3<sup>rd</sup> through 6<sup>th</sup> grade with a team of five</i></li>
+			</ul>
 		</p>
+		<h2>Panera Bread<span class="notbold">, Irvine, CA</span></h2>
 		<p>
-			<b>Panera Bread</b>, Irvine, CA
-			<br>Associate Trainer <span class="gray">/</span> March 2017–June 2019
-			<br><i>Assisted customers in placing orders, verified order accuracy, maintained cleanliness, and trained new associates in job duties</i>
+			Associate Trainer <span class="gray">/</span> March 2017–June 2019
+			<ul>
+				<li><i>Established clear communication with guests, working on a team to ensure cleanliness, order accuracy, and a positive guest experience</i></li>
+			</ul>
 		</p>
+		<h2>University of California, Irvine<span class="notbold">, Irvine, CA</span></h2>
 		<p>
-			<b>University of California, Irvine</b>, Irvine, CA
-			<br>Summer Conference Assistant <span class="gray">/</span> June 2018–September 2018
-			<br><i>Worked with Summer Conference staff to host and provide customer service to conferences and camps residing at UCI</i>
+			Summer Conference Assistant <span class="gray">/</span> June 2018–September 2018
+			<ul>
+				<li><i>Ensured client satisfaction for residential conferences and camps by providing consistent communication and customer service alongside a team of 12</i></li>
+			</ul>
 		</p>
 		<h1>Skills</h1>
 		<div class="row">
 			<div class="col-md-5">
-				<b>Processes</b>
+				<h2>Processes</h2>
 				<ul>
 					<li>User-centered design</li>
 					<li>Wireframing</li>
@@ -62,7 +74,7 @@ permalink: /resume
 				</ul>
 			</div>
 			<div class="col-md">
-				<b>Tools</b>
+				<h2>Tools</h2>
 				<ul>
 					<li>Figma</li>
 					<li>Balsamiq</li>
@@ -72,12 +84,13 @@ permalink: /resume
 				</ul>
 			</div>
 			<div class="col-md">
-				<b>Languages</b>
+				<h2>Languages</h2>
 				<ul>
 					<li>HTML</li>
 					<li>CSS</li>
-					<li>JavaScript</li>
 					<li>Sass</li>
+					<li>JavaScript</li>
+					<li>TypeScript</li>
 					<li>Angular</li>
 					<li>Python</li>
 				</ul>

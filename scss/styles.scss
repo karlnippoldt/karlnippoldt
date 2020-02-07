@@ -11,7 +11,7 @@ $display4-weight: 700;
 
 $lead-font-weight: 400;
 
-$font-size-base: 1.15rem;
+$font-size-base: 1.25rem;
 $h1-font-size: $font-size-base * 2.5;
 $h2-font-size: $font-size-base * 1.75;
 $h3-font-size: $font-size-base * 1.25;
@@ -26,6 +26,7 @@ $secondary: #dee2e6;
 // Add wider spacing for padding and margin
 $spacer: 1rem;
 $spacers:  (
+    8:  ($spacer * 4.5),
     10: ($spacer * 6),
     15: ($spacer * 9),
     // from old design delete later 20: ($spacer * 12)
@@ -80,7 +81,6 @@ html {
 }
 
 // Navigation
-// Includes solution from Stack Overflow https://stackoverflow.com/a/6285388
 .navigation {
   h1 {
     @include font-size($font-size-base * 1.5);
@@ -96,11 +96,9 @@ html {
       @extend .lead;
       a {
         @extend .badge;
+        font-weight: normal;
         &.active {
           @extend .badge-primary;
-        }
-        &:not(.active) {
-          font-weight: normal;
         }
       }
     }
@@ -117,10 +115,6 @@ p {
   &.emphasized {
     @extend .lead;
     font-weight: bold;  
-  }
-  &.lead-emphasized {
-    @include font-size($lead-font-size * 1.25);
-    @extend p.emphasized;
   }
 }
 
@@ -164,9 +158,41 @@ ul.tags {
 }
 
 // Resume body font modifications
-.resume-body {
+.resume-card-body {
+  @extend .card-body;
+  @extend .p-4;
+  @extend .p-md-8;
   h1 {
-    @include font-size(1.75rem);
+    @extend h2;
+    &:first-child {
+      @extend .mt-0;
+    }
+    &:not(:first-child) {
+      @extend .mt-4;
+      @extend .mt-md-5;
+    }
+  }
+  h2 {
+    @extend body;
+    font-weight: bold;
+    @extend .mt-3;
+    span.notbold {
+      font-weight: normal;
+    }
+    &:first-child {
+      // This is for the headings under Skills
+      @extend .mt-0;
+    }
+  }
+  h1 + h2 {
+    // for h2s directly under h1
+    @extend .mt-0;
+  }
+  p {
+    @extend .m-0;
+  }
+  ul {
+    @extend .m-0;
   }
 }
 
@@ -183,8 +209,8 @@ ul.tags {
   @extend .bg-light;
   @extend .border-0;
   @extend .p-4;
-  @extend .px-md-10;
   @extend .py-md-5;
+  @extend .px-md-8;
 }
 
 // Create class for fullscreen modal
@@ -199,7 +225,7 @@ ul.tags {
   height: 100%; width: 100%;
 }
 
-// Make ul bullets square and reduce padding
+// Reduce list padding
 ul {
   // list-style: square;
   padding-left: 20px;

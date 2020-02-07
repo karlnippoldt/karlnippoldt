@@ -1,7 +1,7 @@
 ---
 image_modal: true
 order: 1
-title: Redesign of Real Estate Market Analysis Product
+title: Real Estate Market Analysis Product Redesign
 date: 2020-02-01
 date_string: September 2019–March 2020
 role: UX Designer
@@ -11,7 +11,9 @@ tags:
     - Information Architecture
     - Branding
 description: I created a significantly more usable design for a real estate market analysis product, both improving interfaces for existing features and adding useful new ones.
-resume_description: Created a significantly more usable design for real estate market analysis software, improving interfaces for existing features and adding useful new ones
+resume_description:
+    - Created a modern, usable design for real estate market analysis software using Figma
+    - Conducted user research, including surveys, as part of a user-centered design process
 thumbnail: /assets/projects/realestate/thumbnail.png
 thumbnail_alt: Laptop with real estate market analysis software on screen
 ---
@@ -54,7 +56,7 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 
 We began our project by undertaking to understand the users of this product. My team's prior exprience in the real estate industry was limited, so we devoted quite a bit of time to this task.
 
-Our goal was to understand the user journey, their goals when they open the software, and the steps they take to get there.
+Our goal was to understand the user's journey, their goals when they open the software, and the steps they take to get there.
 {: .lead}
 
 We started by talking with those at the company who were already familiar with the product's users, such as the product manager. While the company wants to stay up to date with a more modern design for this product, users are resistant to change and a radical redesign would likely cause them to lose customers. However, users did desire some additional features not present in the original product. For example, the original system did not provide any way for them to manage their account. If the user forgot their password, they had to contact customer service to get it changed. This was both frustrating to users and a significant expense for the company.
