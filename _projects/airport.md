@@ -25,7 +25,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 **My project provides the driver with helpful information** that reduces the unknowns of a trip to the airport, making the pick-up experience less stressful. I created a design using Figma that adds features to the existing Southwest Airlines website. The driver can receive flight status and time-to-leave notifications, get directions on how to get to the airport, and find the best place to meet the traveler.
 
 ## Process
-**My process included a user flow, sketches, and a prototype.** From the project concept, I began by creating a user flow. I then sketched ideas for what a design for the features in the user flow would look like and created a simple design system. With components from the design system, I created an interactive prototype in Figma.
+**My process included a user flow, sketches, and a prototype.** From the project concept, I began by creating a user flow. I then sketched ideas for what the features in the user flow would look like and created a simple design system. With components from the design system, I created an interactive prototype in Figma.
 
 ## My Role
 **I completed the entirety of this project myself.**
@@ -47,7 +47,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 
 ## Research
 
-I got the idea for this project when I was picking a friend up from the airport. I realized that, even as an air travel aficionado, I could not think of a single app designed to streamline the pick-up experience. I enjoy a trip to the airport—seeing a variety of planes from faraway places—but the average person does not.
+I got the idea for this project when I was picking a friend up from the airport. I realized that, even as an air travel aficionado, I could not think of a single app designed to streamline the pick-up experience for a driver. I enjoy a trip to the airport—seeing a variety of planes from faraway places—but the average person does not.
 
 For many people, a trip to the airport is an unfamiliar, complicated experience. A solution to manage the seeming chaos would be quite valuable to the infrequent airport visitor.
 {: .lead}
@@ -79,7 +79,7 @@ I ran into a problem with these elements, however: the Southwest mobile website'
 To introduce vertical rhythm into my design, I adjusted all element and font sizing and padding to follow an 8-point grid.
 {: .lead}
 
-I also made UI elements much more consistent. For example, now, whenever there's a departure and arrival listed, the text for departure is aligned to the left and the text for arrival is to the right. There is always an icon representing the appropriate vehicle in between the departure and arrival times (except for when the times are intentionally de-emphasized, such as the scheduled times for a flight that has been delayed). This applies to flights as well as other transportation, like the car ride to the airport.
+I also made UI elements much more consistent. In my design, whenever there's a departure and arrival listed, the text for departure is aligned to the left and the text for arrival is to the right. There is always an icon representing the appropriate vehicle in between the departure and arrival times (except for when the times are intentionally de-emphasized, such as the scheduled times for a flight that has been delayed). This applies to flights as well as other transportation, like the car ride to the airport.
 
 Even with my changes to existing UI elements, they still retain most of the original design and stay true to Southwest's identity.
 
