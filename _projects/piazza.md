@@ -12,6 +12,14 @@ resume_description:
 thumbnail: /assets/projects/piazza/thumbnail.jpg
 thumbnail_alt: Screenshot of Piazza redesign mockup
 ---
+<div class="section-tall">
+    <div class="card bg-secondary border-0 text-center text-dark">
+        <div class="card-body">
+            <span class="h1 iconify" data-icon="ic:round-warning"></span>
+            <p class="lead">I'm still completing this part of my portfolio.</p>
+        </div>
+    </div>
+</div>
 
 # Getting to know the users
 

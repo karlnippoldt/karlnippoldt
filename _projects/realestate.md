@@ -9,8 +9,8 @@ tags:
     - UX/UI Design
     - User Research
     - Information Architecture
-    - Branding
-description: I created a significantly more usable design for a real estate market analysis product, both improving interfaces for existing features and adding useful new ones.
+    - Brand Identity
+description: I created a modern, usable design for a real estate market analysis product using Figma, both improving interfaces for existing features and adding useful new ones, as part of a user-centered design process.
 resume_description:
     - Created a modern, usable design for real estate market analysis software using Figma
     - Conducted user research, including surveys, as part of a user-centered design process
@@ -30,12 +30,13 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 **My team followed as close to a user-centered design process as we could,** given the constraints of the project. We began by getting up to speed on the users—who they are and why they use the software—meeting with the product manager, the person at the company most familiar with them. We then evaluated our priorities in a redesign by conducting a survey and reviewing previous user interviews. From this information, I developed a clickable, high-fidelity mockup of a redesign of the system using Figma. Based on the mockup, we created a working prototype in Angular.{% comment %} We then tested the mockup with users, using our findings to inform our creation of a working prototype in Angular.{% endcomment %}
 
 ## My Role
+
 **My primary role in this project was closest to that of a UX designer.** For this project, I was part of a team of six students. My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %} I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
 
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
 {% assign images_alt="Search screen&comma; geography filter,Account settings page" | split: ',' %}
 {% assign images_width="1280,1280" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true %}        
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width caption=true modal=true %}        
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
     View Mockup <span class="iconify" data-icon="ic:round-arrow-downward"></span>
@@ -120,7 +121,7 @@ With a clearer idea of what our screens should look like, I created wireframes u
 
 A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. While we were able to make significant progress despite not being able to use the product, we later encountered delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
-## Design
+## Prototype
 
 From the wireframes, I created a high-fidelity mockup with Figma.
 {: .lead}
@@ -132,7 +133,7 @@ The expert opinion of designers both on and outside the team was our primary sou
 <div id="mockup" class="section section-wide">
     <div class="embed-responsive embed-responsive-4by3">
         <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvNLhx9IDeQbZ3Oes91zNhq%2FReal-Estate-Mockups-Copy%3Fnode-id%3D233%253A1806%26scaling%3Dscale-down-width" allowfullscreen></iframe>
-    </div>    
+    </div>
 </div>
 
 # Conclusion

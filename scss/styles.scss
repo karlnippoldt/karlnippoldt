@@ -196,12 +196,16 @@ ul.tags {
   }
 }
 
-// Image spacing class
+// Image spacing classes
 .image-margins {
   @extend .mb-3;
   @extend .mb-md-0;
   @extend .mx-4;
   @extend .mx-md-0;
+}
+.image-margins-b {
+  @extend .mb-3;
+  @extend .mb-md-0;
 }
 
 // Display card class for homepage
