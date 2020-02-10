@@ -2,5 +2,5 @@ docs_list_title: Social Links
 docs:
 
 - title: LinkedIn
-  icon: <span class="iconify" data-icon="fa-brands:linkedin-in"></span>
+  icon: <span class="iconify" data-icon="bx:bxl-linkedin"></span>
   url: https://www.linkedin.com/in/karlnippoldt/
