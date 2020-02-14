@@ -89,18 +89,15 @@ html {
       text-decoration: none;
     }
   }
-  ul {
-    @extend .list-inline;
-    margin: initial;
-    li {
-      @extend .list-inline-item;
-      @extend .lead;
-      a {
-        @extend .badge;
-        font-weight: normal;
-        &.active {
-          @extend .badge-primary;
-        }
+  ul.nav {
+    .nav-link {
+      padding: 0.25em 0.4em;
+      line-height: 1;
+    }
+    .nav-item {
+      @include font-size($font-size-base * 0.9);
+      &:not(:last-child) {
+        margin-right: 0.5rem;
       }
     }
   }

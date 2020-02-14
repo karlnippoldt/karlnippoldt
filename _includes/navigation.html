@@ -11,14 +11,18 @@ col-md-auto: resize column to fit contents
     </div>
     <div class="col col-12 col-md-auto px-md-0 text-center">
         <nav>
-            <ul>
+            <ul class="nav nav-pills justify-content-center">
                 {% for item in site.data.navigation.docs %}
-                <li><a {% if item.url == page.url %}class="active" {% endif %}href="{{ item.url }}">{{ item.title }}</a></li>
+                <li class="nav-item">
+                    <a class="nav-link{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+                </li>
                 {% endfor %}
                 {% for item in site.data.social.docs %}
-                <li><a href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}">{{ item.icon }}</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}">{{ item.icon }}</a>
+                </li>
                 {% endfor %}
-            </ul>
+            </ul>    
         </nav>
     </div>
 </div>

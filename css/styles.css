@@ -408,13 +408,13 @@ h6, .h6 {
   font-size: 0.875rem;
 }
 
-.lead, .navigation ul li, p.emphasized, ul.tags {
+.lead, p.emphasized, ul.tags {
   font-size: 1.5625rem;
   font-weight: 400;
 }
 
 @media (max-width: 1200px) {
-  .lead, .navigation ul li, p.emphasized, ul.tags {
+  .lead, p.emphasized, ul.tags {
     font-size: calc(1.28125rem + 0.375vw) ;
   }
 }
@@ -491,16 +491,16 @@ mark,
   list-style: none;
 }
 
-.list-inline, .navigation ul, ul.tags {
+.list-inline, ul.tags {
   padding-left: 0;
   list-style: none;
 }
 
-.list-inline-item, .navigation ul li, ul.tags li {
+.list-inline-item, ul.tags li {
   display: inline-block;
 }
 
-.list-inline-item:not(:last-child), .navigation ul li:not(:last-child), ul.tags li:not(:last-child) {
+.list-inline-item:not(:last-child), ul.tags li:not(:last-child) {
   margin-right: 0.5rem;
 }
 
@@ -4870,7 +4870,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0.2rem;
 }
 
-.badge, .navigation ul li a, ul.tags li {
+.badge, ul.tags li {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
@@ -4884,20 +4884,20 @@ input[type="button"].btn-block {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .badge, .navigation ul li a, ul.tags li {
+  .badge, ul.tags li {
     transition: none;
   }
 }
 
-a.badge:hover, .navigation ul li a:hover, a.badge:focus, .navigation ul li a:focus {
+a.badge:hover, a.badge:focus {
   text-decoration: none;
 }
 
-.badge:empty, .navigation ul li a:empty, ul.tags li:empty {
+.badge:empty, ul.tags li:empty {
   display: none;
 }
 
-.btn .badge, .btn .navigation ul li a, .navigation ul li .btn a, .btn ul.tags li, ul.tags .btn li {
+.btn .badge, .btn ul.tags li, ul.tags .btn li {
   position: relative;
   top: -1px;
 }
@@ -4908,17 +4908,17 @@ a.badge:hover, .navigation ul li a:hover, a.badge:focus, .navigation ul li a:foc
   border-radius: 10rem;
 }
 
-.badge-primary, .navigation ul li a.active {
+.badge-primary {
   color: #fff;
   background-color: #000;
 }
 
-a.badge-primary:hover, .navigation ul li a.active:hover, a.badge-primary:focus, .navigation ul li a.active:focus {
+a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
   background-color: black;
 }
 
-a.badge-primary:focus, .navigation ul li a.active:focus, a.badge-primary.focus, .navigation ul li a.focus.active {
+a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
@@ -10666,7 +10666,7 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar {
     display: none;
   }
-  .badge, .navigation ul li a, ul.tags li {
+  .badge, ul.tags li {
     border: 1px solid #000;
   }
   .table {
@@ -10717,12 +10717,17 @@ html {
   text-decoration: none;
 }
 
-.navigation ul {
-  margin: initial;
+.navigation ul.nav .nav-link {
+  padding: 0.25em 0.4em;
+  line-height: 1;
 }
 
-.navigation ul li a {
-  font-weight: normal;
+.navigation ul.nav .nav-item {
+  font-size: 1.125rem;
+}
+
+.navigation ul.nav .nav-item:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .gray {
