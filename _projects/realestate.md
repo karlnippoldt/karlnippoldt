@@ -34,9 +34,9 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 **My primary role in this project was closest to that of a UX designer.** For this project, I was part of a team of six students. My team worked together on initial sketches; from there, I created both wireframes and the high-fidelity mockup.{% comment %} I also evaluated the front-end implementation of the interface and ensured its consistency with the mockup. {% endcomment %} I was also one of two primary contacts between my team and the sponsoring company for our project, scheduling meetings and ensuring consistent communication between the two teams.
 
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
-{% assign images_alt="Search screen&comma; geography filter,Account settings page" | split: ',' %}
+{% assign images_alt="Home screen,Search screen&comma; geography filter" | split: ',' %}
 {% assign images_width="1280,1280" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width caption=true modal=true %}        
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
     View Mockup <span class="iconify" data-icon="ic:round-arrow-downward"></span>
@@ -104,10 +104,10 @@ From the information we learned about the users from our research, we created pe
 My team began designing a new interface together, beginning with sketching designs on a whiteboard.
 {: .lead}
 
-A particularly challenging design problem was creating screen to refine the geography of a search. The user should be able to choose between different data types (State, County, etc.), and select options within each of them. For problems like this, each member of the team sketched different solutions to this problem. For our final design, we put together the best ideas from each of the sketches. As we encountered further design problems later in development, one other team member and I collaborated using a similar process.
+A particularly challenging design problem was creating a screen to refine the geography of a search. The user should be able to choose between different data types (State, County, etc.), and select options within each of them. For problems like this, each member of the team sketched different solutions to this problem. For our final design, we put together the best ideas from each of the sketches. As we encountered further design problems later in development, one other team member and I collaborated using a similar process.
 
 {% assign images="/assets/projects/realestate/sketch_sidebar.jpg,/assets/projects/realestate/sketch_account.jpg" | split: ',' %}
-{% assign images_alt="Sketch: navigation sidebar,Sketch: account settings page" | split: ',' %}
+{% assign images_alt="Sketch: navigation sidebar,Sketch: account settings screen" | split: ',' %}
 {% assign images_width="2016,1512" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 
@@ -121,18 +121,38 @@ With a clearer idea of what our screens should look like, I created wireframes u
 
 A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. While we were able to make significant progress despite not being able to use the product, we later encountered delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
-## Prototype
-
-From the wireframes, I created a high-fidelity mockup with Figma.
+## Design
+Using the company styles available to me, I created high-fidelity designs in Figma.
 {: .lead}
 
 First, I created the styles and components (such as buttons and cards) to use on the mockup, ensuring consistency across different screens. The company does have a comprehensive library style guide for UI design, but as a non-employee, I did not have access to it, so I based fonts and colors of the components on a print version of the company's style guide.
 
+With these styles and components, I created an initial set of designs for the various screens in the product.
+
+{% assign images="/assets/projects/realestate/search_before.png,/assets/projects/realestate/settings_before.png" | split: ',' %}
+{% assign images_alt="Initial design: search screen&comma; geography filter,Initial design: settings screen" | split: ',' %}
+{% assign images_width="1280,1280" | split: ',' %}
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
+
 The expert opinion of designers both on and outside the team was our primary source of feedback. After a few screens had been created, I showed the designs to the product manager, who generally liked them, but provided a few suggestions for improvements, primarily to rename some elements to conform to industry standard. Throughout the project, I also consulted with a UX designer at the company, who provided valuable feedback, particularly on information architecture and visual design conventions.
 
+Based on the feedback we received, I updated the design of the mockup to better fit user needs.
+{: .lead}
+
+I toned down the colors in the initial design for a more conservative, businesslike look, leaving the red accent color for buttons and headings to match the company's branding. I also updated the design of components and buttons with drop shadows and icons for a more modern look.
+
+{% assign images="/assets/projects/realestate/search_after.png,/assets/projects/realestate/settings_after.png" | split: ',' %}
+{% assign images_alt="Final design: search screen&comma; geography filter,Final design: settings screen" | split: ',' %}
+{% assign images_width="1280,1280" | split: ',' %}
+{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
+
+## Prototype
+From the mockups, I created an interactive prototype to validate our final design.
+{: .lead}
+
 <div id="mockup" class="section section-wide">
-    <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvNLhx9IDeQbZ3Oes91zNhq%2FReal-Estate-Mockups-Copy%3Fnode-id%3D233%253A1806%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+    <div class="embed-responsive embed-responsive-16by11">
+        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIVvee09cUX1MMCdSDHkyiB%2FRealtrack-Mockups%3Fscaling%3Dcontain%26node-id%3D14%253A29" allowfullscreen></iframe>
     </div>
 </div>
 
