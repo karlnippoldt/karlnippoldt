@@ -67,7 +67,6 @@ We created a 15-question survey to learn about the users and which features they
 
 We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
 
-
 <a class="btn btn-primary btn-lg" href="/assets/projects/realestate/survey_questions.pdf" target="_blank">View survey questions <span class="iconify" data-icon="feather:external-link"></span></a>
 {: .section .text-center}
 
