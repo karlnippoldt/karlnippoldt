@@ -67,9 +67,8 @@ We created a 15-question survey to learn about the users and which features they
 
 We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#surveyModal">
-<span class="iconify" data-icon="feather:file"></span> View survey questions
-</button>
+
+<a class="btn btn-primary btn-lg" href="/assets/projects/realestate/survey_questions.pdf" target="_blank">View survey questions <span class="iconify" data-icon="feather:external-link"></span></a>
 {: .section .text-center}
 
 While we were not able send the survey directly to users, a link to complete the survey was shown to users when they opened the product. We received nine responses to our survey, though ideally we would have had more.
@@ -79,9 +78,7 @@ We were able to learn some valuable information from the survey responses we rec
 
 Users were, for the most part, satisfied with the functionality the product offers, not expressing a significant desire for any one of the features proposed in the survey. Users preferred to interact with data outside the product instead of using its built-in visualization features, indicating a possible area for improvement. After the survey was completed, I created a document summarizing the data collected and how it would impact our project.
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#surveyResultsModal">
-<span class="iconify" data-icon="feather:file"></span> View survey results summary
-</button>
+<a class="btn btn-primary btn-lg" href="/assets/projects/realestate/survey_results.pdf" target="_blank">View survey results summary <span class="iconify" data-icon="feather:external-link"></span></a>
 {: .section .text-center}
 
 ## Personas
@@ -171,6 +168,3 @@ In this project, I've designed for an industry I'm unfamiliar with, which has ta
         </div>
     </div>
 </div>
-
-{% include pdf_modal.html id="surveyModal" title="User Survey Questions" src="/assets/projects/realestate/survey_questions.pdf" %}
-{% include pdf_modal.html id="surveyResultsModal" title="User Survey Results" src="/assets/projects/realestate/survey_results.pdf" %}
