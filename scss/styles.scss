@@ -77,9 +77,11 @@ html {
 }
 
 // Fix Safari 100% height issue
+/* Currently not used
 .fix-safari-size {
   height: 0;
 }
+*/
 
 // Navigation
 .navigation {
@@ -213,13 +215,6 @@ ul.tags {
   @extend .p-4;
   @extend .py-md-5;
   @extend .px-md-8;
-}
-
-// Create class for fullscreen modal
-.modal-fullscreen {
-  @extend .modal-xl;
-  @extend .my-0;
-  height: 100% !important;
 }
 
 // Reduce list padding

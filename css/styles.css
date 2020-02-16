@@ -5858,16 +5858,13 @@ a.close.disabled {
 
 @media (min-width: 992px) {
   .modal-lg,
-  .modal-xl,
-  .modal-fullscreen {
+  .modal-xl {
     max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
-  
-  .modal-xl,
-  .modal-fullscreen {
+  .modal-xl {
     max-width: 1140px;
   }
 }
@@ -7659,8 +7656,7 @@ button.bg-dark:focus {
 }
 
 .mt-0, .resume-card-body h1:first-child, .resume-card-body h2:first-child, .resume-card-body h1 + h2, .resume-card-body h1 + h1,
-.my-0,
-.modal-fullscreen {
+.my-0 {
   margin-top: 0 !important;
 }
 
@@ -7670,8 +7666,7 @@ button.bg-dark:focus {
 }
 
 .mb-0,
-.my-0,
-.modal-fullscreen {
+.my-0 {
   margin-bottom: 0 !important;
 }
 
@@ -10699,10 +10694,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Currently not used
 .fix-safari-size {
   height: 0;
 }
-
+*/
 .navigation h1 {
   font-size: 1.875rem;
 }
@@ -10763,10 +10759,6 @@ p.emphasized {
 
 .resume-card-body h2 span.notbold, .resume-card-body h1 span.notbold {
   font-weight: normal;
-}
-
-.modal-fullscreen {
-  height: 100% !important;
 }
 
 ul {
