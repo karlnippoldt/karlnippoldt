@@ -39,7 +39,7 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
-    View Mockup <span class="iconify" data-icon="ic:round-arrow-downward"></span>
+    View Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
 </a>
 {: .text-center}
 
@@ -68,7 +68,7 @@ We created a 15-question survey to learn about the users and which features they
 We worked as a team to compile the questions, consulting with a UX designer at the company to ensure our questions were valuable and concise. From the final list of questions, I created the survey on Qualtrics.
 
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#surveyModal">
-<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey questions
+<span class="iconify" data-icon="feather:file"></span> View survey questions
 </button>
 {: .section .text-center}
 
@@ -80,7 +80,7 @@ We were able to learn some valuable information from the survey responses we rec
 Users were, for the most part, satisfied with the functionality the product offers, not expressing a significant desire for any one of the features proposed in the survey. Users preferred to interact with data outside the product instead of using its built-in visualization features, indicating a possible area for improvement. After the survey was completed, I created a document summarizing the data collected and how it would impact our project.
 
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#surveyResultsModal">
-<span class="iconify" data-icon="ic:round-picture-as-pdf"></span> View survey results summary
+<span class="iconify" data-icon="feather:file"></span> View survey results summary
 </button>
 {: .section .text-center}
 
@@ -166,7 +166,7 @@ In this project, I've designed for an industry I'm unfamiliar with, which has ta
 <div class="section-tall">
     <div class="card bg-secondary border-0 text-center text-dark">
         <div class="card-body">
-            <span class="h1 iconify" data-icon="ic:round-info"></span>
+            <span class="h1 iconify" data-icon="feather:info"></span>
             <p class="lead">I'm still completing this project. Check back later for more details.</p>
         </div>
     </div>
