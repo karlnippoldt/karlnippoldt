@@ -48,7 +48,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 <div class="timeline-row">
     <div class="timeline-col">
         <a href="#research">
-            <img src="/assets/projects/airport/illustrations/research.svg" alt="Illustration of man walking with mobile phone">
+            <img src="/assets/projects/airport/illustrations/research.svg" alt="Illustration of woman laying down, using laptop">
             <p>Research</p>
         </a>
     </div>
@@ -74,7 +74,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 
 ## Research {#research}
 
-![Illustration of man walking with mobile phone](/assets/projects/airport/illustrations/research.svg){: .illustration}
+![Illustration of woman laying down, using laptop](/assets/projects/airport/illustrations/research.svg){: .illustration}
 {: .section .image-margins-x .text-center}
 
 I got the idea for this project when I was picking a friend up from the airport. I realized that, even as an air travel aficionado, I could not think of a single app designed to streamline the pick-up experience for a driver. I enjoy a trip to the airport—seeing a variety of planes from faraway places—but the average person does not.
