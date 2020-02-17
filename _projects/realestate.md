@@ -48,12 +48,43 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 
 # Process
 
-![Timeline of project process](/assets/projects/realestate/timeline.png){: .img-fluid}
-{: .d-none .d-md-block .section-tall .section-wide}
-![Timeline of project process](/assets/projects/realestate/timeline_small.png){: .img-fluid}
-{: .d-block .d-md-none .section-tall}
+<div class="timeline-row">
+    <div class="timeline-col">
+        <a href="#research">
+            <img src="/assets/projects/realestate/illustrations/research.svg" alt="Illustration of house with magnifying glass">
+            <p>Research</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#personas">
+            <img src="/assets/projects/realestate/illustrations/personas.svg" alt="Illustration of a woman and a man next to each other">
+            <p>Personas</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#sketches">
+            <img src="/assets/projects/realestate/illustrations/sketches.svg" alt="Illustration of a woman sketching user interface elements">
+            <p>Sketches and Wireframes</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#design">
+            <img src="/assets/projects/realestate/illustrations/design.svg" alt="Illustration of a canvas with sketches next to a tablet computer">
+            <p>Design</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#prototype">
+            <img src="/assets/projects/realestate/illustrations/prototype.svg" alt="Illustration of pages on a website">
+            <p>Prototype</p>
+        </a>
+    </div>
+</div>
 
-## Research
+## Research {#research}
+
+![Illustration of house with magnifying glass](/assets/projects/realestate/illustrations/research.svg){: .illustration}
+{: .section .image-margins-x .text-center}
 
 We began our project by undertaking to understand the users of this product. My team's prior exprience in the real estate industry was limited, so we devoted quite a bit of time to this task.
 
@@ -80,7 +111,11 @@ Users were, for the most part, satisfied with the functionality the product offe
 <a class="btn btn-primary btn-lg" href="/assets/projects/realestate/survey_results.pdf" target="_blank">View survey results summary <span class="iconify" data-icon="feather:external-link"></span></a>
 {: .section .text-center}
 
-## Personas
+## Personas {#personas}
+
+![Illustration of a woman and a man next to each other](/assets/projects/realestate/illustrations/personas.svg){: .illustration}
+{: .section .image-margins-x .text-center}
+
 
 From the information we learned about the users from our research, we created personas and storyboards.
 {: .lead}
@@ -95,7 +130,10 @@ From the information we learned about the users from our research, we created pe
 {% assign images_width="1999,1999" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
 
-## Sketches and Wireframes
+## Sketches and Wireframes {#sketches}
+
+![Illustration of a woman sketching user interface elements](/assets/projects/realestate/illustrations/sketches.svg){: .illustration}
+{: .section .image-margins-x .text-center}
 
 My team began designing a new interface together, beginning with sketching designs on a whiteboard.
 {: .lead}
@@ -117,7 +155,11 @@ With a clearer idea of what our screens should look like, I created wireframes u
 
 A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. While we were able to make significant progress despite not being able to use the product, we later encountered delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
-## Design
+## Design {#design}
+
+![Illustration of a canvas with sketches next to a tablet computer](/assets/projects/realestate/illustrations/design.svg){: .illustration}
+{: .section .image-margins-x .text-center}
+
 Using the company styles available to me, I created high-fidelity designs in Figma.
 {: .lead}
 
@@ -142,7 +184,11 @@ I toned down the colors in the initial design for a more conservative, businessl
 {% assign images_width="1280,1280" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true border=true caption=true %}
 
-## Prototype
+## Prototype {#prototype}
+
+![Illustration of pages on a website](/assets/projects/realestate/illustrations/prototype.svg){: .illustration}
+{: .section .image-margins-x .text-center}
+
 From the mockups, I created an interactive prototype to validate our final design.
 {: .lead}
 

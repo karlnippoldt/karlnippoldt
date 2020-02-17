@@ -45,7 +45,37 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 
 # Process
 
-## Research
+<div class="timeline-row">
+    <div class="timeline-col">
+        <a href="#research">
+            <img src="/assets/projects/airport/illustrations/research.svg" alt="Illustration of man walking with mobile phone">
+            <p>Research</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#sketches">
+            <img src="/assets/projects/airport/illustrations/sketches.svg" alt="Illustration of a woman sketching user interface elements">
+            <p>Sketches and Wireframes</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#design">
+            <img src="/assets/projects/airport/illustrations/design.svg" alt="Illustration of a man next to mobile app designs">
+            <p>Design</p>
+        </a>
+    </div>
+    <div class="timeline-col">
+        <a href="#prototype">
+            <img src="/assets/projects/airport/illustrations/prototype.svg" alt="Illustration of a man standing next to a mobile phone">
+            <p>Prototype</p>
+        </a>
+    </div>
+</div>
+
+## Research {#research}
+
+![Illustration of man walking with mobile phone](/assets/projects/airport/illustrations/research.svg){: .illustration}
+{: .section .image-margins-x .text-center}
 
 I got the idea for this project when I was picking a friend up from the airport. I realized that, even as an air travel aficionado, I could not think of a single app designed to streamline the pick-up experience for a driver. I enjoy a trip to the airport—seeing a variety of planes from faraway places—but the average person does not.
 
@@ -56,7 +86,11 @@ I initially planned on designing a separate app for drivers to receive flight up
 
 A set of features like this would likely be most successful as part of an existing airline's website because the friction in the onboarding process could be reduced significantly. I chose Southwest Airlines because their target customer is budget-conscious—the kind of traveler who might get a ride to and from the airport from friends or family instead of paying for an Uber.
 
-## Sketches and Wireframes
+## Sketches and Wireframes {#sketches}
+
+![Illustration of a woman sketching user interface elements](/assets/projects/airport/illustrations/sketches.svg){: .illustration}
+{: .section .image-margins-x .text-center}
+
 To begin solving the problem of a stressful airport experience, I created a simple user flow for an Airport Pick-Up Assistant feature.
 {: .lead}
 
@@ -67,7 +101,10 @@ The user flow follows them from the beginning of the interaction with the websit
 {% assign images_width="1470,1470,1470" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 
-## Design
+## Design {#design}
+
+![Illustration of a man next to mobile app designs](/assets/projects/airport/illustrations/design.svg){: .illustration}
+{: .section .image-margins-x .text-center}
 
 A number of the UI elements in the Pick-Up Assistant—especially in the flow to select the correct flights—exist already in the Southwest website. I didn't want to reinvent the wheel—Southwest has a great brand already.
 
@@ -93,7 +130,11 @@ Even with my changes to existing UI elements, they still retain most of the orig
 {% assign images_width="375,375" | split: ',' %}
 {% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
 
-## Prototype
+## Prototype {#prototype}
+
+![Illustration of a man standing next to a mobile phone](/assets/projects/airport/illustrations/prototype.svg){: .illustration}
+{: .section .image-margins-x .text-center}
+
 With the user flow, I created mockups of each of this feature's screens, making them interactive using Figma.
 {: .lead}
 
