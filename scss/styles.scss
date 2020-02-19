@@ -147,7 +147,7 @@ p {
     @extend .row, .justify-content-center, .section-t, .section-tall-b, .section-wide, .bg-light, .rounded, .m-0, .p-4;
     .timeline-col {
       //d-flex and flex-column are in both places so it aligns correctly with a link or not
-      @extend .col-6, .col-md-4, .col-lg, .d-flex, .flex-column;
+      @extend .col-6, .col-md, .d-flex, .flex-column;
       a {
         @extend .d-flex, .flex-column;
         height: 100%;
@@ -160,7 +160,8 @@ p {
         font-family: $font-family-base;
       }
       &:not(:last-child):after {
-        content: url(/assets/chevron-right.svg);
+        height: 24px;
+        content: url('https://api.iconify.design/feather:chevron-right.svg?color=%23000&height=24');
         position: absolute;
         right: 0;
         top: 50%;  /* position the top  edge of the element at the middle of the parent */
@@ -229,9 +230,19 @@ ul.tags {
   @extend .mb-3, .mb-md-0;
 }
 
+// Remove underline for link in figure caption
+.figure a:hover {
+  text-decoration: none;
+}
+
 // Display card class for homepage
 .card-display {
   @extend .card, .bg-light, .border-0, .p-4, .py-md-5, .px-md-8;
+}
+
+// Override fancybox styles
+.fancybox-caption {
+  font-size: 90% !important;
 }
 
 // Reduce list padding

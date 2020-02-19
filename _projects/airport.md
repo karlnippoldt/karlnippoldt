@@ -1,5 +1,4 @@
 ---
-image_modal: true
 order: 2
 title: Airport Pick-Up Assistant Concept
 date: 2020-01-31
@@ -33,7 +32,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 {% assign images="/assets/projects/airport/showcase_1.png,/assets/projects/airport/showcase_2.png" | split: ',' %}
 {% assign images_alt="Pick-Up Assistant: driver view,Pick-Up Assistant: traveler view" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width caption=true modal=true %}
+{% include img_thumbs.html id="showcase" images=images images_alt=images_alt images_width=images_width caption=true%}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
     View Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
@@ -48,25 +47,25 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 <div class="timeline-row">
     <div class="timeline-col">
         <a href="#research">
-            <img src="/assets/projects/airport/illustrations/research.svg" alt="Illustration of woman laying down, using laptop">
+            <img src="/assets/projects/airport/illustrations/research.svg" alt="">
             <p>Research</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#sketches">
-            <img src="/assets/projects/airport/illustrations/sketches.svg" alt="Illustration of a woman sketching user interface elements">
+            <img src="/assets/projects/airport/illustrations/sketches.svg" alt="">
             <p>Sketches and Wireframes</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#design">
-            <img src="/assets/projects/airport/illustrations/design.svg" alt="Illustration of a man next to mobile app designs">
+            <img src="/assets/projects/airport/illustrations/design.svg" alt="">
             <p>Design</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#prototype">
-            <img src="/assets/projects/airport/illustrations/prototype.svg" alt="Illustration of a man standing next to a mobile phone">
+            <img src="/assets/projects/airport/illustrations/prototype.svg" alt="">
             <p>Prototype</p>
         </a>
     </div>
@@ -99,7 +98,7 @@ The user flow follows them from the beginning of the interaction with the websit
 {% assign images="/assets/projects/airport/flow.jpg,/assets/projects/airport/sketches_1.jpg,/assets/projects/airport/sketches_2.jpg" | split: ',' %}
 {% assign images_alt="User flow for Airport Pick-Up Assistant,Sketches of a potential home screen,Sketches of user interface components" | split: ',' %}
 {% assign images_width="1470,1470,1470" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
+{% include img_thumbs.html id="sketches" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 ## Design {#design}
 
@@ -123,12 +122,12 @@ Even with my changes to existing UI elements, they still retain most of the orig
 {% assign images="/assets/projects/airport/flyer_info_before.png,/assets/projects/airport/flyer_info_after.png" | split: ',' %}
 {% assign images_alt="Before: flight information screen while boarding,After: flight information screen while boarding" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
+{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 {% assign images="/assets/projects/airport/status_before.png,/assets/projects/airport/status_after.png" | split: ',' %}
 {% assign images_alt="Before: flight status,After: flight status" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html images=images images_alt=images_alt images_width=images_width modal=true caption=true %}
+{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 ## Prototype {#prototype}
 

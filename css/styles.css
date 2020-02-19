@@ -1066,7 +1066,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-md {
+  .col-md, .project-body div.timeline-row .timeline-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -1112,7 +1112,7 @@ pre code {
     flex: 0 0 25%;
     max-width: 25%;
   }
-  .col-md-4, .project-body div.timeline-row .timeline-col {
+  .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
@@ -1232,7 +1232,7 @@ pre code {
 }
 
 @media (min-width: 992px) {
-  .col-lg, .project-body div.timeline-row .timeline-col {
+  .col-lg {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -10774,7 +10774,8 @@ p.emphasized {
 }
 
 .project-body div.timeline-row .timeline-col:not(:last-child):after {
-  content: url(/assets/chevron-right.svg);
+  height: 24px;
+  content: url("https://api.iconify.design/feather:chevron-right.svg?color=%23000&height=24");
   position: absolute;
   right: 0;
   top: 50%;
@@ -10794,6 +10795,14 @@ p.emphasized {
 
 .resume-card-body h2 span.notbold, .resume-card-body h1 span.notbold {
   font-weight: normal;
+}
+
+.figure a:hover {
+  text-decoration: none;
+}
+
+.fancybox-caption {
+  font-size: 90% !important;
 }
 
 ul {
