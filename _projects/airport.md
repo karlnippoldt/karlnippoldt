@@ -105,7 +105,7 @@ The user flow follows them from the beginning of the interaction with the websit
 ![Illustration of a man next to mobile app designs](/assets/projects/airport/illustrations/design.svg){: .illustration}
 {: .section .image-margins-x .text-center}
 
-A number of the UI elements in the Pick-Up Assistant—especially in the flow to select the correct flights—exist already in the Southwest website. I didn't want to reinvent the wheel—Southwest has a great brand already.
+A number of the UI elements in the Pick-Up Assistant—especially in the flow to select the correct flights—exist already in the Southwest website. I didn't want to reinvent the wheel. Southwest has a great brand already.
 
 I used relevant elements from Southwest's website to maintain consistency with their existing design language.
 {: .lead}
