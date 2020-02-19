@@ -86,7 +86,7 @@ We posted our survey on various UCI social media groups on Facebook, UCI’s sub
 
 {% assign images="/assets/projects/piazza/survey_results_1.png,/assets/projects/piazza/survey_results_2.png" | split: ',' %}
 {% assign images_alt="Results for &quot;What year are you in school?&quot;,Results for &quot;How often do you do the following on the Piazza Q&A section?&quot;" | split: ',' %}
-{% include img_thumbs.html id="survey" images=images images_alt=images_alt border=true caption=true %}
+{% include img_thumbs.html id="lightbox_survey" images=images images_alt=images_alt border=true caption=true %}
 
 {% comment %}
 Missing Survey Results
@@ -105,7 +105,7 @@ We created personas for three primary types of students that use Piazza.
 {% assign images="/assets/projects/piazza/persona_1.jpg,/assets/projects/piazza/persona_2.jpg,/assets/projects/piazza/persona_3.jpg" | split: ',' %}
 {% assign images_alt="Persona for Sally Stark,Persona for David Hwang,Persona for Peter Smith" | split: ',' %}
 {% assign images_width="800,800,800" | split: ',' %}
-{% include img_thumbs.html id="personas" images=images images_alt=images_alt images_width=images_width border=true%}        
+{% include img_thumbs.html id="lightbox_personas" images=images images_alt=images_alt images_width=images_width border=true%}        
 
 * Sally Stark is an active user who both asks and answers questions frequently.
 * David Hwang reads others' questions and answers, but doesn't post any of his own.
@@ -157,42 +157,42 @@ After testing the usability of the current version of Piazza, my team compiled t
 {% assign images="/assets/projects/piazza/history_before.png,/assets/projects/piazza/history_after.png" | split: ',' %}
 {% assign images_alt="Before: history slider,Mockup: history button in Actions" | split: ',' %}
 {% assign images_width="700,700" | split: ',' %}
-{% include img_thumbs.html id="history" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_history" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 **The location of the Follow and Favorite features was difficult for users to find.** In addition, users were unsure of the difference between their functionalities. To resolve this issue, we combined Follow and Favorite into one Bookmarks feature. Bookmarking both sends notifications and saves the post in a list for viewing later.
     
 {% assign images="/assets/projects/piazza/bookmark_before.png,/assets/projects/piazza/bookmark_after.png" | split: ',' %}
 {% assign images_alt="Before: Follow and Favorite features,Mockup: Bookmarks feature" | split: ',' %}
 {% assign images_width="700,700" | split: ',' %}
-{% include img_thumbs.html id="bookmark" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_bookmark" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 **Piazza provides a number of filtering options, but discovering and using them was difficult.** Most users were not aware of the option to filter posts, but had a strong desire for an efficient way to find existing questions. We organized the filtering options and placed them in a toolbar where they are more visible and discoverable.
     
 {% assign images="/assets/projects/piazza/filters_before.png,/assets/projects/piazza/filters_after.png" | split: ',' %}
 {% assign images_alt="Before: different filters in different places,Mockup: organized filters in toolbar" | split: ',' %}
 {% assign images_width="1000,1000" | split: ',' %}
-{% include img_thumbs.html id="filters" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_filters" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 **When a user wrote a post and saved a draft, how to find it later was unclear.** Initially, the draft would appear in a Drafts section in the sidebar, but once the user would leave the draft, it disappeared. The only way to see the Drafts section again is to click New Post. To solve this problem, we added a Drafts button next to the New Question button. When users click this button, a list of drafts appears in the sidebar from which the user can select.
     
 {% assign images="/assets/projects/piazza/drafts_before.png,/assets/projects/piazza/drafts_after.png" | split: ',' %}
 {% assign images_alt="Before: disappearing drafts only in the sidebar,Mockup: drafts button" | split: ',' %}
 {% assign images_width="350,350" | split: ',' %}
-{% include img_thumbs.html id="drafts" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_drafts" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 **The Follow-Up Discussion section was used as a comments section,** with questions posted as follow-ups going unanswered. We changed Follow-Up Discussions to a standard Comments feature, representing how users actually use the feature.
     
 {% assign images="/assets/projects/piazza/post_before.png,/assets/projects/piazza/post_after.png" | split: ',' %}
 {% assign images_alt="Before: original layout of the post page,Mockup: new layout of the post page" | split: ',' %}
 {% assign images_width="700,700" | split: ',' %}
-{% include img_thumbs.html id="post" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_post" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 **Users felt inundated with constant, useless emails.** When users join a class, they were subscribed to emails by default. Users could change the email setting, but because the settings were specific to each class, when they would join a new one, it would be set to the default email settings. We added default email settings that apply to all classes, retaining class-specific settings under an Advanced Options section.
     
 {% assign images="/assets/projects/piazza/email_before.png,/assets/projects/piazza/email_after.png" | split: ',' %}
 {% assign images_alt="Before: email settings per class,Mockup: global email settings" | split: ',' %}
 {% assign images_width="700,700" | split: ',' %}
-{% include img_thumbs.html id="email" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_email" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 After my team completed the mockups, we individually performed heuristic evaluations on each of the design targets.
 {: .lead}

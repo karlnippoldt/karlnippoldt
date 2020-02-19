@@ -35,7 +35,7 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 {% assign images="/assets/projects/realestate/showcase_1.png,/assets/projects/realestate/showcase_2.png" | split: ',' %}
 {% assign images_alt="Home screen,Search screen&comma; geography filter" | split: ',' %}
 {% assign images_width="1280,1280" | split: ',' %}
-{% include img_thumbs.html id="showcase" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_showcase" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
     View Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
@@ -122,12 +122,12 @@ From the information we learned about the users from our research, we created pe
 {% assign images="/assets/projects/realestate/persona_1.png,/assets/projects/realestate/persona_2.png,/assets/projects/realestate/persona_3.png" | split: ',' %}
 {% assign images_alt="Persona for Mark San,Persona for Stacy Rose,Persona for Jacob Williams" | split: ',' %}
 {% assign images_width="1646,1646,1646" | split: ',' %}
-{% include img_thumbs.html id="personas" images=images images_alt=images_alt images_width=images_width border=true caption=true%}
+{% include img_thumbs.html id="lightbox_personas" images=images images_alt=images_alt images_width=images_width border=true caption=true%}
 
 {% assign images="/assets/projects/realestate/storyboard_1.png,/assets/projects/realestate/storyboard_2.png" | split: ',' %}
 {% assign images_alt="Storyboard: Stacy retrieves a saved search,Storyboard: Mark creates a new custom search" | split: ',' %}
 {% assign images_width="1999,1999" | split: ',' %}
-{% include img_thumbs.html id="personas" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_personas" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 ## Sketches and Wireframes {#sketches}
 
@@ -142,7 +142,7 @@ A particularly challenging design problem was creating a screen to refine the ge
 {% assign images="/assets/projects/realestate/sketch_sidebar.jpg,/assets/projects/realestate/sketch_account.jpg" | split: ',' %}
 {% assign images_alt="Sketch: navigation sidebar,Sketch: account settings screen" | split: ',' %}
 {% assign images_width="2016,1512" | split: ',' %}
-{% include img_thumbs.html id="sketches" images=images images_alt=images_alt images_width=images_width caption=true %}
+{% include img_thumbs.html id="lightbox_sketches" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 With a clearer idea of what our screens should look like, I created wireframes using Balsamiq.
 {: .lead}
@@ -150,7 +150,7 @@ With a clearer idea of what our screens should look like, I created wireframes u
 {% assign images="/assets/projects/realestate/wireframe_1.png,/assets/projects/realestate/wireframe_2.png,/assets/projects/realestate/wireframe_3.png" | split: ',' %}
 {% assign images_alt="Wireframe: search&comma; geography filter,Wireframe: search&comma; time period filter,Wireframe: search&comma; loan options filter" | split: ',' %}
 {% assign images_width="1024,1024,1024" | split: ',' %}
-{% include img_thumbs.html id="wireframes" images=images images_alt=images_alt images_width=images_width caption=true%}        
+{% include img_thumbs.html id="lightbox_wireframes" images=images images_alt=images_alt images_width=images_width caption=true%}        
 
 A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. While we were able to make significant progress despite not being able to use the product, we later encountered delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
 
@@ -169,7 +169,7 @@ With these styles and components, I created an initial set of designs for the va
 {% assign images="/assets/projects/realestate/search_before.png,/assets/projects/realestate/settings_before.png" | split: ',' %}
 {% assign images_alt="Initial design: search screen&comma; geography filter,Initial design: settings screen" | split: ',' %}
 {% assign images_width="1280,1280" | split: ',' %}
-{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_design" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 The expert opinion of designers both on and outside the team was our primary source of feedback. After a few screens had been created, I showed the designs to the product manager, who generally liked them, but provided a few suggestions for improvements, primarily to rename some elements to conform to industry standard. Throughout the project, I also consulted with a UX designer at the company, who provided valuable feedback, particularly on information architecture and visual design conventions.
 
@@ -181,7 +181,7 @@ I toned down the colors in the initial design for a more conservative, businessl
 {% assign images="/assets/projects/realestate/search_after.png,/assets/projects/realestate/settings_after.png" | split: ',' %}
 {% assign images_alt="Final design: search screen&comma; geography filter,Final design: settings screen" | split: ',' %}
 {% assign images_width="1280,1280" | split: ',' %}
-{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
+{% include img_thumbs.html id="lightbox_design" images=images images_alt=images_alt images_width=images_width border=true caption=true %}
 
 ## Prototype {#prototype}
 

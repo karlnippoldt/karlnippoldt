@@ -32,7 +32,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 {% assign images="/assets/projects/airport/showcase_1.png,/assets/projects/airport/showcase_2.png" | split: ',' %}
 {% assign images_alt="Pick-Up Assistant: driver view,Pick-Up Assistant: traveler view" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html id="showcase" images=images images_alt=images_alt images_width=images_width caption=true%}
+{% include img_thumbs.html id="lightbox_showcase" images=images images_alt=images_alt images_width=images_width caption=true%}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
     View Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
@@ -98,7 +98,7 @@ The user flow follows them from the beginning of the interaction with the websit
 {% assign images="/assets/projects/airport/flow.jpg,/assets/projects/airport/sketches_1.jpg,/assets/projects/airport/sketches_2.jpg" | split: ',' %}
 {% assign images_alt="User flow for Airport Pick-Up Assistant,Sketches of a potential home screen,Sketches of user interface components" | split: ',' %}
 {% assign images_width="1470,1470,1470" | split: ',' %}
-{% include img_thumbs.html id="sketches" images=images images_alt=images_alt images_width=images_width caption=true %}
+{% include img_thumbs.html id="lightbox_sketches" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 ## Design {#design}
 
@@ -122,12 +122,12 @@ Even with my changes to existing UI elements, they still retain most of the orig
 {% assign images="/assets/projects/airport/flyer_info_before.png,/assets/projects/airport/flyer_info_after.png" | split: ',' %}
 {% assign images_alt="Before: flight information screen while boarding,After: flight information screen while boarding" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width caption=true %}
+{% include img_thumbs.html id="lightbox_design" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 {% assign images="/assets/projects/airport/status_before.png,/assets/projects/airport/status_after.png" | split: ',' %}
 {% assign images_alt="Before: flight status,After: flight status" | split: ',' %}
 {% assign images_width="375,375" | split: ',' %}
-{% include img_thumbs.html id="design" images=images images_alt=images_alt images_width=images_width caption=true %}
+{% include img_thumbs.html id="lightbox_design" images=images images_alt=images_alt images_width=images_width caption=true %}
 
 ## Prototype {#prototype}
 
