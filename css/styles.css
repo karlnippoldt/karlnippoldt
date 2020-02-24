@@ -7737,17 +7737,19 @@ button.bg-dark:focus {
 }
 
 .mr-3,
-.mx-3 {
+.mx-3,
+.project-body div.timeline-row .timeline-col img {
   margin-right: 1rem !important;
 }
 
-.mb-3, .image-margins, .image-margins-b,
+.mb-3, .project-body div.timeline-row .timeline-col img, .image-margins, .image-margins-b,
 .my-3 {
   margin-bottom: 1rem !important;
 }
 
 .ml-3,
-.mx-3 {
+.mx-3,
+.project-body div.timeline-row .timeline-col img {
   margin-left: 1rem !important;
 }
 
@@ -7961,19 +7963,17 @@ button.bg-dark:focus {
 }
 
 .pr-3,
-.px-3,
-.project-body div.timeline-row .timeline-col img {
+.px-3 {
   padding-right: 1rem !important;
 }
 
-.pb-3, .project-body div.timeline-row .timeline-col img,
+.pb-3,
 .py-3 {
   padding-bottom: 1rem !important;
 }
 
 .pl-3,
-.px-3,
-.project-body div.timeline-row .timeline-col img {
+.px-3 {
   padding-left: 1rem !important;
 }
 
