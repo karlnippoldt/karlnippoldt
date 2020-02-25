@@ -193,7 +193,7 @@ From the mockups, I created an interactive prototype to validate our final desig
 
 <div id="mockup" class="section section-wide">
     <div class="rounded embed-responsive embed-responsive-16by11">
-        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIVvee09cUX1MMCdSDHkyiB%2FRealtrack-Mockups%3Fscaling%3Dcontain%26node-id%3D14%253A29" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHZ4a73YKOOzJQxJoTLZOvd%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" allowfullscreen></iframe>
     </div>
 </div>
 
