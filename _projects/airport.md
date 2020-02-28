@@ -35,7 +35,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 {% include img_thumbs.html id="lightbox_showcase" images=images images_alt=images_alt images_width=images_width caption=true%}
 
 <a class="btn btn-secondary btn-lg" href="#mockup" role="button">
-    View Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
+    Skip to Mockup <span class="iconify" data-icon="feather:arrow-down"></span>
 </a>
 {: .text-center}
 
