@@ -1,4 +1,1 @@
 User-agent: *
-Disallow: /assets/projects/
-Disallow: /about
-Disallow: /about.html
