@@ -8,9 +8,6 @@ exclude:
   - vendor/ruby/
   - bootstrap
 
-plugins:
-  - jekyll-redirect-from
-
 collections:
   projects:
     output: true
