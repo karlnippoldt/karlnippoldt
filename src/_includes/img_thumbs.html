@@ -1,0 +1,25 @@
+{% comment %}
+Include:
+id (optional, string, for lightbox gallery)
+images (array)
+images_alt (array)
+images_width (optional, array)
+
+Options:
+border: boolean
+caption: boolean
+{% endcomment %}
+<div class="section section-wide">
+	<div class="row align-items-center">
+		{% for src in images %}
+		<div class="col-md image-margins text-center">
+			<figure class="figure my-0">
+				<a data-fancybox="{{ include.id }}" data-caption="{{ include.images_alt[forloop.index0] }}"{% if include.images_width %} data-width="{{ include.images_width[forloop.index0] }}"{% endif %} href="{{ src }}">
+					<img class="figure-img img-fluid{% if include.border %} img-thumbnail{% endif %}" src="{{ src }}"{% if include.images_width %} width="{{ include.images_width[forloop.index0] }}"{% endif %} alt="{% unless include.caption %}{{ include.images_alt[forloop.index0] }}{% endunless %}">
+					{% if include.caption %}<figcaption class="figure-caption text-center">{{ include.images_alt[forloop.index0] }}</figcaption> {% endif %}
+				</a>
+			</figure>
+		</div>
+		{% endfor %}
+	</div>
+</div>

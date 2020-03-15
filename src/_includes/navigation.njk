@@ -1,0 +1,29 @@
+{#
+align-items-center: vertically aligns columns
+justify-content-md-between: adds space in between the two columns
+mx-md-0, px-md-0: remove horizontal gutters but not vertical
+col-md-auto: resize column to fit contents
+#}
+
+<div class="row align-items-center justify-content-md-between mx-md-0 section section-wide navigation">
+    <div class="col-12 col-md-auto px-md-0 text-center">
+        <h1 class="mb-md-0"><a href="/">Karl Nippoldt</a></h1>
+    </div>
+    <div class="col-12 col-md-auto px-md-0 text-center">
+        {% set navigation = collections.all | eleventyNavigation %}
+        {{ navPages | dump | safe }}
+        <nav>
+            <ul class="nav nav-pills justify-content-center">
+                {% for item in navigation %}
+                <li class="nav-item">
+                    {% if not item.icon %}
+                    <a class="nav-link{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+                    {% else %}
+                    <a class="nav-link" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>    
+        </nav>
+    </div>
+</div>

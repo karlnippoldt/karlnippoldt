@@ -1,0 +1,39 @@
+---
+layout: default.njk
+# Variables:
+# hidden: if true, hides from homepage and resume
+# order: order number for homepage list
+# title: title
+# date: YYYY-MM-DD format
+# date_string: String representation of date
+# role: OPTIONAL my role in the project
+# skills:
+#	- list of
+#	- tags
+# description: Paragraph describing project
+# resume_description: Shorter description for resume
+# thumbnail: /assets/xxx.png
+# thumbnail_alt: alt text for thumbnail
+---
+<div class="section-tall section-wide">
+	<div class="row align-items-center">
+		<div class="col-md-7 col-lg-8">
+			<div>
+				<h1>{{ title }}</h1>
+				<p class="emphasized">
+					{% if role %}<span class="line">{{ role }} <span class="gray">/</span> </span>{% endif %}
+					<span class="line">{{ date_string }}</span>
+				</p>
+				<ul class="tags">{% for skill in skills %}<li>{{ skill }}</li>{% endfor %}</ul>
+				<p class="lead">{{ description }}</p>	
+			</div>
+		</div>
+		<div class="col-md-5 col-lg-4 image-margins order-first order-md-last">
+			<img src="{{ thumbnail }}" class="img-fluid" alt="{{ thumbnail_alt }}">
+		</div>
+	</div>
+</div>
+<div class="project-body">
+	{{ content }}
+</div>
+{% include scripts.html fancybox=true %}
