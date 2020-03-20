@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Real Estate Analysis Product
+  key: Real Estate Analysis
   parent: Projects
 tags: project
 title: Real Estate Market Analysis Product Redesign
