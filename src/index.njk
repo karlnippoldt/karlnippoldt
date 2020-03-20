@@ -1,0 +1,26 @@
+---
+eleventyNavigation:
+  key: Projects
+  order: 1
+---
+<div class="card-display section-tall section-wide">
+	<p class="h1 display-1">Hi, I'm Karl.</p>
+	<p class="lead mt-md-4">I'm a UX Designer with experience in user-centered design processes, prototyping tools, and front-end development. I'm looking for a UX design position that draws on my passion for good design in the products and experiences I create and use every day.</p>	
+</div>
+<div id="projects">
+	{% for project in collections.project | reverse %}
+	{% if not project.data.hidden %}
+	{% ProjectSummary {
+		title: project.data.title,
+		url: project.url,
+		dateString: project.data.date_string,
+		role: project.data.role,
+		skills: project.data.skills,
+		description: project.data.description,
+		thumbnail: project.data.thumbnail,
+		thumbnailAlt: project.data.thumbnail_alt,
+		link: true
+	}%}
+	{% endif %}
+	{% endfor %}
+</div>

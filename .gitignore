@@ -1,6 +1,6 @@
 vendor
 .bundle
-_site
+public
 .DS_Store
 *.code-workspace
-.jekyll-cache
+node_modules

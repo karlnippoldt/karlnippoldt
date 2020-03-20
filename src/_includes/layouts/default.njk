@@ -1,0 +1,20 @@
+---
+siteTitle: Karl Nippoldt
+---
+<!DOCTYPE html>
+<html lang="en">
+	{% include "head.njk" %}
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-9">
+					{% include "navigation.njk" %}
+					{{ content | safe }}
+					{% include "copyright.html" %}		
+				</div>
+			</div>
+		</div>
+	{% include "analytics.html" %}
+	{% include "scripts.njk" %}
+	</body>
+</html>

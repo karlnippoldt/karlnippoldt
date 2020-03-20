@@ -1,0 +1,30 @@
+---
+layout: default.njk
+fancybox: true
+# Variables:
+# hidden: if true, hides from homepage and resume
+# order: order number for homepage list
+# title: title
+# date: YYYY-MM-DD format
+# date_string: String representation of date
+# role: OPTIONAL my role in the project
+# skills:
+#	- list of
+#	- tags
+# description: Paragraph describing project
+# resume_description: Shorter description for resume
+# thumbnail: /assets/xxx.png
+# thumbnail_alt: alt text for thumbnail
+---
+{% ProjectSummary {
+	title: title,
+	dateString: date_string,
+	role: role,
+	skills: skills,
+	description: description,
+	thumbnail: thumbnail,
+	thumbnailAlt: thumbnail_alt
+}%}
+<div class="project-body">
+	{{ content | safe }}
+</div>

@@ -1,0 +1,36 @@
+{#
+align-items-center: vertically aligns columns
+justify-content-md-between: adds space in between the two columns
+mx-md-0, px-md-0: remove horizontal gutters but not vertical
+col-md-auto: resize column to fit contents
+#}
+
+<div class="row align-items-center justify-content-md-between mx-md-0 section section-wide navigation">
+    <div class="col-12 col-md-auto px-md-0 text-center">
+        <h1 class="mb-md-0"><a href="/">Karl Nippoldt</a></h1>
+    </div>
+    <div class="col-12 col-md-auto px-md-0 text-center">
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% macro renderChildNavListItem(item) %}
+        <a class="dropdown-item{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endmacro %}
+        {% macro renderNavListItem(item) %}
+        <div class="btn-group">
+            {% if not item.icon %}
+            <a class="btn{% if item.url == page.url %} btn-primary{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+            {% else %}
+            <a class="btn" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
+            {% endif %}
+            {% if item.children.length %}
+            <a class="btn{% if item.url == page.url %} btn-primary{% endif %} dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu dropdown-menu-right">
+                {% for child in item.children | reverse %}{{ renderChildNavListItem(child) }}{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endmacro %}
+        <nav class="justify-content-center">
+            {% for item in navPages %}{{ renderNavListItem(item) }}{% endfor %}
+        </nav>
+    </div>
+</div>
