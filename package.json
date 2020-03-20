@@ -9,11 +9,10 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "bootstrap": "^4.4.1",
     "eleventy-plugin-lazyimages": "^1.0.5",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-shell": "^0.8.0",
     "html-minifier": "^4.0.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1"
   },
   "dependencies": {}
 }

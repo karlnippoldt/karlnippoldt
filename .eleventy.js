@@ -25,8 +25,9 @@ module.exports = function(eleventyConfig) {
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js": "assets/scripts/bootstrap.bundle.min.js" });
-  eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist/jquery.slim.min.js": "assets/scripts/jquery.slim.min.js" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js": "assets/scripts/bootstrap" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist": "assets/scripts/jquery" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/popper.js/dist/umd": "assets/scripts/popper.js" });
 
   // Paired shortcodes
   eleventyConfig.addPairedShortcode("section", Section);
