@@ -10,20 +10,27 @@ col-md-auto: resize column to fit contents
         <h1 class="mb-md-0"><a href="/">Karl Nippoldt</a></h1>
     </div>
     <div class="col-12 col-md-auto px-md-0 text-center">
-        {% set navigation = collections.all | eleventyNavigation %}
-        {{ navPages | dump | safe }}
-        <nav>
-            <ul class="nav nav-pills justify-content-center">
-                {% for item in navigation %}
-                <li class="nav-item">
-                    {% if not item.icon %}
-                    <a class="nav-link{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
-                    {% else %}
-                    <a class="nav-link" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>    
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% macro renderChildNavListItem(item) %}
+        <a class="dropdown-item{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endmacro %}
+        {% macro renderNavListItem(item) %}
+        <div class="btn-group">
+            {% if not item.icon %}
+            <a class="btn{% if item.url == page.url %} btn-primary{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+            {% else %}
+            <a class="btn" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
+            {% endif %}
+            {% if item.children.length %}
+            <a class="btn{% if item.url == page.url %} btn-primary{% endif %} dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu dropdown-menu-right">
+                {% for child in item.children | reverse %}{{ renderChildNavListItem(child) }}{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endmacro %}
+        <nav class="justify-content-center">
+            {% for item in navPages %}{{ renderNavListItem(item) }}{% endfor %}
         </nav>
     </div>
 </div>

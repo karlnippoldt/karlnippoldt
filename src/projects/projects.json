@@ -1,1 +1,1 @@
-{ "layout": "project.liquid" }
+{ "layout": "project.njk" }

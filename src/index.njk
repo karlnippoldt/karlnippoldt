@@ -10,25 +10,17 @@ eleventyNavigation:
 <div id="projects">
 	{% for project in collections.project | reverse %}
 	{% if not project.data.hidden %}
-	<div class="section-tall section-wide">
-		<div class="row align-items-center">
-			<div class="col-md-7 col-lg-8">
-				<div>
-					<h1><a href="{{ project.url }}">{{ project.data.title }}</a></h1>
-					<p class="emphasized">
-						{% if project.data.role %}<span class="line">{{ project.data.role }} <span class="gray">/</span> </span>{% endif %}
-						<span class="line">{{ project.data.date_string }}</span>
-					</p>
-					<ul class="tags">{% for tag in project.data.skills %}<li>{{ tag }}</li>{% endfor %}</ul>
-					<p>{{ project.data.description }}</p>
-					<a href="{{ project.url }}" class="btn btn-secondary">More about this project <span class="iconify" data-icon="feather:chevron-right"></span></a>
-				</div>
-			</div>
-			<div class="col-md-5 col-lg-4 image-margins order-first order-md-last">
-				<a href="{{ project.url }}"><img src="{{ project.data.thumbnail }}" class="img-fluid" alt="{{ project.data.thumbnail_alt }}"></a>
-			</div>
-		</div>
-	</div>
+	{% ProjectSummary {
+		title: project.data.title,
+		url: project.url,
+		dateString: project.data.date_string,
+		role: project.data.role,
+		skills: project.data.skills,
+		description: project.data.description,
+		thumbnail: project.data.thumbnail,
+		thumbnailAlt: project.data.thumbnail_alt,
+		link: true
+	}%}
 	{% endif %}
 	{% endfor %}
 </div>

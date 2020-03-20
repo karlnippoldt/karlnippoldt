@@ -48,7 +48,7 @@ $embed-responsive-aspect-ratios: (
 $enable-responsive-font-sizes: true;
 $modal-fade-transform: none;
 
-@import "./bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Enable smooth scrolling (pretty much only works in Chromium-based browsers)
 html {
@@ -90,13 +90,15 @@ html {
       text-decoration: none;
     }
   }
-  ul.nav {
-    .nav-link {
-      padding: 0.25em 0.4em;
+  nav {
+    .btn {
+      padding: 0.25em 0.25em;
       line-height: 1;
     }
-    .nav-item {
-      @include font-size($font-size-base * 0.9);
+    .btn, .dropdown-item {
+      @include font-size($font-size-base * 0.85);
+    }
+    .btn-group {
       &:not(:last-child) {
         margin-right: 0.5rem;
       }
@@ -119,7 +121,7 @@ p {
 
 // Add project body styles
 .project-body {
-  h1 {
+  /*h1 {
     @extend .section-tall-t;
     + h2 {
       @extend .mt-auto;
@@ -127,13 +129,9 @@ p {
   }
   h2 {
     @extend .section-t;
-  }
+  }*/
   p, ul {
     font-family: 'Noto Serif', serif;
-    &.lead {
-      font-weight: bold;
-      font-style: italic;
-    }
     .btn {
       font-family: $font-family-base;
     }
@@ -142,6 +140,10 @@ p {
     font-family: $font-family-base;
     font-weight: initial;
     font-style: initial;
+  }
+  div.lead p {
+    font-weight: bold;
+    font-style: italic;
   }
   div.timeline-row {
     @extend .row, .justify-content-center, .section-t, .section-tall-b, .section-wide, .bg-light, .rounded, .m-0, .p-4;

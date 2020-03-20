@@ -1,0 +1,104 @@
+---
+title: Résumé
+eleventyNavigation:
+  key: Résumé
+  order: 2
+---
+<div class="text-center">
+{% Button {
+	text: "View PDF",
+	icon: "feather:external-link",
+	href: "/assets/pdf/resume.pdf",
+	newWindow: true
+} %}
+</div>
+<div class="card section">
+	<div class="resume-card-body">
+		<h1>Education</h1>
+		<h2>University of California, Irvine</h2>
+		<p>
+			Bachelor of Science, Informatics <span class="gray">/</span> June 2020
+			<br>Specialization in Human-Computer Interaction
+			<br><i>3.69 GPA</i>
+		</p>
+		<h1>Projects</h1>
+		{% for project in collections.project | reverse %}
+		{% if not project.data.hidden %}
+		<h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+		<p>
+			{% if project.data.role %}<span class="line">{{ project.data.role }} <span class="gray">/</span></span>{% endif %}
+			<span class="line">{{ project.data.date_string }}</span>
+			<ul>
+				{% for desc_item in project.data.resume_description %}
+				<li><i>{{ desc_item }}</i></li>
+				{% endfor %}
+			</ul>
+		</p>
+		{% endif %}
+		{% endfor %}
+		<h1>Work Experience</h1>
+		<h2>Urban Plates<span class="notbold">, Irvine, CA</span></h2>
+		<p>
+			Cashier <span class="gray">/</span> September 2019–Present
+			<ul>
+				<li><i>Ensure satisfaction by accommodating guests’ requests, serving desserts and beverages, and accurately entering orders into the POS system</i></li>
+			</ul>
+		</p>
+		<h2>Dreams for Schools<span class="notbold">, Irvine, CA</span></h2>
+		<p>
+			Summer STEM Mentor <span class="gray">/</span> June 2019–July 2019
+			<ul>
+				<li><i>Taught programming and STEM concepts to elementary school children from  3<sup>rd</sup> through 6<sup>th</sup> grade with a team of five</i></li>
+			</ul>
+		</p>
+		<h2>Panera Bread<span class="notbold">, Irvine, CA</span></h2>
+		<p>
+			Associate Trainer <span class="gray">/</span> March 2017–June 2019
+			<ul>
+				<li><i>Established clear communication with guests, working on a team to ensure cleanliness, order accuracy, and a positive guest experience</i></li>
+			</ul>
+		</p>
+		<h2>University of California, Irvine<span class="notbold">, Irvine, CA</span></h2>
+		<p>
+			Summer Conference Assistant <span class="gray">/</span> June 2018–September 2018
+			<ul>
+				<li><i>Ensured client satisfaction for residential conferences and camps by providing consistent communication and customer service alongside a team of 12</i></li>
+			</ul>
+		</p>
+		<h1>Skills</h1>
+		<div class="row">
+			<div class="col-md-5">
+				<h2>Processes</h2>
+				<ul>
+					<li>User-centered design</li>
+					<li>Wireframing</li>
+					<li>Prototyping</li>
+					<li>Agile development</li>
+					<li>Requirements and design documentation</li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<h2>Tools</h2>
+				<ul>
+					<li>Figma</li>
+					<li>Balsamiq</li>
+					<li>Photoshop</li>
+					<li>NPM</li>
+					<li>Git</li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<h2>Languages</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Sass</li>
+					<li>JavaScript</li>
+					<li>TypeScript</li>
+					<li>Angular</li>
+					<li>Python</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

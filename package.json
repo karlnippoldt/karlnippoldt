@@ -1,10 +1,19 @@
 {
+  "name": "karlnippoldt",
+  "version": "1.0.0",
+  "description": "Personal website and portfolio for Karl Nippoldt",
+  "author": "Karl Nippoldt <karlnippoldt@users.noreply.github.com>",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
+    "bootstrap": "^4.4.1",
+    "eleventy-plugin-lazyimages": "^1.0.5",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
-    "gulp-shell": "^0.8.0"
+    "gulp-shell": "^0.8.0",
+    "html-minifier": "^4.0.0",
+    "jquery": "^3.4.1"
   },
   "dependencies": {}
 }
