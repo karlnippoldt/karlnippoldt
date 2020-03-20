@@ -144,12 +144,9 @@ We created personas for three primary types of students that use Piazza.
     caption: true
 } %}
 
-{# Weird markdown bug means that this has to be in html #}
-<ul>
-    <li>Sally Stark is an active user who both asks and answers questions frequently.</li>
-    <li>David Hwang reads others' questions and answers, but doesn't post any of his own.</li>
-    <li>Peter Smith checks Piazza frequently and posts questions, but doesn't answer others' questions.</li>
-</ul>
+* Sally Stark is an active user who both asks and answers questions frequently.
+* David Hwang reads others' questions and answers, but doesn't post any of his own.
+* Peter Smith checks Piazza frequently and posts questions, but doesn't answer others' questions.
 
 {% section classStr="text-center" %}
 {% Button {
