@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js": "assets/scripts/bootstrap" });
   eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist": "assets/scripts/jquery" });
   eleventyConfig.addPassthroughCopy({ "node_modules/popper.js/dist/umd": "assets/scripts/popper.js" });
