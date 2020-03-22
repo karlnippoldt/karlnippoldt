@@ -15,7 +15,7 @@ description: I streamlined the process of picking up friends and family at the a
 resume_description:
     - Streamlined process of picking up friends and family at the airport with added features to Southwest Airlines mobile website, integrating with existing brand
     - Created an interactive prototype using Figma
-thumbnail: /assets/images/projects/airport/thumbnail.png
+thumbnail: projects/airport/thumbnail.png
 thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 ---
 {% section %}
@@ -42,9 +42,9 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/airport/showcase_1.png","/assets/images/projects/airport/showcase_2.png"],
+    imagesSrc: ["projects/airport/showcase_1.png","projects/airport/showcase_2.png"],
     imagesAltText: ["Pick-Up Assistant: driver view","Pick-Up Assistant: traveler view"],
-    imagesWidth: [375, 375],
+    imagesWidth: [750, 750],
     id: "lightbox_showcase",
     caption: true
 } %}
@@ -68,25 +68,25 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 <div class="timeline-row">
     <div class="timeline-col">
         <a href="#research">
-            <img src="/assets/images/projects/airport/research.svg" alt="">
+            {% Image src="projects/airport/research.svg", alt="" %}
             <p>Research</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#sketches">
-            <img src="/assets/images/projects/airport/sketches.svg" alt="">
+            {% Image src="projects/airport/sketches.svg", alt="" %}
             <p>Sketches and Wireframes</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#design">
-            <img src="/assets/images/projects/airport/design.svg" alt="">
+            {% Image src="projects/airport/design.svg", alt="" %}
             <p>Design</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#prototype">
-            <img src="/assets/images/projects/airport/prototype.svg" alt="">
+            {% Image src="projects/airport/prototype.svg", alt="" %}
             <p>Prototype</p>
         </a>
     </div>
@@ -96,7 +96,7 @@ thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 ## Research
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/airport/research.svg", alt="Illustration of woman laying down, using laptop", classStr="illustration" %}
+{% Image src="projects/airport/research.svg", alt="Illustration of woman laying down, using laptop", classStr="illustration" %}
 {% endsection %}
 
 I got the idea for this project when I was picking a friend up from the airport. I realized that, even as an air travel aficionado, I could not think of a single app designed to streamline the pick-up experience for a driver. I enjoy a trip to the airport—seeing a variety of planes from faraway places—but the average person does not.
@@ -114,7 +114,7 @@ A set of features like this would likely be most successful as part of an existi
 ## Sketches and Wireframes
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/airport/sketches.svg", alt="Illustration of a woman sketching user interface elements", classStr="illustration" %}
+{% Image src="projects/airport/sketches.svg", alt="Illustration of a woman sketching user interface elements", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -124,10 +124,11 @@ To begin solving the problem of a stressful airport experience, I created a simp
 The user flow follows them from the beginning of the interaction with the website to pick-up. This gave me an idea of what screens would need to be created as part of this feature. I sketched a potential design for a home screen for a standalone app before pivoting towards designing a solution within an airline website. I then sketched a design for each of the components that would make up the final design.
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/airport/flow.jpg","/assets/images/projects/airport/sketches_1.jpg","/assets/images/projects/airport/sketches_2.jpg"],
+    imagesSrc: ["projects/airport/flow.jpg","projects/airport/sketches_1.jpg","projects/airport/sketches_2.jpg"],
     imagesAltText: ["User flow for Airport Pick-Up Assistant","Sketches of a potential home screen","Sketches of user interface components"],
-    imagesWidth: [1470,1470,1470],
+    imagesWidth: [1470,1425,1441],
     id: "lightbox_sketches",
+    no2x: true,
     caption: true
 } %}
 {% endsection %}
@@ -136,7 +137,7 @@ The user flow follows them from the beginning of the interaction with the websit
 ## Design
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/airport/design.svg", alt="Illustration of a man next to mobile app designs", classStr="illustration" %}
+{% Image src="projects/airport/design.svg", alt="Illustration of a man next to mobile app designs", classStr="illustration" %}
 {% endsection %}
 
 A number of the UI elements in the Pick-Up Assistant—especially in the flow to select the correct flights—exist already in the Southwest website. I didn't want to reinvent the wheel. Southwest has a great brand already.
@@ -156,17 +157,17 @@ I also made UI elements much more consistent. In my design, whenever there's a d
 Even with my changes to existing UI elements, they still retain most of the original design and stay true to Southwest's identity.
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/airport/flyer_info_before.png","/assets/images/projects/airport/flyer_info_after.png"],
+    imagesSrc: ["projects/airport/flyer_info_before.png","projects/airport/flyer_info_after.png"],
     imagesAltText: ["Before: flight information screen while boarding","After: flight information screen while boarding"],
-    imagesWidth: [375,375],
+    imagesWidth: [750,750],
     id: "lightbox_design",
     caption: true
 } %}
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/airport/status_before.png","/assets/images/projects/airport/status_after.png"],
+    imagesSrc: ["projects/airport/status_before.png","projects/airport/status_after.png"],
     imagesAltText: ["User flow for Airport Pick-Up Assistant","Sketches of a potential home screen","Sketches of user interface components"],
-    imagesWidth: [375,375],
+    imagesWidth: [750,750],
     id: "lightbox_design",
     caption: true
 } %}
@@ -176,7 +177,7 @@ Even with my changes to existing UI elements, they still retain most of the orig
 ## Prototype
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/airport/prototype.svg", alt="Illustration of a man standing next to a mobile phone", classStr="illustration" %}
+{% Image src="projects/airport/prototype.svg", alt="Illustration of a man standing next to a mobile phone", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -193,13 +194,13 @@ The suggested Where to Meet location is determined based on an airport map and t
     <div class="col-10 col-md-6 col-lg-5">
         <h3>Driver View</h3>
         <div class="embed-responsive embed-responsive-9by16 image-margins-b">
-            <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDdkecWFExTBbTQexpf3Eqz%2FPick-Up-Assistant%3F%26scaling%3Dcontain" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDdkecWFExTBbTQexpf3Eqz%2FPick-Up-Assistant%3F%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
         </div>
     </div>
     <div class="col-10 col-md-6 col-lg-5">
         <h3>Traveler View</h3>
         <div class="embed-responsive embed-responsive-9by16 image-margins-b">
-            <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDdkecWFExTBbTQexpf3Eqz%2FPick-Up-Assistant%3Fnode-id%3D167%253A64%26scaling%3Dcontain" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDdkecWFExTBbTQexpf3Eqz%2FPick-Up-Assistant%3Fnode-id%3D167%253A64%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
         </div>
     </div>
 </div>

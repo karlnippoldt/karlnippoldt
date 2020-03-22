@@ -19,7 +19,13 @@ eleventyNavigation:
             </p>
         </div>
         <div class="col-md-5 col-lg-4 pr-md-5 image-margins order-last order-md-first">
-            <img src="/assets/images/about/karl.jpg" class="img-fluid rounded" alt="Karl Nippoldt standing in front of city skyline">
+            {% Image {
+                src: "about/karl.jpg",
+                alt: "Karl standing in front of city skyline",
+                classStr: "rounded",
+                width: 1000,
+                cols: 3
+            } %}
         </div>
     </div>
 </div>
@@ -27,19 +33,31 @@ eleventyNavigation:
     <h1 class="h2">Things I Enjoy</h1>
     <div class="row">
         <div class="col-6 col-md d-flex flex-column justify-content-between">
-            <img class="img-fluid flex-grow-1 mx-3 mb-3" src="/assets/images/about/coffee.svg" alt="">
+            {% Image {
+                src: "about/coffee.svg",
+                classStr: "flex-grow-1 mx-3 mb-3"
+            } %}
             <p>Making a cup of pour-over coffee every morning</p>
         </div>
         <div class="col-6 col-md d-flex flex-column justify-content-between">
-            <img class="img-fluid flex-grow-1 mx-3 mb-3" src="/assets/images/about/airplane.svg" alt="">
+            {% Image {
+                src: "about/airplane.svg",
+                classStr: "flex-grow-1 mx-3 mb-3"
+            } %}
             <p>Learning about airliners and the aviation industry</p>
         </div>
         <div class="col-6 col-md d-flex flex-column justify-content-between">
-            <img class="img-fluid flex-grow-1 mx-3 mb-3" src="/assets/images/about/food.svg" alt="">
+            {% Image {
+                src: "about/food.svg",
+                classStr: "flex-grow-1 mx-3 mb-3"
+            } %}
             <p>Cooking a meal for friends (or just myself)</p>
         </div>
         <div class="col-6 col-md d-flex flex-column justify-content-between">
-            <img class="img-fluid flex-grow-1 mx-3 mb-3" src="/assets/images/about/travel.svg" alt="">
+            {% Image {
+                src: "about/travel.svg",
+                classStr: "flex-grow-1 mx-3 mb-3"
+            } %}
             <p>Traveling to new places, especially national parks</p>
         </div>
     </div>
