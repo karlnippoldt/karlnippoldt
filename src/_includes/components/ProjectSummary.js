@@ -1,4 +1,5 @@
 const Button = require('./Button.js');
+const Image = require('./Image.js');
 
 module.exports = function({ title, url="", dateString, role, skills, description, thumbnail, thumbnailAlt, link = false } = {}) {
     var tagsCode = "";
@@ -25,7 +26,17 @@ module.exports = function({ title, url="", dateString, role, skills, description
             </div>
         </div>
         <div class="col-md-5 col-lg-4 image-margins order-first order-md-last">
-            ${ link ? `<a href="${ url }"><img src="${ thumbnail }" class="img-fluid" alt="${ thumbnailAlt }"></a>` : `<img src="${ thumbnail }" class="img-fluid" alt="${ thumbnailAlt }">`}
+            ${ link ? `<a href="${ url }">${ Image({
+                src: thumbnail,
+                alt: thumbnailAlt,
+                width: 900,
+                cols: 3
+            }) }</a>` : Image({
+                src: thumbnail,
+                alt: thumbnailAlt,
+                width: 900,
+                cols: 3
+            })}
         </div>
     </div>
 </div>`};

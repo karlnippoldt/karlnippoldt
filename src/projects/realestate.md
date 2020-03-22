@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Real Estate Analysis Product
+  key: Real Estate Analysis
   parent: Projects
 tags: project
 title: Real Estate Market Analysis Product Redesign
@@ -16,7 +16,7 @@ description: I created a modern, usable design for a real estate market analysis
 resume_description:
     - Created a modern, usable design for real estate market analysis software using Figma
     - Conducted user research, including surveys, as part of a user-centered design process
-thumbnail: /assets/images/projects/realestate/thumbnail.png
+thumbnail: projects/realestate/thumbnail.png
 thumbnail_alt: Laptop with real estate market analysis software on screen
 ---
 {% section %}
@@ -44,9 +44,9 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 {% endsection %}
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/showcase_1.png","/assets/images/projects/realestate/showcase_2.png"],
+    imagesSrc: ["projects/realestate/showcase_1.png","projects/realestate/showcase_2.png"],
     imagesAltText: ["Home screen","Search screen, geography filter"],
-    imagesWidth: [1280,1280],
+    imagesWidth: [2560,2560],
     id: "lightbox_showcase",
     border: true,
     caption: true
@@ -71,31 +71,31 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 <div class="timeline-row">
     <div class="timeline-col">
         <a href="#research">
-            <img src="/assets/images/projects/realestate/research.svg" alt="">
+            {% Image src="projects/realestate/research.svg", alt="" %}
             <p>Research</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#personas">
-            <img src="/assets/images/projects/realestate/personas.svg" alt="">
+            {% Image src="projects/realestate/personas.svg", alt="" %}
             <p>Personas</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#sketches">
-            <img src="/assets/images/projects/realestate/sketches.svg" alt="">
+            {% Image src="projects/realestate/sketches.svg", alt="" %}
             <p>Sketches and Wireframes</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#design">
-            <img src="/assets/images/projects/realestate/design.svg" alt="">
+            {% Image src="projects/realestate/design.svg", alt="" %}
             <p>Design</p>
         </a>
     </div>
     <div class="timeline-col">
         <a href="#prototype">
-            <img src="/assets/images/projects/realestate/prototype.svg" alt="">
+            {% Image src="projects/realestate/prototype.svg", alt="" %}
             <p>Prototype</p>
         </a>
     </div>
@@ -105,7 +105,7 @@ thumbnail_alt: Laptop with real estate market analysis software on screen
 ## Research
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/realestate/research.svg", alt="Illustration of house with magnifying glass", classStr="illustration" %}
+{% Image src="projects/realestate/research.svg", alt="Illustration of house with magnifying glass", classStr="illustration" %}
 {% endsection %}
 
 We began our project by undertaking to understand the users of this product. My team's prior exprience in the real estate industry was limited, so we devoted quite a bit of time to this task.
@@ -157,7 +157,7 @@ Users were, for the most part, satisfied with the functionality the product offe
 ## Personas
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/realestate/personas.svg", alt="Illustration of a woman and a man next to each other", classStr="illustration" %}
+{% Image src="projects/realestate/personas.svg", alt="Illustration of a woman and a man next to each other", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -165,15 +165,16 @@ From the information we learned about the users from our research, we created pe
 {% endlead %}
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/persona_1.png","/assets/images/projects/realestate/persona_2.png","/assets/images/projects/realestate/persona_3.png"],
+    imagesSrc: ["projects/realestate/persona_1.png","projects/realestate/persona_2.png","projects/realestate/persona_3.png"],
     imagesAltText: ["Persona for Mark San","Persona for Stacy Rose","Persona for Jacob Williams"],
     imagesWidth: [1646,1646,1646],
     id: "lightbox_personas",
     border: true,
-    caption: true
+    caption: true,
+    no2x: true
 } %}
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/storyboard_1.png","/assets/images/projects/realestate/storyboard_2.png"],
+    imagesSrc: ["projects/realestate/storyboard_1.png","projects/realestate/storyboard_2.png"],
     imagesAltText: ["Storyboard: Stacy retrieves a saved search","Storyboard: Mark creates a new custom search"],
     imagesWidth: [1999,1999],
     id: "lightbox_personas",
@@ -186,7 +187,7 @@ From the information we learned about the users from our research, we created pe
 ## Sketches and Wireframes
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/realestate/sketches.svg", alt="Illustration of a woman sketching user interface elements", classStr="illustration" %}
+{% Image src="projects/realestate/sketches.svg", alt="Illustration of a woman sketching user interface elements", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -196,11 +197,12 @@ My team began designing a new interface together, beginning with sketching desig
 A particularly challenging design problem was creating a screen to refine the geography of a search. The user should be able to choose between different data types (State, County, etc.), and select options within each of them. For problems like this, each member of the team sketched different solutions to this problem. For our final design, we put together the best ideas from each of the sketches. As we encountered further design problems later in development, one other team member and I collaborated using a similar process.
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/sketch_sidebar.jpg","/assets/images/projects/realestate/sketch_account.jpg"],
+    imagesSrc: ["projects/realestate/sketch_sidebar.jpg","projects/realestate/sketch_account.jpg"],
     imagesAltText: ["Sketch: navigation sidebar","Sketch: account settings screen"],
     imagesWidth: [2016,1512],
     id: "lightbox_sketches",
-    caption: true
+    caption: true,
+    no2x: true
 } %}
 
 {% lead %}
@@ -208,11 +210,12 @@ With a clearer idea of what our screens should look like, I created wireframes u
 {% endlead %}
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/wireframe_1.png","/assets/images/projects/realestate/wireframe_2.png","/assets/images/projects/realestate/wireframe_3.png"],
+    imagesSrc: ["projects/realestate/wireframe_1.png","projects/realestate/wireframe_2.png","projects/realestate/wireframe_3.png"],
     imagesAltText: ["Wireframe: search, geography filter","Wireframe: search, time period filter","Wireframe: search, loan options filter"],
     imagesWidth: [1024,1024,1024],
     id: "lightbox_wireframes",
-    caption: true
+    caption: true,
+    no2x: true
 } %}
 
 A major challenge my team encountered was not being able to use the system we were redesigning until two months into the project. By the time the company gave us access to the system, we needed to have completed a significant amount of work towards a new design. To move forward with the project, we used video recordings and screenshots of product demos as our primary source of information. While we were able to make significant progress despite not being able to use the product, we later encountered delays as we realized shortcomings in some of our designs and had to go back to the drawing board.
@@ -222,7 +225,7 @@ A major challenge my team encountered was not being able to use the system we we
 ## Design
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/realestate/design.svg", alt="Illustration of a canvas with sketches next to a tablet computer", classStr="illustration" %}
+{% Image src="projects/realestate/design.svg", alt="Illustration of a canvas with sketches next to a tablet computer", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -234,9 +237,9 @@ First, I created the styles and components (such as buttons and cards) to use on
 With these styles and components, I created an initial set of designs for the various screens in the product.
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/search_before.png","/assets/images/projects/realestate/settings_before.png"],
+    imagesSrc: ["projects/realestate/search_before.png","projects/realestate/settings_before.png"],
     imagesAltText: ["Initial design: search screen, geography filter","Initial design: settings screen"],
-    imagesWidth: [1280,1280],
+    imagesWidth: [2560,2560],
     id: "lightbox_design",
     border: true,
     caption: true
@@ -251,9 +254,9 @@ Based on the feedback we received, I updated the design of the mockup to better 
 I toned down the colors in the initial design for a more conservative, businesslike look, leaving the red accent color for buttons and headings to match the company's branding. I also updated the design of components and buttons with drop shadows and icons for a more modern look.
 
 {% ImageThumbs {
-    imagesSrc: ["/assets/images/projects/realestate/search_after.png","/assets/images/projects/realestate/settings_after.png"],
+    imagesSrc: ["projects/realestate/search_after.png","projects/realestate/settings_after.png"],
     imagesAltText: ["Final design: search screen, geography filter","Final design: settings screen"],
-    imagesWidth: [1280,1280],
+    imagesWidth: [2560,2560],
     id: "lightbox_design",
     border: true,
     caption: true
@@ -264,7 +267,7 @@ I toned down the colors in the initial design for a more conservative, businessl
 ## Prototype
 
 {% section classStr="image-margins-x text-center" %}
-{% Image src="/assets/images/projects/realestate/prototype.svg", alt="Illustration of pages on a website", classStr="illustration" %}
+{% Image src="projects/realestate/prototype.svg", alt="Illustration of pages on a website", classStr="illustration" %}
 {% endsection %}
 
 {% lead %}
@@ -273,7 +276,7 @@ From the mockups, I created an interactive prototype to validate our final desig
 
 <div id="mockup" class="section section-wide">
     <div class="rounded embed-responsive embed-responsive-16by11">
-        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHZ4a73YKOOzJQxJoTLZOvd%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHZ4a73YKOOzJQxJoTLZOvd%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
     </div>
 </div>
 {% endsection %}

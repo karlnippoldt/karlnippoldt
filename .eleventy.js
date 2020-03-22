@@ -3,10 +3,8 @@ const layoutsDir = `_includes/layouts`;
 const componentsDir = `${inputDir}/_includes/components`;
 
 // Plugins
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const htmlMinPlugin = require("html-minifier");
-
-//const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const htmlMinPlugin = require('html-minifier');
 
 // Components
 // Code modified from https://github.com/adamduncan/eleventy-shortcomps
@@ -21,14 +19,12 @@ const ProjectSummary = require(`./${componentsDir}/ProjectSummary.js`);
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  //eleventyConfig.addPlugin(lazyImagesPlugin);
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js": "assets/scripts/bootstrap" });
   eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist": "assets/scripts/jquery" });
-  eleventyConfig.addPassthroughCopy({ "node_modules/popper.js/dist/umd": "assets/scripts/popper.js" });
 
   // Paired shortcodes
   eleventyConfig.addPairedShortcode("section", Section);

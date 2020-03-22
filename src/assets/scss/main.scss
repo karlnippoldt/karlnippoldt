@@ -50,6 +50,11 @@ $modal-fade-transform: none;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Add white button class for navigation
+.btn-white {
+  @include button-variant(#ffffff, #ffffff, $hover-background: $secondary, $hover-border: $secondary, $active-background: darken($secondary, 7.5%), $active-border: darken($secondary, 10%));
+}
+
 // Enable smooth scrolling (pretty much only works in Chromium-based browsers)
 html {
     scroll-behavior: smooth;
