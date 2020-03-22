@@ -19,10 +19,10 @@ col-md-auto: resize column to fit contents
             {% if not item.icon %}
             <a class="btn{% if item.url == page.url %} btn-primary{% else %} btn-white{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
             {% else %}
-            <a class="btn btn-white" href="{{ item.url }}" target="_blank" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
+            <a class="btn btn-white" href="{{ item.url }}" target="_blank" rel="noopener" aria-label="{{ item.title }}"><span class="iconify" data-icon="{{ item.icon }}"></span></a>
             {% endif %}
             {% if item.children.length %}
-            <a class="btn{% if item.url == page.url %} btn-primary{% else %} btn-white{% endif %} dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <a class="btn{% if item.url == page.url %} btn-primary{% else %} btn-white{% endif %} dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></a>
             <div class="dropdown-menu dropdown-menu-right">
                 {% for child in item.children | reverse %}{{ renderChildNavListItem(child) }}{% endfor %}
             </div>
