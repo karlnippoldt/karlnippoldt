@@ -5,6 +5,7 @@ const componentsDir = `${inputDir}/_includes/components`;
 // Plugins
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const htmlMinPlugin = require('html-minifier');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 // Components
 // Code modified from https://github.com/adamduncan/eleventy-shortcomps
@@ -19,12 +20,17 @@ const ProjectSummary = require(`./${componentsDir}/ProjectSummary.js`);
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    scriptSrc: '/assets/scripts/lazysizes/lazysizes.min.js',
+    //preferNativeLazyLoad: false
+  });
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js": "assets/scripts/bootstrap" });
   eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist": "assets/scripts/jquery" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/lazysizes/*.js": "assets/scripts/lazysizes" });
 
   // Paired shortcodes
   eleventyConfig.addPairedShortcode("section", Section);
