@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     scriptSrc: '/assets/scripts/lazysizes/lazysizes.min.js',
-    preferNativeLazyLoad: false,
+    //preferNativeLazyLoad: false,
     transformImgPath: (imgPath) => {
       if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
         return `./src${imgPath}`;

@@ -10,7 +10,7 @@ module.exports = function({ imagesSrc, imagesAltText, imagesWidth, id, no2x = fa
         imageCode += `
 <div class="col-md image-margins text-center">
     <figure class="figure my-0">
-        <a${ id ? ` data-fancybox="${ id }"` : ``} data-caption="${ altText }" href="https://res.cloudinary.com/karlnippoldt/image/upload/q_auto,f_auto/${ src }">
+        <a${ id ? ` data-fancybox="${ id }"` : ``} data-caption="${ altText }"${ width ? ` data-width="${width}"` : ``} href="https://res.cloudinary.com/karlnippoldt/image/upload/q_auto,f_auto/${ src }">
             ${ Image({
                 src: src,
                 alt: altText,
