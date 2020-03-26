@@ -37,6 +37,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "node_modules/bootstrap/dist/js": "assets/scripts/bootstrap" });
   eleventyConfig.addPassthroughCopy({ "node_modules/jquery/dist": "assets/scripts/jquery" });
   eleventyConfig.addPassthroughCopy({ "node_modules/lazysizes/*.js": "assets/scripts/lazysizes" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/zenscroll/*.js": "assets/scripts/zenscroll" });
+  // Fancybox is included through files in src
 
   // Paired shortcodes
   eleventyConfig.addPairedShortcode("section", Section);
