@@ -274,9 +274,14 @@ I toned down the colors in the initial design for a more conservative, businessl
 From the mockups, I created an interactive prototype to validate our final design.
 {% endlead %}
 
+Another member of the team and I reviewed the design with a recruiter, a frequent product user. Using a think-aloud protocol, he used the mockup to search for loan officers. Though this was only one interview, we learned some valuable information.
+
+- Retaining much the user flow of the original design made transitioning to the new design much easier.
+- Data structures often do not meet user needs and should be a primary target for further review.
+
 <div id="mockup" class="section section-wide">
     <div class="rounded embed-responsive embed-responsive-16by11">
-        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHZ4a73YKOOzJQxJoTLZOvd%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fe02yil8JPcGW1CCdvuMcuq%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
     </div>
 </div>
 {% endsection %}
@@ -285,18 +290,14 @@ From the mockups, I created an interactive prototype to validate our final desig
 {% section tall=true %}
 # Conclusion
 
+In this project, I worked with an industry I was initially unfamiliar with, which taught me the importance of involving users in creating a useful design. This proved to be a major challenge.
+
+My team was not able to speak to any users until very late in the project, making understanding how they use the product very difficult. Since we were unable to have direct interaction with the users, we talked to people in the company who could. Most useful, though, was a survey with well-planned questions, helping us to gain insight into users' desires and goals.
+
 {% lead %}
-While the project is still in progress, we've already come a long way towards achieving a significantly more usable design for the product and adding useful features.
+Even with the constraints my team had, we achieved a significantly more usable design for the product and added useful features.
 {% endlead %}
 
-In this project, I've designed for an industry I'm unfamiliar with, which has taught me the importance of interacting with users in creating a useful design. We have, so far, not been able to talk to any users directly, making understanding how they use the product much more difficult. Without direct interaction with the users, a survey with well-planned questions was a remarkably helpful tool in gaining insight into their desires and goals.
-{% endsection %}
+I learned how to structure complex data and user flows in a way that reduces cognitive load and increases usability. I also learned how to incorporate brand identity into a project's visual design.
 
-<div class="section-tall">
-    <div class="card bg-secondary border-0 text-center text-dark">
-        <div class="card-body">
-            <span class="h1 iconify" data-icon="feather:info"></span>
-            <p class="lead">I'm still completing this project. Check back later for more details.</p>
-        </div>
-    </div>
-</div>
+{% endsection %}
