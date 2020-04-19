@@ -277,11 +277,11 @@ From the mockups, I created an interactive prototype to validate our final desig
 Another member of the team and I reviewed the design with a recruiter, a frequent product user. Using a think-aloud protocol, he used the mockup to search for loan officers. Though this was only one interview, we learned some valuable information.
 
 - Retaining much the user flow of the original design made transitioning to the new design much easier.
-- Data structures often do not meet user needs and should be a primary target for further review.
+- Existing data structures, outside the scope of this project, do not align with user needs and should be a primary target for further review.
 
 <div id="mockup" class="section section-wide">
     <div class="rounded embed-responsive embed-responsive-16by11">
-        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fe02yil8JPcGW1CCdvuMcuq%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dcontain" loading="lazy" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fe02yil8JPcGW1CCdvuMcuq%2FRealtrack-Mockups%3Fnode-id%3D14%253A29%26scaling%3Dscale-down" loading="lazy" allowfullscreen></iframe>
     </div>
 </div>
 {% endsection %}
