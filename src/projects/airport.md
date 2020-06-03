@@ -13,8 +13,8 @@ skills:
     - Brand Identity
 description: I streamlined the process of picking up friends and family at the airport, creating a design in Figma that adds features to the Southwest Airlines mobile website and integrates with Southwest's existing brand.
 resume_description:
-    - Streamlined process of picking up friends and family at the airport with added features to Southwest Airlines mobile website, integrating with existing brand
-    - Created an interactive prototype using Figma
+    - Streamlined process of picking up friends and family at the airport with added features to the Southwest Airlines mobile website, integrating with existing brand
+    - Created sketches, then mockups and an interactive prototype using Figma
 thumbnail: projects/airport/thumbnail.png
 thumbnail_alt: Screenshot of Airport Pick-Up Assistant
 ---

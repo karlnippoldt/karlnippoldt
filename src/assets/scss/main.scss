@@ -250,18 +250,9 @@ ul.tags {
   h2 {
     @extend body;
     font-weight: bold;
-    @extend .mt-3;
     span.notbold {
       font-weight: normal;
     }
-    &:first-child {
-      // This is for the headings under Skills
-      @extend .mt-0;
-    }
-  }
-  h1 + h2 {
-    // for h2s directly under h1
-    @extend .mt-0;
   }
   p {
     @extend .m-0;

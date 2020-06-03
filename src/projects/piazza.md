@@ -5,15 +5,15 @@ eleventyNavigation:
 tags: project
 title: Piazza User Research and Design Improvements
 date: 2019-06-11
-date_string: April–June 2019
+date_string: April 2019–June 2019
 role: UX Researcher
 skills:
     - User Research
     - Usability Testing
 description: I resolved interface frustrations in Piazza, an academic question and answer website, conducting interviews, a survey using Qualtrics, and observational experiments.
 resume_description:
-    - Conducted interviews, a survey using Qualtrics, and observational experiments
-    - Resolved interface frustrations discovered through user research
+    - Conducted interviews, a survey using Qualtrics, a heuristic evaluation, and observational experiments
+    - Used sketches and mockups to resolve the interface frustrations found
 thumbnail: projects/piazza/thumbnail.png
 thumbnail_alt: Screenshot of Piazza redesign mockup
 ---

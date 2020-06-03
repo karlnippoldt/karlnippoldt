@@ -9,44 +9,53 @@ title: Résumé
 	newWindow: true
 } %}
 </div>
-<div class="card section">
+<div class="card section section-wide">
 	<div class="resume-card-body">
 		<h1>Projects</h1>
 		{% for project in collections.project | reverse %}
 		{% if not project.data.hidden %}
-		<h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+		<div class="row mt-3">
+			<div class="col-md">
+				<h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+			</div>
+			<div class="col-md-auto">
+				<p>{{ project.data.date_string }}</p>
+			</div>
+		</div>
 		<p>
-			{% if project.data.role %}<span class="line">{{ project.data.role }} <span class="gray">/</span></span>{% endif %}
-			<span class="line">{{ project.data.date_string }}</span>
+			{% if project.data.role %}{{ project.data.role }}{% endif %}
 			<ul>
 				{% for desc_item in project.data.resume_description %}
-				<li><i>{{ desc_item }}</i></li>
+				<li>{{ desc_item }}</li>
 				{% endfor %}
 			</ul>
 		</p>
 		{% endif %}
 		{% endfor %}
 		<h1>Education</h1>
-		<h2>University of California, Irvine</h2>
-		<p>
-			Bachelor of Science, Informatics <span class="gray">/</span> June 2020
-			<br>Specialization in Human-Computer Interaction
-		</p>
+		<div class="row mt-3">
+			<div class="col-md">
+			<h2>University of California, Irvine</h2>
+			</div>
+			<div class="col-md-auto">
+				<p>June 2020</p>
+			</div>
+		</div>
+		<p>Bachelor of Science, Informatics<br>Specialization in Human-Computer Interaction</p>
 		<h1>Skills</h1>
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-5 mt-3">
 				<h2>Processes</h2>
 				<ul>
 					<li>User-centered design</li>
 					<li>Wireframing</li>
 					<li>Prototyping</li>
-					<li>Ideation</li>
 					<li>User interviews</li>
 					<li>Usability testing</li>
 					<li>Agile development</li>
 				</ul>
 			</div>
-			<div class="col-md">
+			<div class="col-md mt-3">
 				<h2>Tools</h2>
 				<ul>
 					<li>Figma</li>
@@ -57,46 +66,73 @@ title: Résumé
 					<li>Git</li>
 				</ul>
 			</div>
-			<div class="col-md">
+			<div class="col-md mt-3">
 				<h2>Languages</h2>
 				<ul>
 					<li>HTML</li>
 					<li>CSS</li>
 					<li>Sass</li>
 					<li>JavaScript</li>
-					<li>TypeScript</li>
 					<li>Angular</li>
 					<li>Python</li>
 				</ul>
 			</div>
 		</div>
 		<h1>Work Experience</h1>
-		<h2>Urban Plates<span class="notbold">, Irvine, CA</span></h2>
+		<div class="row mt-3">
+			<div class="col-md">
+				<h2>Urban Plates<span class="notbold">, Irvine, CA</span></h2>
+			</div>
+			<div class="col-md-auto">
+				<p>September 2019–Present</p>
+			</div>
+		</div>
 		<p>
-			Cashier <span class="gray">/</span> September 2019–Present
+			Cashier
 			<ul>
-				<li><i>Ensure satisfaction by accommodating guests’ requests, serving desserts and beverages, and accurately entering orders into the POS system</i></li>
+				<li>Established clear communication with guests, working on a team to accommodate guests’ requests, serve desserts and beverages, and accurately enter orders into the POS system</li>
 			</ul>
 		</p>
-		<h2>Dreams for Schools<span class="notbold">, Irvine, CA</span></h2>
+		<div class="row mt-3">
+			<div class="col-md">
+				<h2>Dreams for Schools<span class="notbold">, Irvine, CA</span></h2>
+			</div>
+			<div class="col-md-auto">
+				<p>June 2019–July 2019</p>
+			</div>
+		</div>
 		<p>
-			Summer STEM Mentor <span class="gray">/</span> June 2019–July 2019
+			Summer STEM Mentor
 			<ul>
-				<li><i>Taught programming and STEM concepts to elementary school children from  3<sup>rd</sup> through 6<sup>th</sup> grade with a team of five</i></li>
+				<li>Taught programming and STEM concepts to elementary school children from  3<sup>rd</sup> through 6<sup>th</sup> grade with a team of five</li>
 			</ul>
 		</p>
-		<h2>Panera Bread<span class="notbold">, Irvine, CA</span></h2>
+		<div class="row mt-3">
+			<div class="col-md">
+				<h2>Panera Bread<span class="notbold">, Irvine, CA</span></h2>
+			</div>
+			<div class="col-md-auto">
+				<p>March 2017–June 2019</p>
+			</div>
+		</div>
 		<p>
-			Associate Trainer <span class="gray">/</span> March 2017–June 2019
+			Associate Trainer
 			<ul>
-				<li><i>Established clear communication with guests, working on a team to ensure cleanliness, order accuracy, and a positive guest experience</i></li>
+				<li>Trained new employees on policies and procedures and worked with a team to ensure cleanliness, order accuracy, and a positive guest experience</li>
 			</ul>
 		</p>
-		<h2>University of California, Irvine<span class="notbold">, Irvine, CA</span></h2>
+		<div class="row mt-3">
+			<div class="col-md">
+				<h2>University of California, Irvine<span class="notbold">, Irvine, CA</span></h2>
+			</div>
+			<div class="col-md-auto">
+				<p>June 2018–September 2018</p>
+			</div>
+		</div>
 		<p>
-			Summer Conference Assistant <span class="gray">/</span> June 2018–September 2018
+			Summer Conference Assistant
 			<ul>
-				<li><i>Ensured client satisfaction for residential conferences and camps by providing consistent communication and customer service alongside a team of 12</i></li>
+				<li>Ensured client satisfaction for residential conferences and camps by providing consistent communication and customer service alongside a team of 12</li>
 			</ul>
 		</p>
 	</div>
