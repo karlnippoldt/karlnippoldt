@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 2
 ---
 <div class="section section-wide">
-    <div class="row align-items-center">
+    <div class="row">
         <div class="col-md-7 col-lg-8">
             <h1>I'm Karl Nippoldt.</h1>
             <p class="emphasized">
@@ -17,6 +17,11 @@ eleventyNavigation:
             <p>
                 I'm passionate about good design, whether it's in a product I use or an app I create. I have experience in user-centered design processes, prototyping tools, and front-end development. I love to bring my attention to detail to the work I do, and I'm always eager for an opportunity to perfect my skills.
             </p>
+            {% Button {
+                text: "Contact Me",
+                icon: "feather:chevron-right",
+                href: "/contact"
+            } %}
         </div>
         <div class="col-md-5 col-lg-4 pr-md-5 image-margins order-first">
             {% Image {
