@@ -19,6 +19,16 @@ eleventyNavigation:
 </div>
 <div class="card section section-wide">
 	<div class="resume-card-body">
+		<h1>Education</h1>
+		<div class="row mt-3">
+			<div class="col-md">
+			<h2>University of California, Irvine</h2>
+			</div>
+			<div class="col-md-auto">
+				<p>June 2020</p>
+			</div>
+		</div>
+		<p>Bachelor of Science, Informatics (GPA: 3.7)<br>Specialization in Human-Computer Interaction</p>
 		<h1>Projects</h1>
 		{% for project in collections.project | reverse %}
 		{% if not project.data.hidden %}
@@ -40,16 +50,6 @@ eleventyNavigation:
 		</p>
 		{% endif %}
 		{% endfor %}
-		<h1>Education</h1>
-		<div class="row mt-3">
-			<div class="col-md">
-			<h2>University of California, Irvine</h2>
-			</div>
-			<div class="col-md-auto">
-				<p>June 2020</p>
-			</div>
-		</div>
-		<p>Bachelor of Science, Informatics<br>Specialization in Human-Computer Interaction</p>
 		<h1>Skills</h1>
 		<div class="row">
 			<div class="col-md-5 mt-3">
